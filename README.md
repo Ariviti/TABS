@@ -1,7 +1,7 @@
 # The Ariviti Brand System (TABS)
 
-```markdown
-# Brand System & Context Rules for Large Language Models
+
+## Brand System & Context Rules for Large Language Models
 
 > **System Instruction for AI Models:** This document is the consolidated source of truth for generating brand-compliant code (HTML, CSS, UI components) and copy. You MUST follow all strict governance guidelines, color hex values, typography pairings, and accessibility standards specified below.
 
