@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ariviti Component Library — Demo</title>
+<link rel="stylesheet" href="../tokens/tokens.css">
+<link rel="stylesheet" href="../tokens/components.css">
+<style>
+  body { margin: 0; font-family: var(--font-body); background: var(--color-bg-page); color: var(--color-text-primary); }
+  .demo-section { max-width: var(--container-max); margin: 0 auto; padding: var(--space-7) var(--space-6); }
+  .demo-section h2 { font-family: var(--font-display); font-size: var(--font-size-2xl); margin: 0 0 var(--space-5) 0; }
+  .demo-row { display: flex; gap: var(--space-4); align-items: flex-start; flex-wrap: wrap; margin-bottom: var(--space-5); }
+  .demo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-5); }
+  .demo-note { font-size: var(--font-size-xs); color: var(--color-text-muted); margin: var(--space-2) 0 0 0; }
+</style>
+</head>
+<body>
+
+  <div class="ar-nav">
+    <a class="ar-nav__brand" href="#"><span class="ar-nav__brand-accent">a</span>riviti</a>
+    <ul class="ar-nav__links">
+      <li><a class="ar-nav__link" href="#" aria-current="page">Product</a></li>
+      <li><a class="ar-nav__link" href="#">Solutions</a></li>
+      <li><a class="ar-nav__link" href="#">Pricing</a></li>
+      <li><a class="ar-nav__link" href="#">About</a></li>
+    </ul>
+    <div class="ar-nav__actions">
+      <a class="ar-btn ar-btn--ghost ar-btn--sm" href="#">Sign in</a>
+      <a class="ar-btn ar-btn--primary ar-btn--sm" href="#">Book a demo</a>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Buttons</h2>
+    <div class="demo-row">
+      <button class="ar-btn ar-btn--primary">Primary</button>
+      <button class="ar-btn ar-btn--secondary">Secondary</button>
+      <button class="ar-btn ar-btn--ghost">Ghost</button>
+      <button class="ar-btn ar-btn--primary" disabled>Disabled</button>
+    </div>
+    <div class="demo-row">
+      <button class="ar-btn ar-btn--primary ar-btn--sm">Small</button>
+      <button class="ar-btn ar-btn--primary">Medium (default)</button>
+      <button class="ar-btn ar-btn--primary ar-btn--lg">Large</button>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Badges</h2>
+    <div class="demo-row">
+      <span class="ar-badge ar-badge--neutral">Neutral</span>
+      <span class="ar-badge ar-badge--brand">Brand</span>
+      <span class="ar-badge ar-badge--info">Info</span>
+      <span class="ar-badge ar-badge--success">Success</span>
+      <span class="ar-badge ar-badge--warning">Warning</span>
+      <span class="ar-badge ar-badge--danger">Danger</span>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Cards</h2>
+    <div class="demo-grid">
+      <div class="ar-card ar-card--interactive">
+        <p class="ar-card__eyebrow">Case Study</p>
+        <h3 class="ar-card__title">40% faster claims triage</h3>
+        <p class="ar-card__body">A regional insurer cut manual review time using Ariviti's governed AI operating model.</p>
+      </div>
+      <div class="ar-card ar-card--interactive">
+        <p class="ar-card__eyebrow">Platform</p>
+        <h3 class="ar-card__title">Governance built in</h3>
+        <p class="ar-card__body">Model risk, audit trails, and approval gates ship with every deployment, not bolted on after.</p>
+      </div>
+      <div class="ar-card ar-card--interactive">
+        <p class="ar-card__eyebrow">Delivery</p>
+        <h3 class="ar-card__title">Pilot to production in 8 weeks</h3>
+        <p class="ar-card__body">Reference architectures and reusable accelerators compress time-to-value.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Text field</h2>
+    <div class="demo-row" style="max-width: 420px; flex-direction: column; align-items: stretch;">
+      <div class="ar-field">
+        <label class="ar-field__label" for="demo-email">Work email<span class="ar-field__required" aria-hidden="true">*</span></label>
+        <input class="ar-input" id="demo-email" type="email" placeholder="you@company.com">
+        <span class="ar-field__helper">We'll never share this with anyone else.</span>
+      </div>
+      <div class="ar-field">
+        <label class="ar-field__label" for="demo-company">Company</label>
+        <input class="ar-input" id="demo-company" type="text" aria-invalid="true">
+        <span class="ar-field__error" role="alert">This field is required.</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="demo-section">
+    <h2>Alerts</h2>
+    <div class="demo-row" style="flex-direction: column; align-items: stretch;">
+      <div class="ar-alert ar-alert--info">
+        <span class="ar-alert__icon" aria-hidden="true">i</span>
+        <div><p class="ar-alert__title">Scheduled maintenance</p><p class="ar-alert__body">The platform will be briefly unavailable Sunday 2–3 AM IST.</p></div>
+      </div>
+      <div class="ar-alert ar-alert--success">
+        <span class="ar-alert__icon" aria-hidden="true">&#10003;</span>
+        <div><p class="ar-alert__title">Deployment successful</p><p class="ar-alert__body">Model v2.3 is now live in production.</p></div>
+      </div>
+      <div class="ar-alert ar-alert--warning">
+        <span class="ar-alert__icon" aria-hidden="true">!</span>
+        <div><p class="ar-alert__title">Approval pending</p><p class="ar-alert__body">This change needs governance council sign-off before it ships.</p></div>
+      </div>
+      <div class="ar-alert ar-alert--danger">
+        <span class="ar-alert__icon" aria-hidden="true">&#10005;</span>
+        <div><p class="ar-alert__title">Model drift detected</p><p class="ar-alert__body">Accuracy has dropped below the 92% threshold on the claims-triage model.</p></div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

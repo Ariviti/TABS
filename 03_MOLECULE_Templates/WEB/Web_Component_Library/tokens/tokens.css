@@ -1,0 +1,159 @@
+/**
+ * Ariviti Design Tokens
+ * ---------------------------------------------------------------
+ * Single source of truth for color, type, spacing, radius, motion,
+ * and elevation. Every component in this library (CSS, React, Vue)
+ * reads from these custom properties — never hard-coded values.
+ *
+ * Usage: import this file once, globally, before any component CSS.
+ *   <link rel="stylesheet" href="tokens/tokens.css">
+ *   @import "./tokens/tokens.css";
+ */
+
+:root {
+  /* ---------------------------------------------------------------
+   * COLOR — primitives (raw brand hex, from brand guideline)
+   * --------------------------------------------------------------- */
+  --ariviti-orange-50:  #FFF3EE;
+  --ariviti-orange-100: #FFDCCF;
+  --ariviti-orange-400: #FF6A3D;
+  --ariviti-orange-500: #FF4D1C;  /* Vibrant Orange — brand primary */
+  --ariviti-orange-600: #E8420F;
+  --ariviti-orange-700: #C23509;
+
+  --ariviti-indigo-50:  #ECEDF6;
+  --ariviti-indigo-100: #C6C7DE;
+  --ariviti-indigo-400: #5153C4;
+  --ariviti-indigo-500: #3B3EA9;  /* Royal Indigo — brand primary */
+  --ariviti-indigo-600: #2E2F87;
+  --ariviti-indigo-700: #1E1669;  /* Indigo Dark */
+
+  --ariviti-neutral-0:   #FFFFFF;
+  --ariviti-neutral-50:  #F4F4F8;
+  --ariviti-neutral-100: #ECEDF6;
+  --ariviti-neutral-200: #E1E2EC;
+  --ariviti-neutral-400: #9A9AA6;
+  --ariviti-neutral-600: #6B6B76;
+  --ariviti-neutral-800: #2E2E2E;  /* Soft Black */
+  --ariviti-neutral-900: #1A1A1A;
+
+  --ariviti-success-500: #1E9E5A;
+  --ariviti-success-50:  #E9F8EF;
+  --ariviti-warning-500: #B8860B;
+  --ariviti-warning-50:  #FBF3E0;
+  --ariviti-danger-500:  #D42A2A;
+  --ariviti-danger-50:   #FBEAEA;
+
+  /* ---------------------------------------------------------------
+   * COLOR — semantic (what components actually consume)
+   * --------------------------------------------------------------- */
+  --color-bg-page:        var(--ariviti-neutral-0);
+  --color-bg-surface:     var(--ariviti-neutral-0);
+  --color-bg-subtle:      var(--ariviti-neutral-50);
+  --color-bg-inverse:     var(--ariviti-indigo-700);
+
+  --color-text-primary:   var(--ariviti-neutral-800);
+  --color-text-secondary: var(--ariviti-neutral-600);
+  --color-text-muted:     var(--ariviti-neutral-400);
+  --color-text-inverse:   var(--ariviti-neutral-0);
+  --color-text-on-brand:  var(--ariviti-neutral-0);
+
+  --color-border-default: var(--ariviti-neutral-200);
+  --color-border-strong:  var(--ariviti-neutral-400);
+  --color-border-focus:   var(--ariviti-indigo-500);
+
+  --color-brand-primary:       var(--ariviti-orange-500);
+  --color-brand-primary-hover: var(--ariviti-orange-600);
+  --color-brand-primary-active:var(--ariviti-orange-700);
+  --color-brand-secondary:       var(--ariviti-indigo-500);
+  --color-brand-secondary-hover: var(--ariviti-indigo-600);
+
+  --color-feedback-success:      var(--ariviti-success-500);
+  --color-feedback-success-bg:   var(--ariviti-success-50);
+  --color-feedback-warning:      var(--ariviti-warning-500);
+  --color-feedback-warning-bg:   var(--ariviti-warning-50);
+  --color-feedback-danger:       var(--ariviti-danger-500);
+  --color-feedback-danger-bg:    var(--ariviti-danger-50);
+  --color-feedback-info:         var(--ariviti-indigo-500);
+  --color-feedback-info-bg:      var(--ariviti-indigo-50);
+
+  /* ---------------------------------------------------------------
+   * TYPOGRAPHY
+   * --------------------------------------------------------------- */
+  --font-display: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-body:    "Plus Jakarta Sans", "Helvetica Neue", Arial, sans-serif;
+
+  --font-size-xs:   0.75rem;   /* 12px — captions, labels */
+  --font-size-sm:   0.875rem;  /* 14px — secondary body, UI text */
+  --font-size-base: 1rem;      /* 16px — body */
+  --font-size-lg:   1.125rem;  /* 18px — lead paragraph */
+  --font-size-xl:   1.5rem;    /* 24px — H4 */
+  --font-size-2xl:  1.875rem;  /* 30px — H3 */
+  --font-size-3xl:  2.375rem;  /* 38px — H2 */
+  --font-size-4xl:  3rem;      /* 48px — H1 */
+
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+  --font-weight-bold:    700;
+
+  --line-height-tight:  1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose:  1.7;
+
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-wide:  0.04em; /* used for eyebrows/labels, uppercase */
+
+  /* ---------------------------------------------------------------
+   * SPACING — 4px base unit
+   * --------------------------------------------------------------- */
+  --space-1: 0.25rem;  /* 4px */
+  --space-2: 0.5rem;   /* 8px */
+  --space-3: 0.75rem;  /* 12px */
+  --space-4: 1rem;     /* 16px */
+  --space-5: 1.5rem;   /* 24px */
+  --space-6: 2rem;     /* 32px */
+  --space-7: 3rem;     /* 48px */
+  --space-8: 4rem;     /* 64px */
+
+  /* ---------------------------------------------------------------
+   * RADIUS, BORDERS, ELEVATION
+   * --------------------------------------------------------------- */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-full: 999px;
+
+  --border-width-thin: 1px;
+  --border-width-thick: 2px;
+
+  --shadow-sm: 0 1px 2px rgba(30, 22, 105, 0.06);
+  --shadow-md: 0 4px 12px rgba(30, 22, 105, 0.10);
+  --shadow-lg: 0 12px 32px rgba(30, 22, 105, 0.14);
+
+  /* ---------------------------------------------------------------
+   * MOTION
+   * --------------------------------------------------------------- */
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 320ms;
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ---------------------------------------------------------------
+   * LAYOUT
+   * --------------------------------------------------------------- */
+  --container-max: 1200px;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+}
+
+/* Respect reduced-motion preference across every component */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}

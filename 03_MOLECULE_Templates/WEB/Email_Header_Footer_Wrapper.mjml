@@ -1,0 +1,117 @@
+<mjml>
+  <mj-head>
+    <mj-title>Ariviti Email Template</mj-title>
+    <mj-preview>Preheader text goes here — summarize the email in one line (hidden in most clients' inbox preview).</mj-preview>
+
+    <!-- Web fonts: render in Apple Mail, Gmail (web/Android/iOS), Yahoo, most modern clients.
+         Outlook desktop (Windows) ignores @import and always falls back to the mj-all fallback stack below. -->
+    <mj-font name="Space Grotesk" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" />
+    <mj-font name="Plus Jakarta Sans" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" />
+
+    <mj-attributes>
+      <mj-all font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" color="#2E2E2E" />
+      <mj-text font-size="15px" line-height="1.6" />
+      <mj-class name="heading" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" color="#2E2E2E" />
+      <mj-class name="eyebrow" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-weight="700" font-size="11px" color="#FF4D1C" letter-spacing="1px" text-transform="uppercase" />
+      <mj-class name="muted" color="#6B6B76" font-size="12px" />
+      <mj-class name="on-dark" color="#FFFFFF" />
+      <mj-class name="on-dark-muted" color="#C6C7DE" font-size="12px" />
+      <mj-button background-color="#FF4D1C" color="#FFFFFF" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-weight="700" border-radius="4px" font-size="15px" inner-padding="14px 28px" />
+    </mj-attributes>
+
+    <mj-style>
+      /* Underline-free links inside text blocks; buttons keep their own styling */
+      a.body-link { color: #3B3EA9; text-decoration: underline; }
+      .hairline { border-top: 1px solid #E1E2EC; font-size: 1px; }
+      .hairline-dark { border-top: 1px solid #3D3D5C; font-size: 1px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F4F4F8" width="600px">
+
+    <!-- ============================================================
+         HEADER — brand mark, fixed on every send. Do not edit per-campaign.
+         ============================================================ -->
+    <mj-section background-color="#FFFFFF" padding="24px 24px 16px 24px">
+      <mj-column>
+        <mj-text mj-class="heading" font-size="20px" padding="0" align="left">
+          <span style="color:#FF4D1C;">a</span><span style="color:#3B3EA9;">riviti</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding="0 24px 24px 24px">
+      <mj-column>
+        <mj-divider border-width="2px" border-color="#FF4D1C" width="48px" align="left" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- ============================================================
+         CONTENT AREA — replace everything between the markers below
+         with the campaign's actual content. Keep the 600px column
+         width and 24px side padding so it aligns with the header/footer.
+         ============================================================ -->
+    <!-- CONTENT:START -->
+    <mj-section background-color="#FFFFFF" padding="0 24px 32px 24px">
+      <mj-column>
+        <mj-text mj-class="eyebrow" padding="0 0 8px 0">Campaign Eyebrow</mj-text>
+        <mj-text mj-class="heading" font-size="26px" line-height="1.3" padding="0 0 12px 0">
+          Headline goes here — one clear sentence
+        </mj-text>
+        <mj-text padding="0 0 20px 0" color="#6B6B76">
+          Body copy goes here. Keep paragraphs short — 2–3 sentences — since most opens happen on mobile.
+          <a class="body-link" href="#">Inline links</a> use the indigo brand color and stay underlined for accessibility.
+        </mj-text>
+        <mj-button href="#">Primary Call to Action</mj-button>
+      </mj-column>
+    </mj-section>
+    <!-- CONTENT:END -->
+
+    <!-- ============================================================
+         FOOTER — fixed on every send. Do not edit per-campaign.
+         ============================================================ -->
+    <mj-section background-color="#1E1669" padding="32px 24px 24px 24px">
+      <mj-column width="60%">
+        <mj-text mj-class="on-dark" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" font-size="15px" padding="0 0 8px 0">
+          Ariviti Technologies
+        </mj-text>
+        <mj-text mj-class="on-dark-muted" padding="0 0 4px 0">
+          Bengaluru, Karnataka, India
+        </mj-text>
+        <mj-text mj-class="on-dark-muted" padding="0">
+          <a href="mailto:hello@ariviti.com" style="color:#C6C7DE; text-decoration:underline;">hello@ariviti.com</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://ariviti.com" style="color:#C6C7DE; text-decoration:underline;">ariviti.com</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-table align="right" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">in</a>
+            </td>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">X</a>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#1E1669" padding="0 24px 28px 24px">
+      <mj-column>
+        <mj-raw><div class="hairline-dark">&nbsp;</div></mj-raw>
+        <mj-spacer height="16px" />
+        <mj-text mj-class="on-dark-muted" font-size="11px" line-height="1.6" padding="0">
+          You're receiving this email because you're a subscriber or customer of Ariviti Technologies.
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Unsubscribe</a>
+          &nbsp;&middot;&nbsp;
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Update preferences</a>
+        </mj-text>
+        <mj-text mj-class="on-dark-muted" font-size="11px" padding="8px 0 0 0">
+          &copy; 2026 Ariviti Technologies. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

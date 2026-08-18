@@ -1,0 +1,237 @@
+/**
+ * Ariviti Component Library — Styles
+ * ---------------------------------------------------------------
+ * Framework-agnostic CSS consumed by both the React (.jsx) and
+ * Vue (.vue) implementations in this library, so visual output is
+ * guaranteed identical regardless of framework. Requires tokens.css
+ * to be loaded first.
+ */
+@import "../tokens/tokens.css";
+
+/* =================================================================
+   BUTTON
+   ================================================================= */
+.ar-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  line-height: 1;
+  border-radius: var(--radius-sm);
+  border: var(--border-width-thin) solid transparent;
+  padding: var(--space-3) var(--space-5);
+  cursor: pointer;
+  transition: background-color var(--duration-base) var(--ease-standard),
+              border-color var(--duration-base) var(--ease-standard),
+              transform var(--duration-fast) var(--ease-standard);
+  text-decoration: none;
+}
+.ar-btn:active { transform: translateY(1px); }
+.ar-btn:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+.ar-btn:disabled,
+.ar-btn[aria-disabled="true"] {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.ar-btn--primary {
+  background-color: var(--color-brand-primary);
+  color: var(--color-text-on-brand);
+}
+.ar-btn--primary:hover:not(:disabled) { background-color: var(--color-brand-primary-hover); }
+.ar-btn--primary:active:not(:disabled) { background-color: var(--color-brand-primary-active); }
+
+.ar-btn--secondary {
+  background-color: var(--color-brand-secondary);
+  color: var(--color-text-on-brand);
+}
+.ar-btn--secondary:hover:not(:disabled) { background-color: var(--color-brand-secondary-hover); }
+
+.ar-btn--ghost {
+  background-color: transparent;
+  border-color: var(--color-border-strong);
+  color: var(--color-text-primary);
+}
+.ar-btn--ghost:hover:not(:disabled) {
+  border-color: var(--color-text-primary);
+  background-color: var(--color-bg-subtle);
+}
+
+.ar-btn--sm { padding: var(--space-2) var(--space-4); font-size: var(--font-size-xs); }
+.ar-btn--lg { padding: var(--space-4) var(--space-6); font-size: var(--font-size-base); }
+
+/* =================================================================
+   CARD
+   ================================================================= */
+.ar-card {
+  background-color: var(--color-bg-surface);
+  border: var(--border-width-thin) solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  transition: box-shadow var(--duration-base) var(--ease-standard),
+              transform var(--duration-base) var(--ease-standard);
+}
+.ar-card--interactive { cursor: pointer; }
+.ar-card--interactive:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+.ar-card__eyebrow {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  letter-spacing: var(--letter-spacing-wide);
+  text-transform: uppercase;
+  color: var(--color-brand-primary);
+  margin: 0 0 var(--space-2) 0;
+}
+.ar-card__title {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xl);
+  color: var(--color-text-primary);
+  margin: 0 0 var(--space-2) 0;
+}
+.ar-card__body {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+/* =================================================================
+   BADGE
+   ================================================================= */
+.ar-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+.ar-badge--neutral  { background-color: var(--color-bg-subtle); color: var(--color-text-secondary); }
+.ar-badge--brand    { background-color: var(--ariviti-orange-50); color: var(--ariviti-orange-700); }
+.ar-badge--info     { background-color: var(--color-feedback-info-bg); color: var(--color-feedback-info); }
+.ar-badge--success  { background-color: var(--color-feedback-success-bg); color: var(--color-feedback-success); }
+.ar-badge--warning  { background-color: var(--color-feedback-warning-bg); color: var(--color-feedback-warning); }
+.ar-badge--danger   { background-color: var(--color-feedback-danger-bg); color: var(--color-feedback-danger); }
+
+/* =================================================================
+   INPUT (text field with label / helper / error states)
+   ================================================================= */
+.ar-field { display: flex; flex-direction: column; gap: var(--space-2); width: 100%; }
+.ar-field__label {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-primary);
+}
+.ar-field__required { color: var(--color-brand-primary); margin-left: var(--space-1); }
+.ar-input {
+  font-family: var(--font-body);
+  font-size: var(--font-size-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-surface);
+  border: var(--border-width-thin) solid var(--color-border-default);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-4);
+  transition: border-color var(--duration-base) var(--ease-standard),
+              box-shadow var(--duration-base) var(--ease-standard);
+}
+.ar-input::placeholder { color: var(--color-text-muted); }
+.ar-input:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px var(--ariviti-indigo-50);
+}
+.ar-input[aria-invalid="true"] {
+  border-color: var(--color-feedback-danger);
+}
+.ar-input[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px var(--color-feedback-danger-bg);
+}
+.ar-input:disabled {
+  background-color: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+  cursor: not-allowed;
+}
+.ar-field__helper { font-size: var(--font-size-xs); color: var(--color-text-secondary); }
+.ar-field__error   { font-size: var(--font-size-xs); color: var(--color-feedback-danger); font-weight: var(--font-weight-medium); }
+
+/* =================================================================
+   NAV
+   ================================================================= */
+.ar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-6);
+  background-color: var(--color-bg-surface);
+  border-bottom: var(--border-width-thin) solid var(--color-border-default);
+}
+.ar-nav__brand {
+  font-family: var(--font-display);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  color: var(--color-text-primary);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+.ar-nav__brand-accent { color: var(--color-brand-primary); }
+.ar-nav__links {
+  display: flex;
+  align-items: center;
+  gap: var(--space-6);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ar-nav__link {
+  font-family: var(--font-body);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--duration-base) var(--ease-standard);
+}
+.ar-nav__link:hover, .ar-nav__link[aria-current="page"] { color: var(--color-text-primary); }
+.ar-nav__actions { display: flex; align-items: center; gap: var(--space-3); }
+
+/* =================================================================
+   ALERT / CALLOUT
+   ================================================================= */
+.ar-alert {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  padding: var(--space-4) var(--space-5);
+  border-radius: var(--radius-md);
+  border-left: var(--border-width-thick) solid transparent;
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+}
+.ar-alert__icon { flex-shrink: 0; margin-top: 2px; font-weight: var(--font-weight-bold); }
+.ar-alert__title { font-weight: var(--font-weight-bold); margin: 0 0 var(--space-1) 0; }
+.ar-alert__body { margin: 0; color: var(--color-text-secondary); line-height: var(--line-height-normal); }
+
+.ar-alert--info    { background-color: var(--color-feedback-info-bg);    border-left-color: var(--color-feedback-info); }
+.ar-alert--info    .ar-alert__icon { color: var(--color-feedback-info); }
+.ar-alert--success { background-color: var(--color-feedback-success-bg); border-left-color: var(--color-feedback-success); }
+.ar-alert--success .ar-alert__icon { color: var(--color-feedback-success); }
+.ar-alert--warning { background-color: var(--color-feedback-warning-bg); border-left-color: var(--color-feedback-warning); }
+.ar-alert--warning .ar-alert__icon { color: var(--color-feedback-warning); }
+.ar-alert--danger  { background-color: var(--color-feedback-danger-bg);  border-left-color: var(--color-feedback-danger); }
+.ar-alert--danger  .ar-alert__icon { color: var(--color-feedback-danger); }
