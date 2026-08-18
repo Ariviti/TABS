@@ -1,0 +1,339 @@
+{
+  "$schema": "Ariviti color tokens \u2014 generated, do not hand-edit; regenerate from compute_colors.py",
+  "meta": {
+    "brand": "Ariviti",
+    "source": "LY_-_Ariviti_Brand_Guidelines.pdf (primary/secondary); neutral + feedback ramps are a developer extension, not in the brand guideline",
+    "cmykNote": "CMYK values use an uncalibrated device-independent formula (naive RGB->CMYK). For press production, get color-matched CMYK from your print house's ICC profile \u2014 do not rely on these for print-critical work."
+  },
+  "colors": {
+    "orange": {
+      "label": "Vibrant Orange",
+      "group": "primary",
+      "hex": "#FF4D1C",
+      "rgb": {
+        "r": 255,
+        "g": 77,
+        "b": 28
+      },
+      "rgbString": "rgb(255, 77, 28)",
+      "hsl": {
+        "h": 13.0,
+        "s": 100.0,
+        "l": 55.5
+      },
+      "hslString": "hsl(13.0, 100.0%, 55.5%)",
+      "cmyk": {
+        "c": 0,
+        "m": 70,
+        "y": 89,
+        "k": 0
+      },
+      "cmykString": "cmyk(0%, 70%, 89%, 0%)"
+    },
+    "indigo": {
+      "label": "Royal Indigo",
+      "group": "primary",
+      "hex": "#3B3EA9",
+      "rgb": {
+        "r": 59,
+        "g": 62,
+        "b": 169
+      },
+      "rgbString": "rgb(59, 62, 169)",
+      "hsl": {
+        "h": 238.4,
+        "s": 48.2,
+        "l": 44.7
+      },
+      "hslString": "hsl(238.4, 48.2%, 44.7%)",
+      "cmyk": {
+        "c": 65,
+        "m": 63,
+        "y": 0,
+        "k": 34
+      },
+      "cmykString": "cmyk(65%, 63%, 0%, 34%)"
+    },
+    "indigo-dark": {
+      "label": "Indigo Dark",
+      "group": "primary",
+      "hex": "#1E1669",
+      "rgb": {
+        "r": 30,
+        "g": 22,
+        "b": 105
+      },
+      "rgbString": "rgb(30, 22, 105)",
+      "hsl": {
+        "h": 245.8,
+        "s": 65.4,
+        "l": 24.9
+      },
+      "hslString": "hsl(245.8, 65.4%, 24.9%)",
+      "cmyk": {
+        "c": 71,
+        "m": 79,
+        "y": 0,
+        "k": 59
+      },
+      "cmykString": "cmyk(71%, 79%, 0%, 59%)"
+    },
+    "white": {
+      "label": "White",
+      "group": "secondary",
+      "hex": "#FFFFFF",
+      "rgb": {
+        "r": 255,
+        "g": 255,
+        "b": 255
+      },
+      "rgbString": "rgb(255, 255, 255)",
+      "hsl": {
+        "h": 0.0,
+        "s": 0.0,
+        "l": 100.0
+      },
+      "hslString": "hsl(0.0, 0.0%, 100.0%)",
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 0
+      },
+      "cmykString": "cmyk(0%, 0%, 0%, 0%)"
+    },
+    "soft-black": {
+      "label": "Soft Black",
+      "group": "secondary",
+      "hex": "#2E2E2E",
+      "rgb": {
+        "r": 46,
+        "g": 46,
+        "b": 46
+      },
+      "rgbString": "rgb(46, 46, 46)",
+      "hsl": {
+        "h": 0.0,
+        "s": 0.0,
+        "l": 18.0
+      },
+      "hslString": "hsl(0.0, 0.0%, 18.0%)",
+      "cmyk": {
+        "c": 0,
+        "m": 0,
+        "y": 0,
+        "k": 82
+      },
+      "cmykString": "cmyk(0%, 0%, 0%, 82%)"
+    },
+    "mist": {
+      "label": "Mist",
+      "group": "neutral",
+      "hex": "#F4F4F8",
+      "rgb": {
+        "r": 244,
+        "g": 244,
+        "b": 248
+      },
+      "rgbString": "rgb(244, 244, 248)",
+      "hsl": {
+        "h": 240.0,
+        "s": 22.2,
+        "l": 96.5
+      },
+      "hslString": "hsl(240.0, 22.2%, 96.5%)",
+      "cmyk": {
+        "c": 2,
+        "m": 2,
+        "y": 0,
+        "k": 3
+      },
+      "cmykString": "cmyk(2%, 2%, 0%, 3%)"
+    },
+    "mist-2": {
+      "label": "Mist 2",
+      "group": "neutral",
+      "hex": "#ECEDF6",
+      "rgb": {
+        "r": 236,
+        "g": 237,
+        "b": 246
+      },
+      "rgbString": "rgb(236, 237, 246)",
+      "hsl": {
+        "h": 234.0,
+        "s": 35.7,
+        "l": 94.5
+      },
+      "hslString": "hsl(234.0, 35.7%, 94.5%)",
+      "cmyk": {
+        "c": 4,
+        "m": 4,
+        "y": 0,
+        "k": 4
+      },
+      "cmykString": "cmyk(4%, 4%, 0%, 4%)"
+    },
+    "line": {
+      "label": "Line",
+      "group": "neutral",
+      "hex": "#E1E2EC",
+      "rgb": {
+        "r": 225,
+        "g": 226,
+        "b": 236
+      },
+      "rgbString": "rgb(225, 226, 236)",
+      "hsl": {
+        "h": 234.5,
+        "s": 22.4,
+        "l": 90.4
+      },
+      "hslString": "hsl(234.5, 22.4%, 90.4%)",
+      "cmyk": {
+        "c": 5,
+        "m": 4,
+        "y": 0,
+        "k": 7
+      },
+      "cmykString": "cmyk(5%, 4%, 0%, 7%)"
+    },
+    "gray": {
+      "label": "Gray",
+      "group": "neutral",
+      "hex": "#6B6B76",
+      "rgb": {
+        "r": 107,
+        "g": 107,
+        "b": 118
+      },
+      "rgbString": "rgb(107, 107, 118)",
+      "hsl": {
+        "h": 240.0,
+        "s": 4.9,
+        "l": 44.1
+      },
+      "hslString": "hsl(240.0, 4.9%, 44.1%)",
+      "cmyk": {
+        "c": 9,
+        "m": 9,
+        "y": 0,
+        "k": 54
+      },
+      "cmykString": "cmyk(9%, 9%, 0%, 54%)"
+    },
+    "gray-light": {
+      "label": "Gray Light",
+      "group": "neutral",
+      "hex": "#9A9AA6",
+      "rgb": {
+        "r": 154,
+        "g": 154,
+        "b": 166
+      },
+      "rgbString": "rgb(154, 154, 166)",
+      "hsl": {
+        "h": 240.0,
+        "s": 6.3,
+        "l": 62.7
+      },
+      "hslString": "hsl(240.0, 6.3%, 62.7%)",
+      "cmyk": {
+        "c": 7,
+        "m": 7,
+        "y": 0,
+        "k": 35
+      },
+      "cmykString": "cmyk(7%, 7%, 0%, 35%)"
+    },
+    "success": {
+      "label": "Success",
+      "group": "feedback",
+      "hex": "#1E9E5A",
+      "rgb": {
+        "r": 30,
+        "g": 158,
+        "b": 90
+      },
+      "rgbString": "rgb(30, 158, 90)",
+      "hsl": {
+        "h": 148.1,
+        "s": 68.1,
+        "l": 36.9
+      },
+      "hslString": "hsl(148.1, 68.1%, 36.9%)",
+      "cmyk": {
+        "c": 81,
+        "m": 0,
+        "y": 43,
+        "k": 38
+      },
+      "cmykString": "cmyk(81%, 0%, 43%, 38%)"
+    },
+    "warning": {
+      "label": "Warning",
+      "group": "feedback",
+      "hex": "#B8860B",
+      "rgb": {
+        "r": 184,
+        "g": 134,
+        "b": 11
+      },
+      "rgbString": "rgb(184, 134, 11)",
+      "hsl": {
+        "h": 42.7,
+        "s": 88.7,
+        "l": 38.2
+      },
+      "hslString": "hsl(42.7, 88.7%, 38.2%)",
+      "cmyk": {
+        "c": 0,
+        "m": 27,
+        "y": 94,
+        "k": 28
+      },
+      "cmykString": "cmyk(0%, 27%, 94%, 28%)"
+    },
+    "danger": {
+      "label": "Danger",
+      "group": "feedback",
+      "hex": "#D42A2A",
+      "rgb": {
+        "r": 212,
+        "g": 42,
+        "b": 42
+      },
+      "rgbString": "rgb(212, 42, 42)",
+      "hsl": {
+        "h": 0.0,
+        "s": 66.9,
+        "l": 49.8
+      },
+      "hslString": "hsl(0.0, 66.9%, 49.8%)",
+      "cmyk": {
+        "c": 0,
+        "m": 80,
+        "y": 80,
+        "k": 17
+      },
+      "cmykString": "cmyk(0%, 80%, 80%, 17%)"
+    }
+  },
+  "tailwindExtend": {
+    "colors": {
+      "orange": "#FF4D1C",
+      "indigo": "#3B3EA9",
+      "indigo-dark": "#1E1669",
+      "white": "#FFFFFF",
+      "soft-black": "#2E2E2E",
+      "mist": "#F4F4F8",
+      "mist-2": "#ECEDF6",
+      "line": "#E1E2EC",
+      "gray": "#6B6B76",
+      "gray-light": "#9A9AA6",
+      "success": "#1E9E5A",
+      "warning": "#B8860B",
+      "danger": "#D42A2A"
+    }
+  }
+}

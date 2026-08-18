@@ -1,0 +1,42 @@
+//
+// Ariviti Color Tokens — SCSS Variables
+// Generated file — see tokens_color.json for the source of truth.
+//
+
+// Primary
+$ariviti-orange: #FF4D1C;  // Vibrant Orange
+$ariviti-indigo: #3B3EA9;  // Royal Indigo
+$ariviti-indigo-dark: #1E1669;  // Indigo Dark
+
+// Secondary
+$ariviti-white: #FFFFFF;  // White
+$ariviti-soft-black: #2E2E2E;  // Soft Black
+
+// Neutral
+$ariviti-mist: #F4F4F8;  // Mist
+$ariviti-mist-2: #ECEDF6;  // Mist 2
+$ariviti-line: #E1E2EC;  // Line
+$ariviti-gray: #6B6B76;  // Gray
+$ariviti-gray-light: #9A9AA6;  // Gray Light
+
+// Feedback
+$ariviti-success: #1E9E5A;  // Success
+$ariviti-warning: #B8860B;  // Warning
+$ariviti-danger: #D42A2A;  // Danger
+
+// Map form, for programmatic access: map-get($ariviti-colors, 'orange')
+$ariviti-colors: (
+  'orange': #FF4D1C,
+  'indigo': #3B3EA9,
+  'indigo-dark': #1E1669,
+  'white': #FFFFFF,
+  'soft-black': #2E2E2E,
+  'mist': #F4F4F8,
+  'mist-2': #ECEDF6,
+  'line': #E1E2EC,
+  'gray': #6B6B76,
+  'gray-light': #9A9AA6,
+  'success': #1E9E5A,
+  'warning': #B8860B,
+  'danger': #D42A2A
+);

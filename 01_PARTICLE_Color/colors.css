@@ -1,0 +1,33 @@
+/**
+ * Ariviti Color Tokens — CSS Custom Properties
+ * Generated file — see tokens_color.json for the source of truth
+ * across formats (hex/rgb/hsl/cmyk) and compute_colors.py for the
+ * conversion logic.
+ *
+ * CMYK values are NOT included here (CSS has no CMYK color function
+ * in current browser support) — see tokens_color.json for print use.
+ */
+
+:root {
+  /* Primary */
+  --ariviti-orange: #FF4D1C;  /* Vibrant Orange — rgb(255, 77, 28) */
+  --ariviti-indigo: #3B3EA9;  /* Royal Indigo — rgb(59, 62, 169) */
+  --ariviti-indigo-dark: #1E1669;  /* Indigo Dark — rgb(30, 22, 105) */
+
+  /* Secondary */
+  --ariviti-white: #FFFFFF;  /* White — rgb(255, 255, 255) */
+  --ariviti-soft-black: #2E2E2E;  /* Soft Black — rgb(46, 46, 46) */
+
+  /* Neutral */
+  --ariviti-mist: #F4F4F8;  /* Mist — rgb(244, 244, 248) */
+  --ariviti-mist-2: #ECEDF6;  /* Mist 2 — rgb(236, 237, 246) */
+  --ariviti-line: #E1E2EC;  /* Line — rgb(225, 226, 236) */
+  --ariviti-gray: #6B6B76;  /* Gray — rgb(107, 107, 118) */
+  --ariviti-gray-light: #9A9AA6;  /* Gray Light — rgb(154, 154, 166) */
+
+  /* Feedback */
+  --ariviti-success: #1E9E5A;  /* Success — rgb(30, 158, 90) */
+  --ariviti-warning: #B8860B;  /* Warning — rgb(184, 134, 11) */
+  --ariviti-danger: #D42A2A;  /* Danger — rgb(212, 42, 42) */
+
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Governance Console — Ariviti</title>
+<style>
+  :root {
+    --orange: #FF4D1C;
+    --orange-hover: #E8420F;
+    --indigo: #3B3EA9;
+    --indigo-dark: #1E1669;
+    --black: #2E2E2E;
+    --white: #FFFFFF;
+    --mist: #F4F4F8;
+    --mist-2: #ECEDF6;
+    --line: #E1E2EC;
+    --gray: #6B6B76;
+    --gray-light: #9A9AA6;
+    --on-dark-muted: #C6C7DE;
+    --font-display: "Space Grotesk", Helvetica, Arial, sans-serif;
+    --font-body: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.6;
+  }
+  a { color: inherit; }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+  @media (max-width: 640px) { .wrap { padding: 0 20px; } }
+
+  /* ---------------- NAV ---------------- */
+  .nav {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 22px 32px; border-bottom: 1px solid var(--line);
+  }
+  .nav__brand { font-family: var(--font-display); font-weight: 700; font-size: 19px; text-decoration: none; color: var(--black); }
+  .nav__brand span { color: var(--orange); }
+  .nav__links { display: flex; gap: 32px; list-style: none; margin: 0; padding: 0; }
+  .nav__links a { font-size: 14px; font-weight: 500; color: var(--gray); text-decoration: none; transition: color .15s; }
+  .nav__links a:hover { color: var(--black); }
+  .nav__cta {
+    display: inline-flex; align-items: center; font-family: var(--font-body); font-weight: 700; font-size: 13px;
+    background: var(--orange); color: var(--white); padding: 10px 20px; border-radius: 4px; text-decoration: none;
+    transition: background-color .15s;
+  }
+  .nav__cta:hover { background: var(--orange-hover); }
+  @media (max-width: 780px) { .nav__links { display: none; } }
+
+  /* ---------------- HERO ---------------- */
+  .hero {
+    background: var(--indigo-dark);
+    color: var(--white);
+    padding: 88px 0 96px 0;
+    overflow: hidden;
+  }
+  .hero__grid { display: flex; align-items: center; gap: 64px; }
+  .hero__grid > div:first-child { flex: 1.05; }
+  .hero__grid > div:last-child { flex: 0.95; }
+  @media (max-width: 900px) { .hero__grid { flex-direction: column; gap: 56px; } }
+
+  .hero__eyebrow {
+    font-family: var(--font-body); font-weight: 700; font-size: 12px; letter-spacing: 1.5px;
+    text-transform: uppercase; color: var(--orange); margin: 0 0 18px 0;
+  }
+  .hero h1 {
+    font-family: var(--font-display); font-weight: 700; font-size: 46px; line-height: 1.12;
+    letter-spacing: -0.01em; margin: 0 0 22px 0;
+  }
+  @media (max-width: 640px) { .hero h1 { font-size: 34px; } }
+  .hero p.lead { font-size: 17px; color: var(--on-dark-muted); max-width: 460px; margin: 0 0 34px 0; }
+  .hero__actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    font-family: var(--font-body); font-weight: 700; font-size: 15px;
+    padding: 14px 28px; border-radius: 4px; text-decoration: none; border: 1px solid transparent;
+    transition: background-color .15s, border-color .15s, transform .1s;
+  }
+  .btn:active { transform: translateY(1px); }
+  .btn--primary { background: var(--orange); color: var(--white); }
+  .btn--primary:hover { background: var(--orange-hover); }
+  .btn--outline { border-color: #4A4DBD; color: var(--white); }
+  .btn--outline:hover { background: rgba(255,255,255,0.06); }
+
+  /* ---------------- SIGNATURE ELEMENT: live decision trail ---------------- */
+  .trail {
+    background: #241C7A;
+    border: 1px solid #3D3D8C;
+    border-radius: 10px;
+    padding: 22px;
+  }
+  .trail__label {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase;
+    color: var(--on-dark-muted); margin-bottom: 18px;
+  }
+  .trail__dot { width: 7px; height: 7px; border-radius: 50%; background: #4ADE80; animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+  .trail__event {
+    display: flex; gap: 12px;
+    padding: 13px 0; opacity: 0.32; transition: opacity .4s;
+  }
+  .trail__event > .trail__rail { flex: 0 0 20px; }
+  .trail__event > div:last-child { flex: 1; }
+  .trail__event:not(:last-child) { border-bottom: 1px solid #3D3D8C; }
+  .trail__rail { display: flex; flex-direction: column; align-items: center; }
+  .trail__node { width: 9px; height: 9px; border-radius: 50%; background: var(--gray-light); margin-top: 3px; transition: background-color .4s, box-shadow .4s; }
+  .trail__stem { flex: 1; width: 1px; background: #3D3D8C; margin-top: 2px; }
+  .trail__title { font-size: 13.5px; font-weight: 700; color: var(--white); margin: 0 0 3px 0; }
+  .trail__meta { font-size: 12px; color: var(--on-dark-muted); margin: 0; }
+  .trail__badge {
+    display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.3px;
+    padding: 2px 8px; border-radius: 999px; margin-left: 6px; vertical-align: middle;
+  }
+  .trail__badge--wait { background: rgba(184,134,11,0.25); color: #F0C36B; }
+  .trail__badge--ok   { background: rgba(30,158,90,0.25); color: #6FE0A6; }
+
+  .trail__event { animation: trail-cycle 8s ease-in-out infinite; }
+  .trail__event:nth-child(1) { animation-delay: 0s; }
+  .trail__event:nth-child(2) { animation-delay: 2s; }
+  .trail__event:nth-child(3) { animation-delay: 4s; }
+  .trail__event:nth-child(4) { animation-delay: 6s; }
+  @keyframes trail-cycle {
+    0%   { opacity: 0.32; }
+    6%   { opacity: 1; }
+    22%  { opacity: 1; }
+    30%  { opacity: 0.32; }
+    100% { opacity: 0.32; }
+  }
+  .trail__event:nth-child(1) .trail__node { animation: node-glow 8s ease-in-out infinite; animation-delay: 0s; }
+  .trail__event:nth-child(2) .trail__node { animation: node-glow 8s ease-in-out infinite; animation-delay: 2s; }
+  .trail__event:nth-child(3) .trail__node { animation: node-glow 8s ease-in-out infinite; animation-delay: 4s; }
+  .trail__event:nth-child(4) .trail__node { animation: node-glow 8s ease-in-out infinite; animation-delay: 6s; }
+  @keyframes node-glow {
+    0%   { background: var(--gray-light); box-shadow: none; }
+    6%   { background: var(--orange); box-shadow: 0 0 0 4px rgba(255,77,28,0.25); }
+    30%  { background: var(--orange); box-shadow: 0 0 0 4px rgba(255,77,28,0.25); }
+    36%  { background: var(--gray-light); box-shadow: none; }
+    100% { background: var(--gray-light); box-shadow: none; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .trail__event, .trail__node, .trail__dot { animation: none !important; opacity: 1 !important; }
+    .trail__event:nth-child(1) .trail__node,
+    .trail__event:nth-child(3) .trail__node { background: var(--orange); }
+  }
+
+  /* ---------------- PROOF BAND ---------------- */
+  .proof { background: var(--mist); padding: 44px 0; }
+  .proof__grid { display: flex; gap: 32px; text-align: center; }
+  .proof__grid > div { flex: 1; }
+  @media (max-width: 640px) { .proof__grid { flex-direction: column; gap: 28px; } }
+  .proof__num { font-family: var(--font-display); font-weight: 700; font-size: 34px; color: var(--indigo); margin: 0; }
+  .proof__label { font-size: 13px; color: var(--gray); margin: 4px 0 0 0; }
+
+  /* ---------------- CAPABILITIES ---------------- */
+  .section { padding: 88px 0; }
+  .section__eyebrow {
+    font-weight: 700; font-size: 12px; letter-spacing: 1.5px; text-transform: uppercase; color: var(--orange);
+    margin: 0 0 12px 0;
+  }
+  .section h2 {
+    font-family: var(--font-display); font-weight: 700; font-size: 32px; letter-spacing: -0.01em;
+    margin: 0 0 48px 0; max-width: 560px;
+  }
+  .cap__grid { display: flex; gap: 40px; }
+  .cap__grid > div { flex: 1; }
+  @media (max-width: 860px) { .cap__grid { flex-direction: column; gap: 36px; } }
+  .cap__num { font-family: var(--font-display); font-weight: 700; font-size: 22px; color: var(--orange); margin: 0 0 14px 0; }
+  .cap__title { font-family: var(--font-display); font-weight: 700; font-size: 18px; margin: 0 0 10px 0; }
+  .cap__body { font-size: 14.5px; color: var(--gray); margin: 0; }
+
+  /* ---------------- TESTIMONIAL ---------------- */
+  .quote { background: var(--black); color: var(--white); padding: 88px 0; }
+  .quote__mark { font-family: var(--font-display); font-weight: 700; font-size: 80px; color: var(--orange); line-height: 1; margin: 0 0 8px 0; }
+  .quote p.text {
+    font-family: var(--font-display); font-weight: 700; font-size: 26px; line-height: 1.4;
+    max-width: 760px; margin: 0 0 28px 0;
+  }
+  @media (max-width: 640px) { .quote p.text { font-size: 20px; } }
+  .quote__attr-name { font-size: 14px; font-weight: 700; margin: 0; }
+  .quote__attr-role { font-size: 13px; color: var(--on-dark-muted); margin: 2px 0 0 0; }
+
+  /* ---------------- FINAL CTA ---------------- */
+  .final-cta { background: var(--indigo); color: var(--white); padding: 72px 0; text-align: center; }
+  .final-cta h2 { font-family: var(--font-display); font-weight: 700; font-size: 30px; margin: 0 0 14px 0; }
+  .final-cta p { color: var(--on-dark-muted); font-size: 15px; margin: 0 0 30px 0; }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer { background: var(--indigo-dark); color: var(--on-dark-muted); padding: 48px 0 32px 0; font-size: 13px; }
+  .footer__grid { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 24px; margin-bottom: 28px; }
+  .footer__brand { font-family: var(--font-display); font-weight: 700; font-size: 17px; color: var(--white); margin: 0 0 8px 0; }
+  .footer__brand span { color: var(--orange); }
+  .footer hr { border: none; border-top: 1px solid #3D3D5C; margin: 0 0 20px 0; }
+  .footer a { color: var(--on-dark-muted); text-decoration: underline; }
+
+  :focus-visible { outline: 2px solid var(--orange); outline-offset: 2px; }
+</style>
+</head>
+<body>
+
+  <nav class="nav">
+    <a class="nav__brand" href="#"><span>a</span>riviti</a>
+    <ul class="nav__links">
+      <li><a href="#capabilities">Product</a></li>
+      <li><a href="#proof">Results</a></li>
+      <li><a href="#quote">Customers</a></li>
+    </ul>
+    <a class="nav__cta" href="#final-cta">Book a walkthrough</a>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap hero__grid">
+      <div>
+        <p class="hero__eyebrow">Governance Console</p>
+        <h1>Every AI decision, one auditable trail.</h1>
+        <p class="lead">
+          Compliance shouldn't be a spreadsheet someone reconstructs after the fact. The Governance Console
+          logs, routes, and exports every model decision your teams make — live, not after a request from legal.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#final-cta">Book a walkthrough</a>
+          <a class="btn btn--outline" href="#capabilities">See how it works</a>
+        </div>
+      </div>
+
+      <!-- SIGNATURE ELEMENT: a live decision trail — what the product actually does,
+           rendered as the hero itself rather than an abstract stat block. -->
+      <div class="trail" role="img" aria-label="Animated example of a governed AI decision moving through the Governance Console: flagged, scored, routed for approval, and logged to the audit trail.">
+        <div class="trail__label"><span class="trail__dot"></span> Live decision trail</div>
+
+        <div class="trail__event">
+          <div class="trail__rail"><div class="trail__node"></div><div class="trail__stem"></div></div>
+          <div>
+            <p class="trail__title">Claim #48213 flagged for review</p>
+            <p class="trail__meta">Model confidence 94% &middot; 09:41:02</p>
+          </div>
+        </div>
+
+        <div class="trail__event">
+          <div class="trail__rail"><div class="trail__node"></div><div class="trail__stem"></div></div>
+          <div>
+            <p class="trail__title">Routed to Priya M.<span class="trail__badge trail__badge--wait">Awaiting approval</span></p>
+            <p class="trail__meta">Claims risk threshold exceeded &middot; 09:41:04</p>
+          </div>
+        </div>
+
+        <div class="trail__event">
+          <div class="trail__rail"><div class="trail__node"></div><div class="trail__stem"></div></div>
+          <div>
+            <p class="trail__title">Approved by Priya M.<span class="trail__badge trail__badge--ok">Signed off</span></p>
+            <p class="trail__meta">09:42:37 &middot; note attached</p>
+          </div>
+        </div>
+
+        <div class="trail__event">
+          <div class="trail__rail"><div class="trail__node"></div></div>
+          <div>
+            <p class="trail__title">Logged to audit trail</p>
+            <p class="trail__meta">Immutable record &middot; export-ready &middot; 09:42:38</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="proof" id="proof">
+    <div class="wrap proof__grid">
+      <div><p class="proof__num">40%</p><p class="proof__label">faster claims processing</p></div>
+      <div><p class="proof__num">18</p><p class="proof__label">enterprise engagements to date</p></div>
+      <div><p class="proof__num">8 wks</p><p class="proof__label">average pilot to production</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="capabilities">
+    <div class="wrap">
+      <p class="section__eyebrow">What it does</p>
+      <h2>Three capabilities your compliance team will actually use</h2>
+      <div class="cap__grid">
+        <div>
+          <p class="cap__num">01</p>
+          <h3 class="cap__title">Real-time decision trail</h3>
+          <p class="cap__body">Every model output is logged with the inputs, confidence score, and human reviewer — searchable the moment it happens, not reconstructed after the fact.</p>
+        </div>
+        <div>
+          <p class="cap__num">02</p>
+          <h3 class="cap__title">One-click approval gates</h3>
+          <p class="cap__body">Route any decision above your risk threshold to a named approver, automatically — no more spreadsheet trackers or Slack threads to prove a human signed off.</p>
+        </div>
+        <div>
+          <p class="cap__num">03</p>
+          <h3 class="cap__title">Export-ready for any audit</h3>
+          <p class="cap__body">One button produces a board-ready or regulator-ready PDF of any date range — the same report our own team uses internally.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="wrap">
+      <p class="quote__mark">&ldquo;</p>
+      <p class="text">Ariviti didn't just deliver a model — they delivered a governed way of working that our risk and compliance teams could actually sign off on.</p>
+      <p class="quote__attr-name">Chief Data Officer</p>
+      <p class="quote__attr-role">Fortune-500 Financial Services Client</p>
+    </div>
+  </section>
+
+  <section class="final-cta" id="final-cta">
+    <div class="wrap">
+      <h2>Available now for all Build-Operate-Transfer clients</h2>
+      <p>Existing clients: your console is already provisioned — check your dashboard. New to Ariviti?</p>
+      <a class="btn btn--primary" href="#">Book a walkthrough</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer__grid">
+        <div>
+          <p class="footer__brand"><span>a</span>riviti</p>
+          <p style="margin:0;">Bengaluru, Karnataka, India</p>
+        </div>
+        <div>
+          <p style="margin:0 0 6px 0;"><a href="mailto:hello@ariviti.com">hello@ariviti.com</a></p>
+          <p style="margin:0;"><a href="https://ariviti.com">ariviti.com</a></p>
+        </div>
+      </div>
+      <hr>
+      <p style="margin:0;">&copy; 2026 Ariviti Technologies. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,179 @@
+<mjml>
+  <mj-head>
+    <mj-title>The W.A.V.E. Brief — August 2026</mj-title>
+    <mj-preview>Governed AI adoption data, a client win in claims triage, and what we're reading this month.</mj-preview>
+    <mj-font name="Space Grotesk" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" />
+    <mj-font name="Plus Jakarta Sans" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" color="#2E2E2E" />
+      <mj-text font-size="15px" line-height="1.6" />
+      <mj-class name="heading" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" color="#2E2E2E" />
+      <mj-class name="eyebrow" font-weight="700" font-size="11px" color="#FF4D1C" letter-spacing="1px" text-transform="uppercase" />
+      <mj-class name="muted" color="#6B6B76" font-size="13px" />
+      <mj-button background-color="#FF4D1C" color="#FFFFFF" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-weight="700" border-radius="4px" font-size="14px" inner-padding="12px 24px" />
+    </mj-attributes>
+    <mj-style>
+      a.body-link { color: #3B3EA9; text-decoration: underline; }
+      .hairline { border-top: 1px solid #E1E2EC; font-size: 1px; }
+      .hairline-dark { border-top: 1px solid #3D3D5C; font-size: 1px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F4F4F8" width="600px">
+
+    <!-- HEADER -->
+    <mj-section background-color="#FFFFFF" padding="24px 24px 16px 24px">
+      <mj-column>
+        <mj-text mj-class="heading" font-size="20px" padding="0">
+          <span style="color:#FF4D1C;">a</span><span style="color:#3B3EA9;">riviti</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding="0 24px 20px 24px">
+      <mj-column>
+        <mj-divider border-width="2px" border-color="#FF4D1C" width="48px" align="left" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- MASTHEAD -->
+    <mj-section background-color="#1E1669" padding="28px 24px">
+      <mj-column>
+        <mj-text mj-class="eyebrow" color="#FF4D1C" padding="0 0 6px 0">The Monthly Brief · Issue 08</mj-text>
+        <mj-text mj-class="heading" color="#FFFFFF" font-size="24px" padding="0">
+          Governed AI, one month at a time
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="13px" padding="6px 0 0 0">
+          August 2026 — what shipped, what we learned, what's next.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- INTRO -->
+    <mj-section background-color="#FFFFFF" padding="28px 24px 8px 24px">
+      <mj-column>
+        <mj-text color="#6B6B76" padding="0">
+          This month: a claims-triage pilot cut processing time 40% at a regional insurer, we published new
+          research on AI governance gaps, and the team is hiring for two senior roles. Details below.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTICLE 1 -->
+    <mj-section background-color="#FFFFFF" padding="24px 24px 8px 24px">
+      <mj-column>
+        <mj-raw><div class="hairline">&nbsp;</div></mj-raw>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding="16px 24px">
+      <mj-column>
+        <mj-text mj-class="eyebrow" padding="0 0 6px 0">Client Win</mj-text>
+        <mj-text mj-class="heading" font-size="19px" padding="0 0 8px 0">
+          40% faster claims triage, live in production
+        </mj-text>
+        <mj-text color="#6B6B76" padding="0 0 12px 0">
+          A regional insurer's manual claims-review queue was the single biggest drag on their customer response
+          time. Eight weeks after kickoff, the governed AI workflow is live — with full audit trails and a
+          human approval gate on every high-value claim.
+        </mj-text>
+        <mj-text padding="0">
+          <a class="body-link" href="#">Read the case study &rarr;</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- ARTICLE 2 -->
+    <mj-section background-color="#FFFFFF" padding="8px 24px">
+      <mj-column>
+        <mj-raw><div class="hairline">&nbsp;</div></mj-raw>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding="16px 24px">
+      <mj-column>
+        <mj-text mj-class="eyebrow" padding="0 0 6px 0">Research</mj-text>
+        <mj-text mj-class="heading" font-size="19px" padding="0 0 8px 0">
+          Only 38% of AI pilots reach production without a governance layer
+        </mj-text>
+        <mj-text color="#6B6B76" padding="0 0 12px 0">
+          Our latest study of enterprise AI adoption across BFSI and manufacturing found that the gap between
+          pilot and production isn't model quality — it's the absence of a repeatable operating model.
+        </mj-text>
+        <mj-text padding="0">
+          <a class="body-link" href="#">Get the full report &rarr;</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- STAT CALLOUT -->
+    <mj-section background-color="#ECEDF6" padding="24px" border-radius="8px">
+      <mj-column width="33%">
+        <mj-text mj-class="heading" font-size="26px" color="#3B3EA9" align="center" padding="0">40%</mj-text>
+        <mj-text mj-class="muted" align="center" padding="4px 4px 0 4px">faster claims processing</mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text mj-class="heading" font-size="26px" color="#3B3EA9" align="center" padding="0">18</mj-text>
+        <mj-text mj-class="muted" align="center" padding="4px 4px 0 4px">enterprise engagements to date</mj-text>
+      </mj-column>
+      <mj-column width="33%">
+        <mj-text mj-class="heading" font-size="26px" color="#3B3EA9" align="center" padding="0">8 wks</mj-text>
+        <mj-text mj-class="muted" align="center" padding="4px 4px 0 4px">avg. pilot to production</mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA -->
+    <mj-section background-color="#FFFFFF" padding="28px 24px">
+      <mj-column>
+        <mj-text mj-class="heading" font-size="17px" padding="0 0 6px 0">We're hiring</mj-text>
+        <mj-text color="#6B6B76" padding="0 0 16px 0">
+          Two senior roles open this month — Solutions Architect and Delivery Lead. Both based in Bengaluru,
+          both remote-friendly.
+        </mj-text>
+        <mj-button href="#">View open roles</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#1E1669" padding="32px 24px 24px 24px">
+      <mj-column width="60%">
+        <mj-text color="#FFFFFF" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" font-size="15px" padding="0 0 8px 0">
+          Ariviti Technologies
+        </mj-text>
+        <mj-text mj-class="on-dark-muted" color="#C6C7DE" font-size="12px" padding="0 0 4px 0">
+          Bengaluru, Karnataka, India
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="12px" padding="0">
+          <a href="mailto:hello@ariviti.com" style="color:#C6C7DE; text-decoration:underline;">hello@ariviti.com</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://ariviti.com" style="color:#C6C7DE; text-decoration:underline;">ariviti.com</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-table align="right" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">in</a>
+            </td>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">X</a>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#1E1669" padding="0 24px 28px 24px">
+      <mj-column>
+        <mj-raw><div class="hairline-dark">&nbsp;</div></mj-raw>
+        <mj-spacer height="16px" />
+        <mj-text color="#C6C7DE" font-size="11px" line-height="1.6" padding="0">
+          You're receiving this because you subscribed to the Ariviti monthly brief.
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Unsubscribe</a>
+          &nbsp;&middot;&nbsp;
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Update preferences</a>
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="11px" padding="8px 0 0 0">
+          &copy; 2026 Ariviti Technologies. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

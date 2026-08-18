@@ -1,0 +1,161 @@
+<mjml>
+  <mj-head>
+    <mj-title>Introducing the Governance Console</mj-title>
+    <mj-preview>A live view into every model decision, approval, and audit trail — now shipping.</mj-preview>
+    <mj-font name="Space Grotesk" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&display=swap" />
+    <mj-font name="Plus Jakarta Sans" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" />
+    <mj-attributes>
+      <mj-all font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" color="#2E2E2E" />
+      <mj-text font-size="15px" line-height="1.6" />
+      <mj-class name="heading" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" color="#2E2E2E" />
+      <mj-class name="eyebrow" font-weight="700" font-size="11px" color="#FF4D1C" letter-spacing="1px" text-transform="uppercase" />
+      <mj-button background-color="#FF4D1C" color="#FFFFFF" font-family="Plus Jakarta Sans, Helvetica, Arial, sans-serif" font-weight="700" border-radius="4px" font-size="15px" inner-padding="14px 32px" />
+    </mj-attributes>
+    <mj-style>
+      a.body-link { color: #3B3EA9; text-decoration: underline; }
+      .hairline { border-top: 1px solid #E1E2EC; font-size: 1px; }
+      .hairline-dark { border-top: 1px solid #3D3D5C; font-size: 1px; }
+    </mj-style>
+  </mj-head>
+
+  <mj-body background-color="#F4F4F8" width="600px">
+
+    <!-- HEADER -->
+    <mj-section background-color="#FFFFFF" padding="24px 24px 16px 24px">
+      <mj-column>
+        <mj-text mj-class="heading" font-size="20px" padding="0">
+          <span style="color:#FF4D1C;">a</span><span style="color:#3B3EA9;">riviti</span>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#FFFFFF" padding="0 24px 24px 24px">
+      <mj-column>
+        <mj-divider border-width="2px" border-color="#FF4D1C" width="48px" align="left" padding="0" />
+      </mj-column>
+    </mj-section>
+
+    <!-- HERO -->
+    <mj-section background-color="#1E1669" padding="48px 24px">
+      <mj-column>
+        <mj-text mj-class="eyebrow" color="#FF4D1C" align="center" padding="0 0 10px 0">New — Now Shipping</mj-text>
+        <mj-text mj-class="heading" color="#FFFFFF" font-size="28px" align="center" line-height="1.3" padding="0 0 12px 0">
+          Introducing the Governance Console
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="15px" align="center" padding="0 12px">
+          A live view into every model decision, every approval, every audit trail — in one screen your
+          compliance team will actually want to open.
+        </mj-text>
+        <mj-spacer height="24px" />
+        <mj-button href="#" align="center">See it live</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FEATURE 1 -->
+    <mj-section background-color="#FFFFFF" padding="32px 24px 16px 24px">
+      <mj-column width="15%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="22px" color="#FF4D1C" padding="0">01</mj-text>
+      </mj-column>
+      <mj-column width="85%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="17px" padding="0 0 6px 0">Real-time decision trail</mj-text>
+        <mj-text color="#6B6B76" padding="0">
+          Every model output is logged with the inputs, confidence score, and human reviewer — searchable
+          the moment it happens, not reconstructed after the fact.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="8px 24px">
+      <mj-column><mj-raw><div class="hairline">&nbsp;</div></mj-raw></mj-column>
+    </mj-section>
+
+    <!-- FEATURE 2 -->
+    <mj-section background-color="#FFFFFF" padding="16px 24px">
+      <mj-column width="15%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="22px" color="#FF4D1C" padding="0">02</mj-text>
+      </mj-column>
+      <mj-column width="85%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="17px" padding="0 0 6px 0">One-click approval gates</mj-text>
+        <mj-text color="#6B6B76" padding="0">
+          Route any decision above your risk threshold to a named approver, automatically — no more
+          spreadsheet trackers or Slack threads to prove a human signed off.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section background-color="#FFFFFF" padding="8px 24px">
+      <mj-column><mj-raw><div class="hairline">&nbsp;</div></mj-raw></mj-column>
+    </mj-section>
+
+    <!-- FEATURE 3 -->
+    <mj-section background-color="#FFFFFF" padding="16px 24px 32px 24px">
+      <mj-column width="15%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="22px" color="#FF4D1C" padding="0">03</mj-text>
+      </mj-column>
+      <mj-column width="85%" vertical-align="top">
+        <mj-text mj-class="heading" font-size="17px" padding="0 0 6px 0">Export-ready for any audit</mj-text>
+        <mj-text color="#6B6B76" padding="0">
+          One button produces a board-ready or regulator-ready PDF of any date range — the same report
+          our own team uses internally.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- CTA BAND -->
+    <mj-section background-color="#ECEDF6" padding="28px 24px">
+      <mj-column>
+        <mj-text mj-class="heading" font-size="17px" align="center" padding="0 0 6px 0">
+          Available now for all Build-Operate-Transfer clients
+        </mj-text>
+        <mj-text color="#6B6B76" align="center" padding="0 0 18px 0">
+          Existing clients: your console is already provisioned — check your dashboard. New to Ariviti?
+        </mj-text>
+        <mj-button href="#" align="center" background-color="#3B3EA9">Book a walkthrough</mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- FOOTER -->
+    <mj-section background-color="#1E1669" padding="32px 24px 24px 24px">
+      <mj-column width="60%">
+        <mj-text color="#FFFFFF" font-family="Space Grotesk, Helvetica, Arial, sans-serif" font-weight="700" font-size="15px" padding="0 0 8px 0">
+          Ariviti Technologies
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="12px" padding="0 0 4px 0">
+          Bengaluru, Karnataka, India
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="12px" padding="0">
+          <a href="mailto:hello@ariviti.com" style="color:#C6C7DE; text-decoration:underline;">hello@ariviti.com</a>
+          &nbsp;&middot;&nbsp;
+          <a href="https://ariviti.com" style="color:#C6C7DE; text-decoration:underline;">ariviti.com</a>
+        </mj-text>
+      </mj-column>
+      <mj-column width="40%">
+        <mj-table align="right" cellpadding="0" cellspacing="0">
+          <tr>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">in</a>
+            </td>
+            <td style="padding:0 0 0 8px;">
+              <a href="#" style="display:inline-block; width:28px; height:28px; line-height:28px; text-align:center; background-color:#3B3EA9; border-radius:50%; color:#FFFFFF; font-family:Space Grotesk, Helvetica, Arial, sans-serif; font-weight:700; font-size:12px; text-decoration:none;">X</a>
+            </td>
+          </tr>
+        </mj-table>
+      </mj-column>
+    </mj-section>
+    <mj-section background-color="#1E1669" padding="0 24px 28px 24px">
+      <mj-column>
+        <mj-raw><div class="hairline-dark">&nbsp;</div></mj-raw>
+        <mj-spacer height="16px" />
+        <mj-text color="#C6C7DE" font-size="11px" line-height="1.6" padding="0">
+          You're receiving this because you're a subscriber or customer of Ariviti Technologies.
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Unsubscribe</a>
+          &nbsp;&middot;&nbsp;
+          <a href="#" style="color:#C6C7DE; text-decoration:underline;">Update preferences</a>
+        </mj-text>
+        <mj-text color="#C6C7DE" font-size="11px" padding="8px 0 0 0">
+          &copy; 2026 Ariviti Technologies. All rights reserved.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>
