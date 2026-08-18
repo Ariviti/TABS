@@ -1,3 +1,5 @@
+# The Ariviti Brand System (TABS)
+
 ```markdown
 # Brand System & Context Rules for Large Language Models
 
