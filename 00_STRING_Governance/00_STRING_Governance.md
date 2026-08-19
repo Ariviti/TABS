@@ -58,6 +58,7 @@ Any designer or agency should be able to run this chain backward from any execut
 | A generic enterprise-SaaS template (rounded cards, pastel illustrations, flat mascots) | Indistinguishable from any B2B SaaS landing page — zero differentiation |
 | A consultancy-generic deck (stock handshake photos, bullet-wall slides) | Contradicts Clarity — bullet walls are the opposite of one idea per slide |
 
+<!-- PRIVATE:START reason="discloses revenue mix / go-to-market strategy" -->
 ## The Real-World Tension to Design Around
 
 Ariviti's revenue is predominantly services and outsourcing; platform work (TurfAI) is a strategic wedge, not the whole business. This creates a genuine design risk: **a site that looks 100% platform-forward will misrepresent the company to enterprise buyers doing due diligence**, and sophisticated buyers notice the mismatch.
@@ -66,6 +67,7 @@ Ariviti's revenue is predominantly services and outsourcing; platform work (Turf
 - Platform pages (TurfAI, CoE) get full design-system investment — they're the differentiation story.
 - Services pages get equal typographic and photographic rigor — never treated as the "boring" section styled with leftover templates.
 - Never let site navigation imply platform-only revenue (e.g., a nav bar with five platform items and one buried "Services" link). Navigation architecture is a design-philosophy decision, not just an IA decision.
+<!-- PRIVATE:END -->
 
 ## One-Sentence Test for Any New Asset
 
@@ -207,7 +209,10 @@ That's it. Test every sentence against it: would a senior engineer actually say 
 | Sales email | One idea per email, subject line states the outcome not the topic | Under 120 words |
 | Leadership bio (About page) | Named, specific, credentialed — not a group photo caption | 2–3 sentences, one proof point per person |
 
+<!-- PRIVATE:START reason="discloses current site gap" -->
 **Note:** Named, specific leadership bios are currently absent from the site (per the last audit). This is a voice problem as much as a content problem — "Human-led" as a brand trait is unconvincing if the humans aren't named.
+<!-- PRIVATE:END -->
+**Evergreen version:** leadership bios must be named and specific, not a group-photo caption — "Human-led" as a brand trait depends on it.
 
 ---
 
@@ -241,6 +246,7 @@ Draft → Self-check against Never List + Fragility Score → Async review (24hr
 **Do:** default every review to asynchronous comment threads, not scheduled meetings. A 24-hour SLA on brand review is achievable and doesn't require anyone's calendar.
 **Don't:** let "brand review" become a synchronous bottleneck — if a review consistently needs a live meeting, the guidelines aren't clear enough and need revision, not more meetings.
 
+<!-- PRIVATE:START reason="live audit numbers and current-state admissions" -->
 ## Quantify Fragility: The Brand Health Scorecard
 
 What gets measured gets protected — but only if the metric is quantified, not vibes-based.
@@ -265,6 +271,7 @@ What gets measured gets protected — but only if the metric is quantified, not 
 | Meta-keywords carrying irrelevant taxonomy site-wide | No owner for technical SEO hygiene | Assign explicit ownership; add to quarterly audit checklist, not a one-time fix |
 | Platform-forward site presentation vs. services-dominant revenue | No navigation/IA governance tying site structure to actual revenue mix | Nav architecture reviewed annually against actual revenue split — platform is the differentiation story, not the whole story |
 | Thin case studies, empty Insights, unnamed leadership | No content cadence or template enforcement | Templates (Compounds manifest) + GEO-Ready Content Block used as the default, cadence tracked in scorecard above |
+<!-- PRIVATE:END -->
 
 ## Version Control
 

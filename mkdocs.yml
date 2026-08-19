@@ -1,0 +1,47 @@
+site_name: Ariviti Brand System
+site_description: TABS — The Ariviti Brand System. Logo, color, typography, voice, and templates.
+site_url: https://YOUR-ORG.github.io/tabs/   # update after first deploy
+
+theme:
+  name: material
+  logo: assets/symbol-white.png
+  favicon: assets/favicon.png
+  font: false   # we load Space Grotesk / Plus Jakarta Sans ourselves — see ariviti-tokens.css
+  palette:
+    scheme: default
+    primary: custom
+    accent: custom
+  features:
+    - navigation.tabs
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - content.code.copy
+
+extra_css:
+  - stylesheets/ariviti-tokens.css
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Strings (Rules): 01-strings.md
+  - Particles (Values):
+      - Color, Type & Accessibility: 02-particles.md
+  - Atoms (Identity):
+      - Logo & Photography: 03-atoms.md
+  - Molecules (Build Manifest): 04-molecules.md
+  - Compounds (Templates & Downloads): 05-compounds.md
+  - Downloads: downloads.md
+  - System Map: 00-intro.md
+
+# This file is the ONLY place theme/nav config lives. The .md files themselves
+# are untouched by this config — MkDocs reads them as-is (post-redaction, see
+# scripts/redact_private.py). Never hand-edit anything under the docs/ folder;
+# it is a build output, not a source file, and is gitignored.

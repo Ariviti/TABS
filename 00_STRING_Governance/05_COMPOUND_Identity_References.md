@@ -16,7 +16,7 @@ Compounds are complete, sendable artifacts — built from Molecules (code/templa
 | **One-Pager (`.docx` / `.pdf`)** | 🟡 Structure specified, no locked template file | Full structure below. |
 | **Slide Deck (`.pptx`)** | 🟡 Structure specified; this Annexure is a partial precedent | Needs a dedicated `.potx` master separate from this reference document (Molecules manifest). |
 | **LinkedIn Post** | 🟡 Structure specified, text-only compound | No file format — governed entirely by the template below plus the Never List (Strings doc). |
-| **About / Leadership Page (`.html`)** | 🟡 Structure specified, not built | Currently blocked on real content (named leaders, bios), not on the template — see Brand Health Scorecard, Strings doc. |
+| **About / Leadership Page (`.html`)** | 🟡 Structure specified, not built | <!-- PRIVATE:START reason="discloses current site gap" -->Currently blocked on real content (named leaders, bios), not on the template — see Brand Health Scorecard, Strings doc.<!-- PRIVATE:END --><!-- PUBLIC:START -->Awaiting content — the template is ready to receive named leadership bios whenever they're finalized.<!-- PUBLIC:END --> |
 
 **Legend:** 🟢 Built & in use · 🟡 Specified, not yet compiled into a file · 🔴 Not started
 
@@ -100,7 +100,12 @@ LLM/AI-search citation now behaves like a second SEO channel, and it rewards exa
 **Do:** structure every Insights/blog piece, every case study section, and every FAQ answer this way — a direct-answer sentence followed by sourced specifics.
 **Don't:** bury the answer inside a narrative paragraph. LLM crawlers (and skimming humans) reward the answer appearing in the first sentence, not the third paragraph.
 
+<!-- PRIVATE:START reason="present-tense claim about current site state" -->
 **Why this matters right now:** an empty Insights section produces near-zero citation surface — there's simply nothing structured for an LLM to find and quote. Every piece published from this template directly builds that surface.
+<!-- PRIVATE:END -->
+<!-- PUBLIC:START -->
+**Why this matters:** an empty content section produces near-zero citation surface, full stop — there's nothing structured for an LLM to find and quote. Every piece published from this template builds that surface instead.
+<!-- PUBLIC:END -->
 
 ---
 
