@@ -19,7 +19,7 @@ This site is generated directly from the same markdown files a coding agent or C
 | **Compounds**  | Finished deliverable specs — signature, case study, one-pager, slide deck                                | [Read →](00_STRING_Governance/05_COMPOUND_Identity_References.md) |
 | **System Map** | The physical folder structure — where every asset file lives, and what governs it                        | [Read →](00_STRING_Governance/00_ATOMIC_TABS_Intro.md)            |
 
-## [GitHub Repo →](https://github.com/Ariviti/TABS/)  
+## :octicons-mark-github-16:[GitHub Repo →](https://github.com/Ariviti/TABS/)  
 ---
 
 ## The one rule that governs everything else
