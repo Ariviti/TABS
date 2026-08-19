@@ -2,8 +2,8 @@
 """
 redact_private.py
 
-Runs at build time. Copies source markdown files into the build folder (docs/),
-stripping anything inside PRIVATE blocks along the way.
+Runs at build time. Copies source markdown files from subfolders into docs/,
+preserving folder hierarchy and stripping PRIVATE blocks along the way.
 """
 
 import re
@@ -50,6 +50,7 @@ def main() -> None:
         raw = src_path.read_text(encoding="utf-8")
         clean = redact(raw)
 
+        # Create destination subfolder inside docs/ if it doesn't exist
         out_path = BUILD_DIR / rel_path_str
         out_path.parent.mkdir(parents=True, exist_ok=True)
 
