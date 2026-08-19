@@ -31,12 +31,11 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - System Map: 00_ATOMIC_TABS_Intro/00_ATOMIC_TABS_Intro.md
+  - System Map: 00_STRING_Governance/00_ATOMIC_TABS_Intro.md
   - Strings (Rules): 00_STRING_Governance/00_STRING_Governance.md
   - Particles (Values):
-      - Color, Type & Accessibility: 02_PARTICLE_Color_Typefaces/02_PARTICLE_Color_Typefaces.md
+      - Color, Typefaces: 00_STRING_Governance/02_PARTICLE_Color_Typefaces.md
   - Atoms (Identity):
-      - Logo & Photography: 02_ATOMS_Logos_Imagery/02_ATOMS_Logos_Imagery.md
-  - Molecules (Build Manifest): 03_MOLECULE_Logos_Templates/03_MOLECULE_Logos_Templates.md
-  - Compounds (Templates & Downloads): 05_COMPOUND_Identity_References/05_COMPOUND_Identity_References.md
-  - Downloads: downloads.md
+      - Logo & Photography: 00_STRING_Governance/02_ATOMS_Logos_Imagery.md
+  - Molecules (Logos & Templates): 00_STRING_Governance/03_MOLECULE_Logos_Templates.md
+  - Compounds (Reference Templates): 00_STRING_Governance/05_COMPOUND_Identity_References.md
