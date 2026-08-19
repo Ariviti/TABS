@@ -1,5 +1,3 @@
-[[00_ATMOS-INDEX]]
-
 # TABS — The Ariviti Brand System
 
 *This document is the index and the physical asset map. It does not restate any rule — every rule lives in exactly one of the five governing files below. This document only answers two questions: "which file governs this?" and "where does the actual asset file live?"*
