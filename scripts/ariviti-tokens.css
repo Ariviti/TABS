@@ -140,6 +140,31 @@ body,
 [data-md-color-scheme="slate"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-drawer__button.md-logo img {
   content: url("https://cdn.ariviti.com/tabs/02_ATOM_Logo_Core/SVG/logo_full_light.svg");
+  height: 3rem;
+}
+
+/* Level 1: Main Category / File Title */
+nav .md-nav>ul>li>a {
+  font-size: 1.1rem;
+  /* ~18px */
+  font-weight: 700;
+}
+
+/* Level 2: Sub-headings (H2s) */
+nav .md-nav ul ul>li>a {
+  font-size: 0.95rem;
+  /* ~15px */
+  font-weight: 500;
+  padding-left: 1rem;
+  /* Indent to reinforce hierarchy */
+}
+
+/* Level 3: Nested Sub-headings (H3s) */
+nav .md-nav ul ul ul>li>a {
+  font-size: 0.85rem;
+  /* ~13px */
+  font-weight: 400;
+  padding-left: 2rem;
 }
 
 /* ==========================================================================

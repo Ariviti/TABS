@@ -126,7 +126,7 @@ Not addressed in core BG — filling the gap, since metrics are central to Evide
 | Left-align body text                                                                                                     | Justify body text (creates uneven word-spacing "rivers," reads as low-budget)                                       |
 
 
-### Download Typefaces {#typeface-downloads-anchor}
+## Download Typefaces {#typeface-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/01_PARTICLE_Typefaces/"></div>
 
 ---

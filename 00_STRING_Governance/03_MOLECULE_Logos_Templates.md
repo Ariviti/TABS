@@ -12,7 +12,7 @@ Molecules are not prose — they're working files. This document does not restat
 If you're building one of these files, read the "Governed By" column first. That document is the spec. This manifest just tells you the file is needed and where the spec lives.
 
 
-### Derived Logo Downloads {#derived-logo-downloads-anchor}
+## Derived Logo Downloads {#derived-logos-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/03_MOLECULE_Logo_Derivatives/"></div>
 
 ## Status Manifest
@@ -28,7 +28,7 @@ If you're building one of these files, read the "Governed By" column first. That
 
 **Legend:** 🟢 Built & in use · 🟡 Partially specified · 🔴 Not yet built
 
-### Core Template Downloads {#core-template-downloads-anchor}
+## Core Template Downloads {#core-template-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/03_MOLECULE_Templates/"></div>
 
 ## Build Principles (apply to every molecule above)

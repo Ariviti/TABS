@@ -7,10 +7,10 @@ Strings are the governing laws — the rules that don't have a hex code or a fon
 
 ---
 
-# Part 1 — Design Philosophy
+## Part 1 — Design Philosophy
 *Reference: Core BG page 3 ("Meaning")*
 
-## The Governing Idea
+### The Governing Idea
 
 Core BG states it plainly: *"Ariviti is built on the belief that the future of AI is guided by human wisdom."*
 
@@ -20,7 +20,7 @@ Every design decision downstream of that sentence must pass one test:
 
 If a layout, animation, or copy block makes AI look like it's operating alone, it contradicts the brand's core conviction — regardless of how polished it looks.
 
-## Three Pillars → Three Design Laws
+### Three Pillars → Three Design Laws
 
 The core BG names three qualities the identity represents: **clarity, confidence, purposeful innovation.** Each converts into an enforceable design law, not a mood.
 
@@ -30,7 +30,7 @@ The core BG names three qualities the identity represents: **clarity, confidence
 | **Confidence**            | State the claim once, plainly, and stop               | No stacked qualifiers, no hedge words, no exclamation marks                       |
 | **Purposeful Innovation** | Every "new" element must trace to a functional reason | No design flourish added because it looks modern — only because it does something |
 
-## Derivation Chain — How a Decision Traces Back
+### Derivation Chain — How a Decision Traces Back
 
 Example: why is the CTA button Vibrant Orange, not Royal Indigo?
 
@@ -51,7 +51,7 @@ Page: Every page has exactly one orange CTA — never two competing actions
 
 Any designer or agency should be able to run this chain backward from any executed asset to the governing idea. If they can't, the asset isn't on-system — it's decoration.
 
-## What Ariviti Is Not (the design version of the Never List)
+### What Ariviti Is Not (the design version of the Never List)
 
 | Not This                                                                               | Because                                                                   |
 | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ Any designer or agency should be able to run this chain backward from any execut
 | A consultancy-generic deck (stock handshake photos, bullet-wall slides)                | Contradicts Clarity — bullet walls are the opposite of one idea per slide |
 
 <!-- PRIVATE:START reason="discloses revenue mix / go-to-market strategy" -->
-## The Real-World Tension to Design Around
+### The Real-World Tension to Design Around
 
 Ariviti's revenue is predominantly services and outsourcing; platform work (TurfAI) is a strategic wedge, not the whole business. This creates a genuine design risk: **a site that looks 100% platform-forward will misrepresent the company to enterprise buyers doing due diligence**, and sophisticated buyers notice the mismatch.
 
@@ -70,20 +70,20 @@ Ariviti's revenue is predominantly services and outsourcing; platform work (Turf
 - Never let site navigation imply platform-only revenue (e.g., a nav bar with five platform items and one buried "Services" link). Navigation architecture is a design-philosophy decision, not just an IA decision.
 <!-- PRIVATE:END -->
 
-## One-Sentence Test for Any New Asset
+### One-Sentence Test for Any New Asset
 
 Before anything ships, ask: **"Would a technical evaluator trust this, and would a human buyer feel understood by this — at the same time?"** If an asset only satisfies one of the two, it's not finished.
 
 ---
 
-# Part 2 — Atomic Design Methodology
+## Part 2 — Atomic Design Methodology
 *The missing layer between "guidelines" and "shipped pages"*
 
-## Why This Section Exists
+### Why This Section Exists
 
 A brand guideline defines the particles (hex codes, fonts). It rarely defines how those particles assemble into a shippable page without a designer re-deriving the logic every time. That gap is where small marketing teams lose the most hours. This closes it.
 
-## The Hierarchy
+### The Hierarchy
 
 | Level          | Contains                                       | Ariviti Example                                                                                         |
 | -------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
@@ -96,7 +96,7 @@ A brand guideline defines the particles (hex codes, fonts). It rarely defines ho
 
 **Rule:** nobody designs at the Section or Template level from scratch. They assemble from governed Components and Patterns. This is what makes a two-person marketing team's output look like a twenty-person team's — consistency by construction, not by review.
 
-## The Proof Block
+### The Proof Block
 
 The single highest-leverage pattern in the system, because it's reused across web, decks, case studies, and LinkedIn — and because it's the atomic unit of GEO/LLM citability (see the Compounds manifest, Templates entry).
 
@@ -109,7 +109,7 @@ The single highest-leverage pattern in the system, because it's reused across we
 **Do:** build every case study, every LinkedIn metric post, every deck slide with a proof point out of this exact pattern.
 **Don't:** let copywriters freehand metric callouts — inconsistent formatting is what makes brand-compliance audits fail.
 
-## Component Library — Minimum Viable Set
+### Component Library — Minimum Viable Set
 
 A two-person marketing team does not need forty components. It needs these, governed tightly:
 
@@ -124,7 +124,7 @@ A two-person marketing team does not need forty components. It needs these, gove
 | Leadership card | Photo + name + role + one proof point (never a group photo substitute) |
 | Case study card | Client industry + challenge headline + one Proof Block + CTA           |
 
-## Derivation Discipline
+### Derivation Discipline
 
 Every new component proposed by anyone — internal or agency — must answer three questions before it's added to the library:
 
@@ -134,16 +134,16 @@ Every new component proposed by anyone — internal or agency — must answer th
 
 If the answer to #3 takes more than one sentence, the component is actually two components pretending to be one — split it.
 
-## Subsidiarity in Practice
+### Subsidiarity in Practice
 
 Component-level decisions (does this button need a new state?) sit with whoever's building the page. Token-level decisions (new color, new font) escalate to the brand owner. This is what keeps the system fast *and* governed — most decisions never need to leave the builder's desk. Full decision-rights table in Part 4 of this document.
 
 ---
 
-# Part 3 — Voice, Tone & Vocabulary
+## Part 3 — Voice, Tone & Vocabulary
 *Reference: Core BG pages 16–17*
 
-## The Four Traits, Operationalized
+### The Four Traits, Operationalized
 
 The core BG names four traits: **Clear & Direct, Knowledgeable, Evidence-first, Human-led.** Traits without tests are just adjectives. Here's the test for each.
 
@@ -154,7 +154,7 @@ The core BG names four traits: **Clear & Direct, Knowledgeable, Evidence-first, 
 | **Evidence-first** | A number appears without its source or baseline | Every metric answers "measured how, against what"      |
 | **Human-led**      | AI is the subject of the sentence               | A person or outcome is the subject; AI is the tool     |
 
-## The Proof Ladder
+### The Proof Ladder
 
 Every external claim climbs three rungs. Skipping a rung is how marketing copy becomes fiction.
 
@@ -165,7 +165,7 @@ Every external claim climbs three rungs. Skipping a rung is how marketing copy b
 **Do:** write outcome-first, evidence-second in headlines; keep the claim itself out of the H1 unless it's already proven.
 **Don't:** publish rung 1 without rungs 2 and 3 available on request. If they're not available, the claim isn't ready to publish.
 
-## Vocabulary — Use This, Never This
+### Vocabulary — Use This, Never This
 
 Directly extending the core BG's two example shifts into a working system:
 
@@ -180,7 +180,7 @@ Directly extending the core BG's two example shifts into a working system:
 | "Transformation" (unqualified)                        | From [state] to [state], by [date/metric]                   | Matches Evidence-first — an unqualified "transformation" is unfalsifiable            |
 | "Full-stack AI"                                       | The specific layer or capability you own                    | Nobody owns the full stack; the claim signals inexperience to technical buyers       |
 
-## The Never List
+### The Never List
 
 Checked before any external asset ships.
 
@@ -192,7 +192,7 @@ Checked before any external asset ships.
 - **Never** use more than one exclamation point per asset, ever.
 - **Never** claim a result as achieved if it is a target or lab result. Say "target" or "pilot" explicitly.
 
-## Personality — One Idea, Not a Framework
+### Personality — One Idea, Not a Framework
 
 Resist inventing an elaborate persona system. Ariviti's personality is simple enough to fit in one sentence:
 
@@ -200,7 +200,7 @@ Resist inventing an elaborate persona system. Ariviti's personality is simple en
 
 That's it. Test every sentence against it: would a senior engineer actually say this out loud to a CFO, without flinching at their own words? If not, cut it.
 
-## Tone by Format
+### Tone by Format
 
 | Format                      | Register                                                          | Length Discipline                                |
 | --------------------------- | ----------------------------------------------------------------- | ------------------------------------------------ |
@@ -217,10 +217,10 @@ That's it. Test every sentence against it: would a senior engineer actually say 
 
 ---
 
-# Part 4 — Implementation & Governance
+## Part 4 — Implementation & Governance
 *The capstone — how the system stays alive with a small team*
 
-## Principle: Subsidiarity
+### Principle: Subsidiarity
 
 **Decide at the lowest level competent to decide, escalate only what's irreversible or system-wide.** A two-person marketing team that routes every button color through leadership review will ship nothing. A team with clear decision rights ships fast *and* stays governed.
 
@@ -238,7 +238,7 @@ That's it. Test every sentence against it: would a senior engineer actually say 
 **Do:** publish this table where the team can see it — most bottlenecks are people escalating decisions that were theirs to make.
 **Don't:** let "brand safety" become an excuse to centralize every decision — that's how brand systems die from neglect, not misuse.
 
-## Approval Pipeline (async by default)
+### Approval Pipeline (async by default)
 
 ```
 Draft → Self-check against Never List + Fragility Score → Async review (24hr SLA) → Publish
@@ -248,7 +248,7 @@ Draft → Self-check against Never List + Fragility Score → Async review (24hr
 **Don't:** let "brand review" become a synchronous bottleneck — if a review consistently needs a live meeting, the guidelines aren't clear enough and need revision, not more meetings.
 
 <!-- PRIVATE:START reason="live audit numbers and current-state admissions" -->
-## Quantify Fragility: The Brand Health Scorecard
+### Quantify Fragility: The Brand Health Scorecard
 
 What gets measured gets protected — but only if the metric is quantified, not vibes-based.
 
@@ -264,7 +264,7 @@ What gets measured gets protected — but only if the metric is quantified, not 
 **Do:** score these quarterly, log the trend, not just the snapshot. A single quarter's number is noise; three quarters is a trend.
 **Don't:** treat a passing score as permission to stop measuring — brand health is a maintained system, not a certification.
 
-## The Three Structural Risks
+### The Three Structural Risks
 *From the last site audit — resolved here as governance items, not one-off fixes*
 
 | Risk                                                             | Root Cause                                                             | Governance Fix                                                                                                               |
@@ -274,7 +274,7 @@ What gets measured gets protected — but only if the metric is quantified, not 
 | Thin case studies, empty Insights, unnamed leadership            | No content cadence or template enforcement                             | Templates (Compounds manifest) + GEO-Ready Content Block used as the default, cadence tracked in scorecard above             |
 <!-- PRIVATE:END -->
 
-## Version Control
+### Version Control
 
 | Element               | Rule                                                                                         |
 | --------------------- | -------------------------------------------------------------------------------------------- |
@@ -282,13 +282,13 @@ What gets measured gets protected — but only if the metric is quantified, not 
 | Asset library         | Single source of truth (Drive/Figma/Notion — pick one, not three)                            |
 | Change log            | Every material change (new component, new color use case) logged with date, author, reason   |
 
-## Onboarding
+### Onboarding
 
 Every person producing external content — internal or agency — completes a **single-session walkthrough** of: Voice/Vocabulary Never List, Logo Don'ts (Atoms doc), Accessibility Fragility Score (Particles doc), and the Decision Rights Table above. Under 60 minutes. Anything longer means the guidelines are too complex for a small team to actually run on.
 
-## Final Principle
+### Final Principle
 
 **A brand system a two-person team can't operate without constant senior review isn't a system — it's a bottleneck wearing a style guide's clothes.** Every rule in this file is written to be self-enforcing: templates that make compliance the default, a scorecard that makes fragility visible, and a decision-rights table that makes escalation the exception, not the norm.
 
-### Download Brand Guidelines {#brand-guidelines-downloads-anchor}
+## Download Brand Guidelines {#brand-guidelines-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/00_STRING_Governance/"></div>
