@@ -28,7 +28,7 @@ def redact(text: str) -> str:
 
 
 def main() -> None:
-    # Reset build folder
+    # 1. Reset build folder
     if BUILD_DIR.exists():
         shutil.rmtree(BUILD_DIR)
     BUILD_DIR.mkdir(parents=True, exist_ok=True)
@@ -36,11 +36,11 @@ def main() -> None:
     redacted_count = 0
     processed_count = 0
 
-    # 1. Process all .md files in the repo (including root index.md & subfolders)
+    # 2. Process all .md files (root index.md & subfolder docs)
     for path in SOURCE_DIR.rglob("*.md"):
         rel_parts = path.relative_to(SOURCE_DIR).parts
         # Skip internal build/script/git folders
-        if any(p in {"docs", "site", ".git", ".venv", "scripts"} for p in rel_parts):
+        if any(p in {"docs", "site", ".git", ".venv", "scripts", "docs_static"} for p in rel_parts):
             continue
 
         rel_path = path.relative_to(SOURCE_DIR)
@@ -59,13 +59,13 @@ def main() -> None:
         out_path.write_text(clean, encoding="utf-8")
         processed_count += 1
 
-    # 2. Copy CSS tokens file to docs/
+    # 3. Copy CSS tokens file to docs/
     css_file = SOURCE_DIR / "ariviti-tokens.css"
     if css_file.exists():
         shutil.copy2(css_file, BUILD_DIR / "ariviti-tokens.css")
         print("  ✓ copied ariviti-tokens.css")
 
-    # 3. Copy logo images folder to docs/
+    # 4. Copy logo assets folder to docs/02_ATOM_Logo_Core
     logo_dir = SOURCE_DIR / "02_ATOM_Logo_Core"
     if logo_dir.exists():
         shutil.copytree(logo_dir, BUILD_DIR / "02_ATOM_Logo_Core")
