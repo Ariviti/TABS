@@ -1,22 +1,6 @@
 site_name: Ariviti Brand System
 site_description: TABS — The Ariviti Brand System. Logo, color, typography, voice, and templates.
-site_url: https://ariviti.github.io/TABS
-
-theme:
-  name: material
-  logo: 02_ATOM_Logo_Core/PNG/logo_full_dark_3237x1202.png
-  favicon: 02_ATOM_Logo_Core/PNG/logo_symbol_dark_1202x1202.png
-  font: false
-  palette:
-    scheme: default
-    primary: custom
-    accent: custom
-  features:
-    - navigation.tabs
-    - navigation.top
-    - toc.integrate
-    - search.suggest
-    - content.code.copy
+site_url: https://tabs.ariviti.com
 
 extra_css:
   - ariviti-tokens.css
@@ -31,11 +15,58 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - System Map: 00_STRING_Governance/00_ATOMIC_TABS_Intro.md
+  - Brand Physics: 00_STRING_Governance/00_ATOMIC_TABS_Intro.md
   - Strings (Rules): 00_STRING_Governance/00_STRING_Governance.md
-  - Particles (Values):
-      - Color, Typefaces: 00_STRING_Governance/01_PARTICLE_Color_Typefaces.md
-  - Atoms (Identity):
-      - Logo & Photography: 00_STRING_Governance/02_ATOMS_Logos_Imagery.md
-  - Molecules (Logos & Templates): 00_STRING_Governance/03_MOLECULE_Logos_Templates.md
-  - Compounds (Reference Templates): 00_STRING_Governance/05_COMPOUND_Identity_References.md
+  - Particles (Colors, Fonts): 00_STRING_Governance/01_PARTICLE_Color_Typefaces.md
+  - Atoms (Core Logos & Images): 00_STRING_Governance/02_ATOMS_Logos_Imagery.md
+  - Molecules (Other Logos & Templates): 00_STRING_Governance/03_MOLECULE_Logos_Templates.md
+  - Compounds (References): 00_STRING_Governance/05_COMPOUND_Identity_References.md
+
+extra:
+  cdn_url: "https://cdn.ariviti.com/tabs"
+
+theme:
+  name: material
+  logo: 02_ATOM_Logo_Core/PNG/logo_full_dark_3237x1202.png
+  favicon: 02_ATOM_Logo_Core/PNG/logo_symbol_dark_1202x1202.png
+  font: false
+
+  # Automatic Light/Dark Mode Switcher
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+  # Power Features & Layout Enhancements
+  features:
+    # Header & Navigation
+    - navigation.instant        # Turbo-charges page loads (SPA-like navigation)
+    - navigation.tracking       # Updates browser URL as you scroll through headings
+    - navigation.tabs           # Top-level category tabs
+    - navigation.tabs.sticky    # Keeps category tabs visible on scroll
+    - navigation.sections       # Groups sub-items cleanly in side drawer
+    - navigation.expand         # Expands navigation tree by default
+    - navigation.top            # "Back to top" smooth-scroll button
+    - navigation.footer         # Next/Previous page links in footer
+
+    # Content & Search
+    - toc.integrate             # Merges Table of Contents into left sidebar for clean reading
+    - search.suggest            # Live search auto-completion
+    - search.highlight          # Highlights matched search terms on the page
+    - search.share              # Allows sharing deep links directly to search results
+    - content.code.copy         # Adds a 1-click copy button to code blocks
+    - content.code.annotate     # Enables inline code comments/annotations
