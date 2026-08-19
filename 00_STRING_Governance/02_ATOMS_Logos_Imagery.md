@@ -3,8 +3,9 @@
 
 Atoms are the recognizable, named identity assets — the things a person points at and says "that's Ariviti." Built from the Particles (colors, type) in the previous file, governed by the Strings (philosophy, voice) in the first file.
 
-[Download Logos](#logo-downloads-anchor)
-[Download Imagery](#imagery-downloads-anchor)
+- [Download Primary Logos](#core-logo-downloads-anchor)
+
+- [Download Imagery](#imagery-downloads-anchor)
 
 ---
 
@@ -80,7 +81,7 @@ The symbol alone will be your most-seen asset: favicon, LinkedIn avatar, app ico
 A modified letterform at brand-identity scale, tied to a real linguistic root (*Arivu*), is rare in enterprise AI services. Most competitors run generic abstract marks or literal "circuit/node" AI clichés. **Protect the etymology as hard as you protect the hex codes** — it should appear in every pitch deck's "why Ariviti" slide and every About page rewrite. It's the one asset a fast-follower cannot legally or credibly copy.
 
 
-### Primary Logo Downloads {#logo-downloads-anchor}
+### Download Primary Logos {#logo-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/02_ATOM_Logo_Core/"></div>
 
 ---
@@ -131,7 +132,7 @@ Example: *"Engineering lead reviewing a live claims-processing dashboard with a 
 **Do:** write alt text at time of upload, not retroactively.
 **Don't:** use filenames or generic descriptors ("team photo," "office shot") as alt text — this fails both accessibility and image-search discoverability.
 
-### Imagery Downloads {#imagery-downloads-anchor}
+### Download Imagery {#imagery-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/02_ATOM_Photography/"></div>
 
 ## Moat Note

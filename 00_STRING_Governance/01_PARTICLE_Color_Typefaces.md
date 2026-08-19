@@ -3,6 +3,8 @@
 
 Particles are the raw, indivisible values — hex codes, type scales, contrast ratios. Every component in the system (see Strings → Atomic Design Methodology) is built by naming a purposeful application of these particles. Get this file wrong and every downstream asset inherits the error.
 
+- [Download Typefaces](#typeface-downloads-anchor)
+ 
 ---
 
 # Part 1 — Color Swatches
@@ -71,6 +73,8 @@ A minimum viable, low-maintenance asset kit:
 - CSS custom properties (`--ariviti-orange: #FF4D1C;` etc.) for all web/product work — tracked as a Molecule, see the Molecules manifest
 - Figma shared color styles, published from one source library — never recreated per file
 
+
+
 ---
 
 # Part 2 — Typography System
@@ -120,6 +124,10 @@ Not addressed in core BG — filling the gap, since metrics are central to Evide
 | Keep body text at 16px minimum on every surface, no exceptions                                                           | Shrink body copy to fit a layout — resize the layout instead                                                        |
 | Use weight and size to create hierarchy                                                                                  | Use color alone to create hierarchy (fails accessibility, see Part 3 below)                                         |
 | Left-align body text                                                                                                     | Justify body text (creates uneven word-spacing "rivers," reads as low-budget)                                       |
+
+
+### Download Typefaces {#typeface-downloads-anchor}
+<div class="ariviti-file-list" data-r2-prefix="tabs/01_PARTICLE_Typefaces/"></div>
 
 ---
 

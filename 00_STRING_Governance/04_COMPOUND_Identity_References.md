@@ -1,6 +1,10 @@
 # 04 · Compounds
 *Tracks & specifies: .pptx · .docx · .html templates · Email Signatures*
 
+- [Download Identity Templates](#identity-templates-downloads-anchor)
+
+- [Download Reference Templates](#reference-templates-downloads-anchor)
+
 ## What This File Is
 
 Compounds are complete, sendable artifacts — built from Molecules (code/template files), which are built from Atoms, Particles, and Strings. Some compounds below are fully specified in content but not yet compiled into a locked template file; some don't exist in any form yet. Each entry says which is true.
@@ -178,6 +182,14 @@ For each leader:
 ```
 
 **Why this template exists:** the current About page has no named leadership — this directly undercuts "Human-led" as a brand trait and removes another GEO-citable structure (named-person + credential is exactly what LLMs surface for "who runs Ariviti" style queries).
+
+
+### Download Identity Templates {#identity-template-downloads-anchor}
+<div class="ariviti-file-list" data-r2-prefix="tabs/04_COMPOUND_Identity/"></div>
+
+
+### Download Reference Templates {#reference-template-downloads-anchor}
+<div class="ariviti-file-list" data-r2-prefix="tabs/04_COMPOUND_References/"></div>
 
 ---
 

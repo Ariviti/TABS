@@ -3,6 +3,8 @@
 
 Strings are the governing laws — the rules that don't have a hex code or a font size, but that every particle, atom, molecule, and compound in this system must trace back to. If a component, a sentence, or a decision can't be justified against something in this file, it isn't on-system.
 
+- [Download Brand Guidelines](#brand-guidelines-downloads-anchor)
+
 ---
 
 # Part 1 — Design Philosophy
@@ -22,10 +24,10 @@ If a layout, animation, or copy block makes AI look like it's operating alone, i
 
 The core BG names three qualities the identity represents: **clarity, confidence, purposeful innovation.** Each converts into an enforceable design law, not a mood.
 
-| Pillar | Design Law | In Practice |
-|---|---|---|
-| **Clarity** | One idea per screen / one idea per slide | No dashboard-style pages cramming five messages above the fold |
-| **Confidence** | State the claim once, plainly, and stop | No stacked qualifiers, no hedge words, no exclamation marks |
+| Pillar                    | Design Law                                            | In Practice                                                                       |
+| ------------------------- | ----------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Clarity**               | One idea per screen / one idea per slide              | No dashboard-style pages cramming five messages above the fold                    |
+| **Confidence**            | State the claim once, plainly, and stop               | No stacked qualifiers, no hedge words, no exclamation marks                       |
 | **Purposeful Innovation** | Every "new" element must trace to a functional reason | No design flourish added because it looks modern — only because it does something |
 
 ## Derivation Chain — How a Decision Traces Back
@@ -51,11 +53,11 @@ Any designer or agency should be able to run this chain backward from any execut
 
 ## What Ariviti Is Not (the design version of the Never List)
 
-| Not This | Because |
-|---|---|
-| A "cutting-edge AI lab" aesthetic (dark mode, neon gradients, glitch effects) | Signals hype, not evidence — contradicts Evidence-first |
-| A generic enterprise-SaaS template (rounded cards, pastel illustrations, flat mascots) | Indistinguishable from any B2B SaaS landing page — zero differentiation |
-| A consultancy-generic deck (stock handshake photos, bullet-wall slides) | Contradicts Clarity — bullet walls are the opposite of one idea per slide |
+| Not This                                                                               | Because                                                                   |
+| -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- |
+| A "cutting-edge AI lab" aesthetic (dark mode, neon gradients, glitch effects)          | Signals hype, not evidence — contradicts Evidence-first                   |
+| A generic enterprise-SaaS template (rounded cards, pastel illustrations, flat mascots) | Indistinguishable from any B2B SaaS landing page — zero differentiation   |
+| A consultancy-generic deck (stock handshake photos, bullet-wall slides)                | Contradicts Clarity — bullet walls are the opposite of one idea per slide |
 
 <!-- PRIVATE:START reason="discloses revenue mix / go-to-market strategy" -->
 ## The Real-World Tension to Design Around
@@ -83,14 +85,14 @@ A brand guideline defines the particles (hex codes, fonts). It rarely defines ho
 
 ## The Hierarchy
 
-| Level | Contains | Ariviti Example |
-|---|---|---|
-| **Tokens** | Raw values — colors, type sizes, spacing units | `#FF4D1C`, Space Grotesk Bold 48px, 8px spacing unit |
-| **Components** | A single-function combination of tokens | Primary CTA button: Orange fill + white Plus Jakarta Sans SemiBold + 16px min |
-| **Patterns** | Reusable multi-component blocks | The **Proof Block**: claim (Space Grotesk) + metric (bold, large) + source line (small, Soft Black 60%) |
-| **Sections** | Complete functional page zones | Homepage hero, case study "Results" section, About page leadership grid |
-| **Templates** | Full page types, pre-populated, ready to fill | Case study template, one-pager template, LinkedIn carousel template |
-| **System** | The live, governed asset library in production | ariviti.com, sales kit, deck library, case study library |
+| Level          | Contains                                       | Ariviti Example                                                                                         |
+| -------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **Tokens**     | Raw values — colors, type sizes, spacing units | `#FF4D1C`, Space Grotesk Bold 48px, 8px spacing unit                                                    |
+| **Components** | A single-function combination of tokens        | Primary CTA button: Orange fill + white Plus Jakarta Sans SemiBold + 16px min                           |
+| **Patterns**   | Reusable multi-component blocks                | The **Proof Block**: claim (Space Grotesk) + metric (bold, large) + source line (small, Soft Black 60%) |
+| **Sections**   | Complete functional page zones                 | Homepage hero, case study "Results" section, About page leadership grid                                 |
+| **Templates**  | Full page types, pre-populated, ready to fill  | Case study template, one-pager template, LinkedIn carousel template                                     |
+| **System**     | The live, governed asset library in production | ariviti.com, sales kit, deck library, case study library                                                |
 
 **Rule:** nobody designs at the Section or Template level from scratch. They assemble from governed Components and Patterns. This is what makes a two-person marketing team's output look like a twenty-person team's — consistency by construction, not by review.
 
@@ -111,16 +113,16 @@ The single highest-leverage pattern in the system, because it's reused across we
 
 A two-person marketing team does not need forty components. It needs these, governed tightly:
 
-| Component | Token Rules |
-|---|---|
-| Primary CTA | Orange fill, white text, Space Grotesk SemiBold, 16px min |
-| Secondary CTA | Indigo outline, Indigo text, transparent fill |
-| H1 | Space Grotesk Bold, 48–72px |
-| H2 | Space Grotesk SemiBold, 28–36px |
-| Body | Plus Jakarta Sans Regular, 16–18px min |
-| Proof Block | See above |
+| Component       | Token Rules                                                            |
+| --------------- | ---------------------------------------------------------------------- |
+| Primary CTA     | Orange fill, white text, Space Grotesk SemiBold, 16px min              |
+| Secondary CTA   | Indigo outline, Indigo text, transparent fill                          |
+| H1              | Space Grotesk Bold, 48–72px                                            |
+| H2              | Space Grotesk SemiBold, 28–36px                                        |
+| Body            | Plus Jakarta Sans Regular, 16–18px min                                 |
+| Proof Block     | See above                                                              |
 | Leadership card | Photo + name + role + one proof point (never a group photo substitute) |
-| Case study card | Client industry + challenge headline + one Proof Block + CTA |
+| Case study card | Client industry + challenge headline + one Proof Block + CTA           |
 
 ## Derivation Discipline
 
@@ -145,12 +147,12 @@ Component-level decisions (does this button need a new state?) sit with whoever'
 
 The core BG names four traits: **Clear & Direct, Knowledgeable, Evidence-first, Human-led.** Traits without tests are just adjectives. Here's the test for each.
 
-| Trait | Fails If... | Passes If... |
-|---|---|---|
-| **Clear & Direct** | A sentence needs re-reading to find the verb | A reader states the point back correctly on first pass |
-| **Knowledgeable** | The claim could be made by any AI vendor | The claim requires domain-specific context to be true |
-| **Evidence-first** | A number appears without its source or baseline | Every metric answers "measured how, against what" |
-| **Human-led** | AI is the subject of the sentence | A person or outcome is the subject; AI is the tool |
+| Trait              | Fails If...                                     | Passes If...                                           |
+| ------------------ | ----------------------------------------------- | ------------------------------------------------------ |
+| **Clear & Direct** | A sentence needs re-reading to find the verb    | A reader states the point back correctly on first pass |
+| **Knowledgeable**  | The claim could be made by any AI vendor        | The claim requires domain-specific context to be true  |
+| **Evidence-first** | A number appears without its source or baseline | Every metric answers "measured how, against what"      |
+| **Human-led**      | AI is the subject of the sentence               | A person or outcome is the subject; AI is the tool     |
 
 ## The Proof Ladder
 
@@ -167,16 +169,16 @@ Every external claim climbs three rungs. Skipping a rung is how marketing copy b
 
 Directly extending the core BG's two example shifts into a working system:
 
-| Never This | Use This | Why |
-|---|---|---|
-| "We leverage AI to accelerate digital transformation" | "We put AI into production with measurable outcomes." | "Leverage" is a verb with no object — says nothing about what changed |
-| "Our platform delivers cutting-edge AI solutions" | "We solve real business problems, not showcase technology." | "Cutting-edge" is a claim every competitor also makes — zero differentiation |
-| "AI-powered" (unqualified) | Name what the AI does and what it produced | Unqualified "AI-powered" is now a red flag to sophisticated buyers, not a credential |
-| "Innovative" / "next-generation" / "revolutionary" | The specific mechanism or result | These words have no verifiable content — they're vibes, not evidence |
-| "End-to-end solution" | Name the start point and end point explicitly | "End-to-end" sounds complete but tells the reader nothing they can check |
-| "Human in the loop" | "Human-led" / name the person's actual role | "In the loop" frames the human as an interruption to the AI, not the decision-maker |
-| "Transformation" (unqualified) | From [state] to [state], by [date/metric] | Matches Evidence-first — an unqualified "transformation" is unfalsifiable |
-| "Full-stack AI" | The specific layer or capability you own | Nobody owns the full stack; the claim signals inexperience to technical buyers |
+| Never This                                            | Use This                                                    | Why                                                                                  |
+| ----------------------------------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| "We leverage AI to accelerate digital transformation" | "We put AI into production with measurable outcomes."       | "Leverage" is a verb with no object — says nothing about what changed                |
+| "Our platform delivers cutting-edge AI solutions"     | "We solve real business problems, not showcase technology." | "Cutting-edge" is a claim every competitor also makes — zero differentiation         |
+| "AI-powered" (unqualified)                            | Name what the AI does and what it produced                  | Unqualified "AI-powered" is now a red flag to sophisticated buyers, not a credential |
+| "Innovative" / "next-generation" / "revolutionary"    | The specific mechanism or result                            | These words have no verifiable content — they're vibes, not evidence                 |
+| "End-to-end solution"                                 | Name the start point and end point explicitly               | "End-to-end" sounds complete but tells the reader nothing they can check             |
+| "Human in the loop"                                   | "Human-led" / name the person's actual role                 | "In the loop" frames the human as an interruption to the AI, not the decision-maker  |
+| "Transformation" (unqualified)                        | From [state] to [state], by [date/metric]                   | Matches Evidence-first — an unqualified "transformation" is unfalsifiable            |
+| "Full-stack AI"                                       | The specific layer or capability you own                    | Nobody owns the full stack; the claim signals inexperience to technical buyers       |
 
 ## The Never List
 
@@ -200,13 +202,13 @@ That's it. Test every sentence against it: would a senior engineer actually say 
 
 ## Tone by Format
 
-| Format | Register | Length Discipline |
-|---|---|---|
-| Website hero copy | Direct claim + immediate qualifier | One sentence, one idea |
-| LinkedIn post | Evidence-first, short declaratives, pause after the number | Under 8 lines before "see more" |
-| Case study | Challenge → Approach → Result, in that order, every time | No hedging language ("may," "could potentially") |
-| Sales email | One idea per email, subject line states the outcome not the topic | Under 120 words |
-| Leadership bio (About page) | Named, specific, credentialed — not a group photo caption | 2–3 sentences, one proof point per person |
+| Format                      | Register                                                          | Length Discipline                                |
+| --------------------------- | ----------------------------------------------------------------- | ------------------------------------------------ |
+| Website hero copy           | Direct claim + immediate qualifier                                | One sentence, one idea                           |
+| LinkedIn post               | Evidence-first, short declaratives, pause after the number        | Under 8 lines before "see more"                  |
+| Case study                  | Challenge → Approach → Result, in that order, every time          | No hedging language ("may," "could potentially") |
+| Sales email                 | One idea per email, subject line states the outcome not the topic | Under 120 words                                  |
+| Leadership bio (About page) | Named, specific, credentialed — not a group photo caption         | 2–3 sentences, one proof point per person        |
 
 <!-- PRIVATE:START reason="discloses current site gap" -->
 **Note:** Named, specific leadership bios are currently absent from the site (per the last audit). This is a voice problem as much as a content problem — "Human-led" as a brand trait is unconvincing if the humans aren't named.
@@ -224,14 +226,14 @@ That's it. Test every sentence against it: would a senior engineer actually say 
 
 ### Decision Rights Table
 
-| Decision | Who Decides | Escalates To | Why |
-|---|---|---|---|
-| Copy edits within voice/vocabulary rules | Content creator | No escalation | Reversible, low-risk, template-governed |
-| New component (button state, card variant) | Designer/builder | Brand owner (async review) | Affects the system but is reversible |
-| New color, new font, tagline change | — | **CEO** | Irreversible at scale, defines the whole system |
-| Logo modification of any kind | — | **CEO** | Highest-irreversibility asset in the system |
-| Case study / metric publication | Content creator drafts | Delivery team confirms metric accuracy | Evidence-first requires a non-marketing sign-off on numbers |
-| External agency brand compliance | Agency | Brand owner, pre-work | Contractual condition, set before work starts, not reviewed after |
+| Decision                                   | Who Decides            | Escalates To                           | Why                                                               |
+| ------------------------------------------ | ---------------------- | -------------------------------------- | ----------------------------------------------------------------- |
+| Copy edits within voice/vocabulary rules   | Content creator        | No escalation                          | Reversible, low-risk, template-governed                           |
+| New component (button state, card variant) | Designer/builder       | Brand owner (async review)             | Affects the system but is reversible                              |
+| New color, new font, tagline change        | —                      | **CEO**                                | Irreversible at scale, defines the whole system                   |
+| Logo modification of any kind              | —                      | **CEO**                                | Highest-irreversibility asset in the system                       |
+| Case study / metric publication            | Content creator drafts | Delivery team confirms metric accuracy | Evidence-first requires a non-marketing sign-off on numbers       |
+| External agency brand compliance           | Agency                 | Brand owner, pre-work                  | Contractual condition, set before work starts, not reviewed after |
 
 **Do:** publish this table where the team can see it — most bottlenecks are people escalating decisions that were theirs to make.
 **Don't:** let "brand safety" become an excuse to centralize every decision — that's how brand systems die from neglect, not misuse.
@@ -250,14 +252,14 @@ Draft → Self-check against Never List + Fragility Score → Async review (24hr
 
 What gets measured gets protected — but only if the metric is quantified, not vibes-based.
 
-| Metric | Method | Fragility If Ignored |
-|---|---|---|
-| **LLM/GEO citation rate** | Ask ChatGPT/Perplexity/Google AI "best AI implementation partners [category]" quarterly — count citations | **Currently near-zero** due to empty Insights section — this is the single most fragile metric in the system right now |
-| **Named leadership presence** | Count named, bio'd leaders on About page | **Currently zero** — directly undercuts Human-led as a claim |
-| **Case study depth** | Count published case studies with full Proof Block structure | Currently thin — every unpublished engagement is a missed GEO/trust asset |
-| **Contrast compliance** | Run Fragility Score (Particles doc, Accessibility) on 5 random assets/quarter | Orange misuse is the most common failure mode — catch it before external distribution |
-| **Voice compliance** | Brand owner reviews 10 random assets/quarter against Never List | Drift compounds silently if unchecked |
-| **Visual recognition (blind test)** | Strip logo from 5 assets, show 5 ICP-profile testers, ask "which company?" | Tests whether the *system* — not just the logo — is doing recognition work |
+| Metric                              | Method                                                                                                    | Fragility If Ignored                                                                                                   |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| **LLM/GEO citation rate**           | Ask ChatGPT/Perplexity/Google AI "best AI implementation partners [category]" quarterly — count citations | **Currently near-zero** due to empty Insights section — this is the single most fragile metric in the system right now |
+| **Named leadership presence**       | Count named, bio'd leaders on About page                                                                  | **Currently zero** — directly undercuts Human-led as a claim                                                           |
+| **Case study depth**                | Count published case studies with full Proof Block structure                                              | Currently thin — every unpublished engagement is a missed GEO/trust asset                                              |
+| **Contrast compliance**             | Run Fragility Score (Particles doc, Accessibility) on 5 random assets/quarter                             | Orange misuse is the most common failure mode — catch it before external distribution                                  |
+| **Voice compliance**                | Brand owner reviews 10 random assets/quarter against Never List                                           | Drift compounds silently if unchecked                                                                                  |
+| **Visual recognition (blind test)** | Strip logo from 5 assets, show 5 ICP-profile testers, ask "which company?"                                | Tests whether the *system* — not just the logo — is doing recognition work                                             |
 
 **Do:** score these quarterly, log the trend, not just the snapshot. A single quarter's number is noise; three quarters is a trend.
 **Don't:** treat a passing score as permission to stop measuring — brand health is a maintained system, not a certification.
@@ -265,20 +267,20 @@ What gets measured gets protected — but only if the metric is quantified, not 
 ## The Three Structural Risks
 *From the last site audit — resolved here as governance items, not one-off fixes*
 
-| Risk | Root Cause | Governance Fix |
-|---|---|---|
-| Meta-keywords carrying irrelevant taxonomy site-wide | No owner for technical SEO hygiene | Assign explicit ownership; add to quarterly audit checklist, not a one-time fix |
+| Risk                                                             | Root Cause                                                             | Governance Fix                                                                                                               |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Meta-keywords carrying irrelevant taxonomy site-wide             | No owner for technical SEO hygiene                                     | Assign explicit ownership; add to quarterly audit checklist, not a one-time fix                                              |
 | Platform-forward site presentation vs. services-dominant revenue | No navigation/IA governance tying site structure to actual revenue mix | Nav architecture reviewed annually against actual revenue split — platform is the differentiation story, not the whole story |
-| Thin case studies, empty Insights, unnamed leadership | No content cadence or template enforcement | Templates (Compounds manifest) + GEO-Ready Content Block used as the default, cadence tracked in scorecard above |
+| Thin case studies, empty Insights, unnamed leadership            | No content cadence or template enforcement                             | Templates (Compounds manifest) + GEO-Ready Content Block used as the default, cadence tracked in scorecard above             |
 <!-- PRIVATE:END -->
 
 ## Version Control
 
-| Element | Rule |
-|---|---|
+| Element               | Rule                                                                                         |
+| --------------------- | -------------------------------------------------------------------------------------------- |
 | Guidelines versioning | This annexure set versions alongside the core BG — cite core BG version in every file header |
-| Asset library | Single source of truth (Drive/Figma/Notion — pick one, not three) |
-| Change log | Every material change (new component, new color use case) logged with date, author, reason |
+| Asset library         | Single source of truth (Drive/Figma/Notion — pick one, not three)                            |
+| Change log            | Every material change (new component, new color use case) logged with date, author, reason   |
 
 ## Onboarding
 
@@ -287,3 +289,6 @@ Every person producing external content — internal or agency — completes a *
 ## Final Principle
 
 **A brand system a two-person team can't operate without constant senior review isn't a system — it's a bottleneck wearing a style guide's clothes.** Every rule in this file is written to be self-enforcing: templates that make compliance the default, a scorecard that makes fragility visible, and a decision-rights table that makes escalation the exception, not the norm.
+
+### Download Brand Guidelines {#brand-guidelines-downloads-anchor}
+<div class="ariviti-file-list" data-r2-prefix="tabs/00_STRING_Governance/"></div>
