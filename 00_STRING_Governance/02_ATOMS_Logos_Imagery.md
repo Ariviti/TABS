@@ -5,6 +5,9 @@ Atoms are the recognizable, named identity assets — the things a person points
 
 ---
 
+### Primary Logos
+<div class="ariviti-file-list" data-r2-prefix="tabs/02_ATOM_Logo_Core"></div>
+
 # Part 1 — Logo System
 *Reference: Core BG pages 1–10*
 
