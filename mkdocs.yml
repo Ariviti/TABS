@@ -37,7 +37,6 @@ theme:
     - scheme: default
       primary: custom
       accent: custom
-      media: "(prefers-color-scheme: light)"
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -46,7 +45,6 @@ theme:
     - scheme: slate
       primary: custom
       accent: custom
-      media: "(prefers-color-scheme: dark)"
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
