@@ -10,16 +10,23 @@
      <div class="ariviti-file-list" data-r2-prefix="04_MOLECULES"></div>
 */
 
-document.addEventListener("DOMContentLoaded", () => {
-  document.querySelectorAll("[data-r2-prefix]").forEach(renderFileList);
-});
+// Replace DOMContentLoaded listener with this:
+if (typeof document$ !== "undefined") {
+  document$.subscribe(() => {
+    document.querySelectorAll("[data-r2-prefix]").forEach(renderFileList);
+  });
+} else {
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("[data-r2-prefix]").forEach(renderFileList);
+  });
+}
 
 async function renderFileList(container) {
   const prefix = container.getAttribute("data-r2-prefix");
   container.innerHTML = '<p class="ariviti-file-status">Loading files…</p>';
 
   try {
-    const res = await fetch(`/api/files?prefix=${encodeURIComponent(prefix)}`);
+    const res = await fetch(`/files?prefix=${encodeURIComponent(prefix)}`);
     if (!res.ok) throw new Error(`API returned ${res.status}`);
     const data = await res.json();
 

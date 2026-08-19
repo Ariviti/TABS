@@ -1,0 +1,6 @@
+name = "tabs"
+pages_build_output_dir = "site"
+
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "cdn"
