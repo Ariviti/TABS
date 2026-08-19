@@ -56,8 +56,6 @@ theme:
     # Header & Navigation
     - navigation.instant        # Turbo-charges page loads (SPA-like navigation)
     - navigation.tracking       # Updates browser URL as you scroll through headings
-    - navigation.tabs           # Top-level category tabs
-    - navigation.tabs.sticky    # Keeps category tabs visible on scroll
     - navigation.sections       # Groups sub-items cleanly in side drawer
     - navigation.expand         # Expands navigation tree by default
     - navigation.top            # "Back to top" smooth-scroll button
