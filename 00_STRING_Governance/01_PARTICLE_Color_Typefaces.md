@@ -7,10 +7,10 @@ Particles are the raw, indivisible values — hex codes, type scales, contrast r
  
 ---
 
-# Part 1 — Color Swatches
+## Part 1 — Color Swatches
 *Reference: Core BG pages 14–15*
 
-## Full Specification
+### Full Specification
 
 | Swatch             | Hex       | RGB           | Approx. CMYK*    | Role                                                  |
 | ------------------ | --------- | ------------- | ---------------- | ----------------------------------------------------- |
@@ -22,7 +22,7 @@ Particles are the raw, indivisible values — hex codes, type scales, contrast r
 
 *CMYK values are approximate sRGB conversions for internal reference only. **Before any offset print run, get a professional Pantone/CMYK match from your printer** — screen-to-print color shift is real and this table is not a substitute for a physical proof.
 
-## Usage Ratio (default page composition)
+### Usage Ratio (default page composition)
 
 Not specified numerically in core BG — added for design consistency:
 
@@ -33,7 +33,7 @@ Not specified numerically in core BG — added for design consistency:
 
 **Do:** treat Orange as a spice, not a base — if more than 10% of a layout is orange, you've built a warning page, not a brand page.
 
-## Tints & Shades
+### Tints & Shades
 
 For UI states (hover, disabled, background fields) — generate programmatically, don't eyeball:
 
@@ -45,7 +45,7 @@ For UI states (hover, disabled, background fields) — generate programmatically
 
 **Use case:** Indigo 20% tint = card backgrounds and hover states. Never use Orange tints for large backgrounds — even at 20%, orange fields fight legibility of Indigo text.
 
-## Pairing Matrix
+### Pairing Matrix
 *Cross-referenced with the verified contrast data in Part 3 of this document*
 
 | Combination                           | Verdict               | Use Case                                            |
@@ -58,14 +58,14 @@ For UI states (hover, disabled, background fields) — generate programmatically
 | **Orange on Indigo**                  | ✗ **Never** (2.59:1)  | Forbidden in any context                            |
 | Orange as small text/icon anywhere    | ✗ Avoid               | Reserve orange for large-scale, short elements only |
 
-## Gradients
+### Gradients
 
 Core BG's "Don'ts" page prohibits gradients **on the logo mark**. It does not authorize free gradient use elsewhere — the cover treatments in the core deck (Indigo-to-black diagonal gradients) are agency-produced backgrounds, not a general license.
 
 **Do:** if a gradient background is needed (event backdrop, deck cover), use Royal Indigo → Dark Indigo → Soft Black only, diagonal, subtle — matching the agency's own cover treatment.
 **Don't:** introduce Orange into any gradient, or let anyone outside the brand owner originate a new gradient direction without sign-off.
 
-## File Formats to Maintain
+### File Formats to Maintain
 
 A minimum viable, low-maintenance asset kit:
 
@@ -77,10 +77,10 @@ A minimum viable, low-maintenance asset kit:
 
 ---
 
-# Part 2 — Typography System
+## Part 2 — Typography System
 *Reference: Core BG pages 11–13*
 
-## The Three-Font Rule
+### The Three-Font Rule
 
 Core BG defines three fonts with three distinct, non-overlapping jobs. The single most common brand-compliance failure in any small marketing team is fonts drifting between jobs.
 
@@ -93,7 +93,7 @@ Core BG defines three fonts with three distinct, non-overlapping jobs. The singl
 **Do:** treat Chillax as a locked asset inside the logo file — never install it as a working typeface for content teams.
 **Don't:** let a designer "match the vibe" with a geometric-sans lookalike (e.g., Poppins, Sora) when Space Grotesk isn't available in a tool. Install the real font. Substitution is how brand drift starts.
 
-## Type Scale
+### Type Scale
 
 | Role                       | Font              | Weight        | Web Size    | Print Size |
 | -------------------------- | ----------------- | ------------- | ----------- | ---------- |
@@ -108,7 +108,7 @@ Core BG defines three fonts with three distinct, non-overlapping jobs. The singl
 
 **Note on emphasis:** no weight or role in this system uses italics. Emphasis is carried by weight (bold), color (Orange for kickers), or size — never by slant. This applies everywhere, including HTML/email templates in the Compounds manifest.
 
-## Numerals & Metrics
+### Numerals & Metrics
 
 Not addressed in core BG — filling the gap, since metrics are central to Evidence-first voice (Strings → Voice, Tone & Vocabulary).
 
@@ -116,7 +116,7 @@ Not addressed in core BG — filling the gap, since metrics are central to Evide
 - Use **Plus Jakarta Sans** for inline numbers within body sentences — switching fonts mid-sentence for a single digit is a common over-engineering mistake; don't do it.
 - Never use a monospace font for data unless a future brand decision explicitly introduces one. The current system has no mono font — don't invent one under deadline pressure.
 
-## Do / Don't
+### Do / Don't
 
 | Do                                                                                                                       | Don't                                                                                                               |
 | ------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
@@ -126,19 +126,19 @@ Not addressed in core BG — filling the gap, since metrics are central to Evide
 | Left-align body text                                                                                                     | Justify body text (creates uneven word-spacing "rivers," reads as low-budget)                                       |
 
 
-## Download Typefaces {#typeface-downloads-anchor}
+### Download Typefaces {#typeface-downloads-anchor}
 <div class="ariviti-file-list" data-r2-prefix="tabs/01_PARTICLE_Typefaces/"></div>
 
 ---
 
-# Part 3 — Accessibility Standards
+## Part 3 — Accessibility Standards
 *Not covered in core BG — critical gap, closed here with verified numbers*
 
-## Why This Section Is Non-Optional
+### Why This Section Is Non-Optional
 
 Accessibility is not a legal checkbox layered on top of the brand — it *is* brand architecture. A color pairing that fails contrast fails the "Clarity" pillar (Strings → Design Philosophy) for a meaningful share of real readers, regardless of how it looks to the designer choosing it.
 
-## Verified Contrast Ratios (WCAG 2.1)
+### Verified Contrast Ratios (WCAG 2.1)
 
 Calculated directly from the core BG hex values in Part 1 above — not estimated.
 
@@ -165,7 +165,7 @@ Calculated directly from the core BG hex values in Part 1 above — not estimate
 **Do:** pair Orange CTAs with white or near-white backgrounds and keep the label under 4 words at 24px+.
 **Don't:** ever place Orange text on Indigo — this combination fails at every text size and should be flagged automatically in any design-review checklist.
 
-## Standards Checklist
+### Standards Checklist
 
 | Standard            | Requirement                                            | Ariviti Application                                                                                                                                     |
 | ------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -177,7 +177,7 @@ Calculated directly from the core BG hex values in Part 1 above — not estimate
 | Color-blind safety  | Never color alone conveys meaning                      | Every status indicator pairs color with an icon or label — e.g., a "validated" badge always carries a ✓ or the word "Verified," never just a green fill |
 | Data visualization  | Max 3 colors per chart, always labeled                 | Orange + Indigo + Soft Black is the default 3-color chart palette; label every series directly, don't rely on a legend alone                            |
 
-## The Fragility Score
+### The Fragility Score
 
 A quick self-audit for any new asset — score 0 (fail) or 1 (pass) per item, sum out of 6:
 
