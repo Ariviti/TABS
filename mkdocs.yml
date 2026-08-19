@@ -13,15 +13,19 @@ markdown_extensions:
   - admonition
   - pymdownx.highlight
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - Home: index.md
+  - TABS Home: index.md
   - Brand Physics: 00_STRING_Governance/00_ATOMIC_TABS_Intro.md
   - Strings / Rules: 00_STRING_Governance/00_STRING_Governance.md
   - Particles / Colors & Fonts: 00_STRING_Governance/01_PARTICLE_Color_Typefaces.md
   - Atoms / Core Logos & Images: 00_STRING_Governance/02_ATOMS_Logos_Imagery.md
   - Molecules / Other Logos & Templates: 00_STRING_Governance/03_MOLECULE_Logos_Templates.md
   - Compounds / References: 00_STRING_Governance/04_COMPOUND_Identity_References.md
+- :octicons-mark-github-16: GitHub Repo: https://github.com/ariviti/tabs
 
 extra:
   cdn_url: "https://cdn.ariviti.com/tabs"

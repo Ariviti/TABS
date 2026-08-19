@@ -2,8 +2,6 @@
 
 ![Ariviti](https://cdn.ariviti.com/tabs/02_ATOM_Logo_Core/PNG/logo_symbol_dark.png){ width="220" }
 
-**Intelligence Amplified.**
-
 TABS is the complete, governed brand system for Ariviti — logo construction, color and typography specification, voice and vocabulary, photography direction, and every template needed to produce on-brand work without asking permission for routine decisions.
 
 This site is generated directly from the same markdown files a coding agent or CLI tool would pull from a git repository — there is no separate "human version" maintained by hand. What you see here is what's true.
@@ -21,6 +19,7 @@ This site is generated directly from the same markdown files a coding agent or C
 | **Compounds**  | Finished deliverable specs — signature, case study, one-pager, slide deck                                | [Read →](00_STRING_Governance/05_COMPOUND_Identity_References.md) |
 | **System Map** | The physical folder structure — where every asset file lives, and what governs it                        | [Read →](00_STRING_Governance/00_ATOMIC_TABS_Intro.md)            |
 
+## [GitHub Repo →](https://github.com/Ariviti/TABS/)  
 ---
 
 ## The one rule that governs everything else
