@@ -27,8 +27,8 @@ extra:
 
 theme:
   name: material
-  logo: 02_ATOM_Logo_Core/PNG/logo_full_light_3237x1202.png  # White/Light logo for dark background
-  favicon: 02_ATOM_Logo_Core/PNG/logo_symbol_dark_1202x1202.png
+  logo: https://cdn.ariviti.com/tabs/02_ATOM_Logo_Core/SVG/logo_full_light.svg
+  favicon: https://cdn.ariviti.com/tabs/02_ATOM_Logo_Core/SVG/logo_symbol_light.svg
   font: false
 
   # Single Slate Theme (No dark/light toggle button)
@@ -52,9 +52,9 @@ theme:
     - content.code.annotate
 
 extra_css:
-  - scripts/ariviti-tokens.css
+  - ariviti-tokens.css
 
 
 extra_javascript:
-  - scripts/file-browser.js
+  - file-browser.js
  

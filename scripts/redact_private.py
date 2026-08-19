@@ -59,17 +59,16 @@ def main() -> None:
         out_path.write_text(clean, encoding="utf-8")
         processed_count += 1
 
-    # 3. Copy CSS tokens file to docs/
-    css_file = SOURCE_DIR / "ariviti-tokens.css"
+    # 3. Copy CSS tokens and JS file from scripts/ to docs/
+    css_file = SOURCE_DIR / "scripts" / "ariviti-tokens.css"
     if css_file.exists():
         shutil.copy2(css_file, BUILD_DIR / "ariviti-tokens.css")
         print("  ✓ copied ariviti-tokens.css")
 
-    # 4. Copy logo assets folder to docs/02_ATOM_Logo_Core
-    logo_dir = SOURCE_DIR / "02_ATOM_Logo_Core"
-    if logo_dir.exists():
-        shutil.copytree(logo_dir, BUILD_DIR / "02_ATOM_Logo_Core")
-        print(f"  ✓ copied logo assets from {logo_dir.name}/")
+    js_file = SOURCE_DIR / "scripts" / "file-browser.js"
+    if js_file.exists():
+        shutil.copy2(js_file, BUILD_DIR / "file-browser.js")
+        print("  ✓ copied file-browser.js")
 
     # Sanity check: prevent secret leaks
     for out_path in BUILD_DIR.rglob("*.md"):
