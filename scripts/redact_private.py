@@ -15,12 +15,12 @@ BUILD_DIR = SOURCE_DIR / "docs"                             # mkdocs input folde
 STATIC_DIR = SOURCE_DIR / "docs_static"                     # static files (index.md, downloads.md, css, images)
 
 SOURCE_FILES = [
-    "00_ATOMIC_TABS_Intro/00_ATOMIC_TABS_Intro.md",
+    "00_STRING_Governance/00_ATOMIC_TABS_Intro.md",
     "00_STRING_Governance/00_STRING_Governance.md",
-    "02_PARTICLE_Color_Typefaces/02_PARTICLE_Color_Typefaces.md",
-    "02_ATOMS_Logos_Imagery/02_ATOMS_Logos_Imagery.md",
-    "03_MOLECULE_Logos_Templates/03_MOLECULE_Logos_Templates.md",
-    "05_COMPOUND_Identity_References/05_COMPOUND_Identity_References.md",
+    "00_STRING_Governance/02_PARTICLE_Color_Typefaces.md",
+    "00_STRING_Governance/02_ATOMS_Logos_Imagery.md",
+    "00_STRING_Governance/03_MOLECULE_Logos_Templates.md",
+    "00_STRING_Governance/05_COMPOUND_Identity_References.md",
 ]
 
 PRIVATE_BLOCK = re.compile(
