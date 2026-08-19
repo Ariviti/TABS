@@ -2,10 +2,8 @@
 """
 redact_private.py
 
-Runs at build time, never by hand. Copies every source .md file into the
-mkdocs docs/ folder, stripping anything wrapped in PRIVATE markers along
-the way. If a PRIVATE block is immediately followed by a PUBLIC block,
-the PUBLIC block's content is kept (unwrapped) in its place.
+Runs at build time. Copies source markdown files into the build folder (docs/),
+stripping anything inside PRIVATE blocks along the way.
 """
 
 import re
@@ -13,18 +11,17 @@ import shutil
 from pathlib import Path
 
 SOURCE_DIR = Path(__file__).resolve().parent.parent          # repo root
-BUILD_DIR = SOURCE_DIR / "docs"                             # mkdocs input folder (gitignored)
-STATIC_DIR = SOURCE_DIR / "docs_static"                     # committed: index.md, downloads.md, css, images
+BUILD_DIR = SOURCE_DIR / "docs"                             # mkdocs input folder
+STATIC_DIR = SOURCE_DIR / "docs_static"                     # static files (index.md, downloads.md, css, images)
 
-# Mapping: "Folder/Filename.md" -> "Target filename expected by mkdocs"
-SOURCE_FILE_MAP = {
-    "00_ATOMIC_TABS_Intro/00_ATOMIC_TABS_Intro.md": "00-intro.md",
-    "00_STRING_Governance/00_STRING_Governance.md": "01-strings.md",
-    "02_PARTICLE_Color_Typefaces/02_PARTICLE_Color_Typefaces.md": "02-particles.md",
-    "02_ATOMS_Logos_Imagery/02_ATOMS_Logos_Imagery.md": "03-atoms.md",
-    "03_MOLECULE_Logos_Templates/03_MOLECULE_Logos_Templates.md": "04-molecules.md",
-    "05_COMPOUND_Identity_References/05_COMPOUND_Identity_References.md": "05-compounds.md",
-}
+SOURCE_FILES = [
+    "00_ATOMIC_TABS_Intro/00_ATOMIC_TABS_Intro.md",
+    "00_STRING_Governance/00_STRING_Governance.md",
+    "02_PARTICLE_Color_Typefaces/02_PARTICLE_Color_Typefaces.md",
+    "02_ATOMS_Logos_Imagery/02_ATOMS_Logos_Imagery.md",
+    "03_MOLECULE_Logos_Templates/03_MOLECULE_Logos_Templates.md",
+    "05_COMPOUND_Identity_References/05_COMPOUND_Identity_References.md",
+]
 
 PRIVATE_BLOCK = re.compile(
     r"<!--\s*PRIVATE:START.*?-->.*?<!--\s*PRIVATE:END\s*-->"
@@ -44,22 +41,25 @@ def main() -> None:
     BUILD_DIR.mkdir(exist_ok=True)
     redacted_count = 0
 
-    for src_rel_path, target_filename in SOURCE_FILE_MAP.items():
-        src_path = SOURCE_DIR / src_rel_path
+    for rel_path_str in SOURCE_FILES:
+        src_path = SOURCE_DIR / rel_path_str
         if not src_path.exists():
-            print(f"  ! skipped (not found): {src_rel_path}")
+            print(f"  ! skipped (not found): {rel_path_str}")
             continue
 
         raw = src_path.read_text(encoding="utf-8")
         clean = redact(raw)
 
+        out_path = BUILD_DIR / rel_path_str
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+
         if clean != raw:
             redacted_count += 1
-            print(f"  ✓ redacted {raw.count('PRIVATE:START')} block(s) in {src_rel_path}")
+            print(f"  ✓ redacted {raw.count('PRIVATE:START')} block(s) in {rel_path_str}")
         else:
-            print(f"  · no redaction needed: {src_rel_path}")
+            print(f"  · no redaction needed: {rel_path_str}")
 
-        (BUILD_DIR / target_filename).write_text(clean, encoding="utf-8")
+        out_path.write_text(clean, encoding="utf-8")
 
     # Copy static assets (index.md, downloads.md, stylesheets, images)
     if STATIC_DIR.exists():
@@ -72,10 +72,10 @@ def main() -> None:
         print(f"  ✓ copied static assets from {STATIC_DIR.name}/")
 
     # Sanity check: fail build loudly if a private marker leaked
-    for out_path in BUILD_DIR.glob("*.md"):
+    for out_path in BUILD_DIR.rglob("*.md"):
         if "PRIVATE:" in out_path.read_text(encoding="utf-8"):
             raise SystemExit(
-                f"BUILD FAILED: unresolved PRIVATE marker leaked into {out_path.name}. "
+                f"BUILD FAILED: unresolved PRIVATE marker leaked into {out_path.relative_to(BUILD_DIR)}. "
                 f"Check marker syntax — build must not publish unredacted content."
             )
 
