@@ -1,5 +1,4 @@
-# 01 · Strings
-*The Ariviti Brand System — Rules Layer*
+# 00 · Strings
 *Contains: Design Philosophy · Atomic Design Methodology · Voice, Tone & Vocabulary · Implementation & Governance*
 
 Strings are the governing laws — the rules that don't have a hex code or a font size, but that every particle, atom, molecule, and compound in this system must trace back to. If a component, a sentence, or a decision can't be justified against something in this file, it isn't on-system.

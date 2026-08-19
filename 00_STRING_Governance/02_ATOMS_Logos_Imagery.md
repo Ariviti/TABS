@@ -1,5 +1,4 @@
-# 03 · Atoms
-*The Ariviti Brand System — Identity Assets Layer*
+# 02 · Atoms
 *Contains: Logo System · Photography Direction*
 
 Atoms are the recognizable, named identity assets — the things a person points at and says "that's Ariviti." Built from the Particles (colors, type) in the previous file, governed by the Strings (philosophy, voice) in the first file.

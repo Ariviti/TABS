@@ -1,5 +1,4 @@
 # 05 · Compounds
-*The Ariviti Brand System — Finished Deliverables Layer*
 *Tracks & specifies: .pptx · .docx · .html templates · Email Signatures*
 
 ## What This File Is

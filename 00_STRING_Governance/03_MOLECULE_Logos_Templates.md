@@ -1,5 +1,4 @@
-# 04 · Molecules
-*The Ariviti Brand System — Build Manifest*
+# 03 · Molecules
 *Tracks: .potx · .dotx · .css · .jsx · .mjml · .json*
 
 ## What This File Is (and Isn't)
