@@ -2,6 +2,7 @@ site_name: Ariviti Brand System
 site_description: TABS — The Ariviti Brand System. Logo, color, typography, voice, and templates.
 site_url: https://tabs.ariviti.com
 
+docs_dir: _build
 
 markdown_extensions:
   - attr_list            # Enables inline image sizing and CSS class attributes

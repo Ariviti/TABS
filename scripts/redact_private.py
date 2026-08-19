@@ -11,7 +11,7 @@ import shutil
 from pathlib import Path
 
 SOURCE_DIR = Path(__file__).resolve().parent.parent          # repo root
-BUILD_DIR = SOURCE_DIR / "docs"                             # staged build folder
+BUILD_DIR = SOURCE_DIR / "_build"                             # staged build folder
 
 PRIVATE_BLOCK = re.compile(
     r"<!--\s*PRIVATE:START.*?-->.*?<!--\s*PRIVATE:END\s*-->"

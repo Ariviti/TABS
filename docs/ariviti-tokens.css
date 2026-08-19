@@ -139,7 +139,7 @@ body,
 /* Dark Mode Logo Switch */
 [data-md-color-scheme="slate"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-drawer__button.md-logo img {
-  content: url("02_ATOM_Logo_Core/PNG/logo_full_light_3237x1202.png");
+  content: url("https://cdn.ariviti.com/tabs/02_ATOM_Logo_Core/SVG/logo_full_light.svg");
 }
 
 /* ==========================================================================
