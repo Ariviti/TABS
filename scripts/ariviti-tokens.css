@@ -145,14 +145,14 @@ body,
 
 /* Level 1: Main Category / File Title */
 nav .md-nav>ul>li>a {
-  font-size: 1.1rem;
+  font-size: 1.1em !important;
   /* ~18px */
   font-weight: 700;
 }
 
 /* Level 2: Sub-headings (H2s) */
 nav .md-nav ul ul>li>a {
-  font-size: 0.95rem;
+  font-size: 0.95em !important;
   /* ~15px */
   font-weight: 500;
   padding-left: 1rem;
@@ -161,7 +161,7 @@ nav .md-nav ul ul>li>a {
 
 /* Level 3: Nested Sub-headings (H3s) */
 nav .md-nav ul ul ul>li>a {
-  font-size: 0.85rem;
+  font-size: 0.85em !important;
   /* ~13px */
   font-weight: 400;
   padding-left: 2rem;
