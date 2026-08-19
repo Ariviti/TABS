@@ -39,8 +39,9 @@ def main() -> None:
     # 2. Process all .md files (root index.md & subfolder docs)
     for path in SOURCE_DIR.rglob("*.md"):
         rel_parts = path.relative_to(SOURCE_DIR).parts
+
         # Skip internal build/script/git folders
-        if any(p in {"docs", "site", ".git", ".venv", "scripts", "docs_static"} for p in rel_parts):
+        if any(p in {"_build", "docs", "site", ".git", ".venv", "scripts", "docs_static"} for p in rel_parts):
             continue
 
         rel_path = path.relative_to(SOURCE_DIR)
