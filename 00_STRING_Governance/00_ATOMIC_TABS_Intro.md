@@ -1,18 +1,3 @@
----
-pid: 26.04.26.22.14
-domain: company
-category:
-  - content
-type:
-created: 2026-04-16 17:29
-modified: 2026-04-16 17:29
-status:
-tags: []
-author:
-linked-projects:
-  - ATMOS
-rule_lead_staleness_audit_status: queued
----
 [[00_ATMOS-INDEX]]
 
 # TABS — The Ariviti Brand System
