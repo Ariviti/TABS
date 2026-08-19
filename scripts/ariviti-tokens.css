@@ -144,6 +144,12 @@ body,
 }
 
 /* Level 1: Main Category / File Title */
+nav .md-nav--primary>ul>li>a {
+  font-size: 1.2em !important;
+  /* ~18px */
+  font-weight: 900;
+}
+
 nav .md-nav>ul>li>a {
   font-size: 1.1em !important;
   /* ~18px */
