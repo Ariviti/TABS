@@ -1,4 +1,4 @@
-# 05 · Compounds
+# 04 · Compounds
 *Tracks & specifies: .pptx · .docx · .html templates · Email Signatures*
 
 ## What This File Is
@@ -7,15 +7,15 @@ Compounds are complete, sendable artifacts — built from Molecules (code/templa
 
 ## Status Manifest
 
-| Compound | Status | Notes |
-|---|---|---|
-| **This Annexure (`.pptx`)** | 🟢 Built & in circulation | The reference implementation of this entire system — every rule above is demonstrated in a real, shipped deck. Treat it as the visual precedent for any future `.pptx`. |
-| **Email Signature** | 🟡 Fully specified, not yet deployed as a file | Full template below. Needs to be built as `ariviti-signature.mjml` (see Molecules manifest) and pushed via IT/Workspace policy. |
-| **Case Study (`.docx` / web)** | 🟡 Structure specified, no locked template file | Full structure below. Needs a `.dotx` master (Molecules manifest) or a locked web template. |
-| **One-Pager (`.docx` / `.pdf`)** | 🟡 Structure specified, no locked template file | Full structure below. |
-| **Slide Deck (`.pptx`)** | 🟡 Structure specified; this Annexure is a partial precedent | Needs a dedicated `.potx` master separate from this reference document (Molecules manifest). |
-| **LinkedIn Post** | 🟡 Structure specified, text-only compound | No file format — governed entirely by the template below plus the Never List (Strings doc). |
-| **About / Leadership Page (`.html`)** | 🟡 Structure specified, not built | <!-- PRIVATE:START reason="discloses current site gap" -->Currently blocked on real content (named leaders, bios), not on the template — see Brand Health Scorecard, Strings doc.<!-- PRIVATE:END --><!-- PUBLIC:START -->Awaiting content — the template is ready to receive named leadership bios whenever they're finalized.<!-- PUBLIC:END --> |
+| Compound                              | Status                                                      | Notes                                                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------- | ----------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **This Annexure (`.pptx`)**           | 🟢 Built & in circulation                                    | The reference implementation of this entire system — every rule above is demonstrated in a real, shipped deck. Treat it as the visual precedent for any future `.pptx`.                                                                                                                                                                            |
+| **Email Signature**                   | 🟡 Fully specified, not yet deployed as a file               | Full template below. Needs to be built as `ariviti-signature.mjml` (see Molecules manifest) and pushed via IT/Workspace policy.                                                                                                                                                                                                                    |
+| **Case Study (`.docx` / web)**        | 🟡 Structure specified, no locked template file              | Full structure below. Needs a `.dotx` master (Molecules manifest) or a locked web template.                                                                                                                                                                                                                                                        |
+| **One-Pager (`.docx` / `.pdf`)**      | 🟡 Structure specified, no locked template file              | Full structure below.                                                                                                                                                                                                                                                                                                                              |
+| **Slide Deck (`.pptx`)**              | 🟡 Structure specified; this Annexure is a partial precedent | Needs a dedicated `.potx` master separate from this reference document (Molecules manifest).                                                                                                                                                                                                                                                       |
+| **LinkedIn Post**                     | 🟡 Structure specified, text-only compound                   | No file format — governed entirely by the template below plus the Never List (Strings doc).                                                                                                                                                                                                                                                        |
+| **About / Leadership Page (`.html`)** | 🟡 Structure specified, not built                            | <!-- PRIVATE:START reason="discloses current site gap" -->Currently blocked on real content (named leaders, bios), not on the template — see Brand Health Scorecard, Strings doc.<!-- PRIVATE:END --><!-- PUBLIC:START -->Awaiting content — the template is ready to receive named leadership bios whenever they're finalized.<!-- PUBLIC:END --> |
 
 **Legend:** 🟢 Built & in use · 🟡 Specified, not yet compiled into a file · 🔴 Not started
 
@@ -68,12 +68,12 @@ Intelligence Amplified.
 
 ### Do / Don't
 
-| Do | Don't |
-|---|---|
-| Use the symbol icon only (32px), never the full lockup — full lockup at signature scale falls below the 24px minimum size and blurs | Embed the full-color primary lockup as a large banner image |
-| Use web-safe fallback fonts (`Arial, sans-serif`) since Plus Jakarta Sans isn't guaranteed to render in Outlook | Rely on custom fonts rendering correctly across all mail clients |
-| Keep it to 4 lines maximum | Add quotes, social icons, calendar-booking banners, or promotional graphics — every addition is a new maintenance liability and a new place to go off-brand |
-| Update centrally and redistribute (via IT/Google Workspace signature policy if available) | Let each employee hand-edit their own signature file |
+| Do                                                                                                                                  | Don't                                                                                                                                                       |
+| ----------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Use the symbol icon only (32px), never the full lockup — full lockup at signature scale falls below the 24px minimum size and blurs | Embed the full-color primary lockup as a large banner image                                                                                                 |
+| Use web-safe fallback fonts (`Arial, sans-serif`) since Plus Jakarta Sans isn't guaranteed to render in Outlook                     | Rely on custom fonts rendering correctly across all mail clients                                                                                            |
+| Keep it to 4 lines maximum                                                                                                          | Add quotes, social icons, calendar-booking banners, or promotional graphics — every addition is a new maintenance liability and a new place to go off-brand |
+| Update centrally and redistribute (via IT/Google Workspace signature policy if available)                                           | Let each employee hand-edit their own signature file                                                                                                        |
 
 **Why no campaign banners:** signatures are infrastructure, not marketing real estate. Every "temporary" campaign banner outlives the campaign by months and becomes a compliance debt. If a campaign needs promotion, it goes in the newsletter or LinkedIn — never the signature.
 
@@ -139,13 +139,13 @@ Footer: "Intelligence Amplified." + contact
 
 ## Slide Deck Template — Minimum Structure
 
-| Slide | Purpose | Typography |
-|---|---|---|
-| Cover | Wordmark + one-line positioning | Space Grotesk Bold, Indigo gradient background |
-| Problem | Named, quantified, no Ariviti branding yet | Plus Jakarta Sans |
-| Approach | What Ariviti does, specifically | Space Grotesk H2 + body |
-| Proof | 1 proof block per slide, never more | Bold metric, sourced |
-| Close | Single CTA, contact | Orange CTA button |
+| Slide    | Purpose                                    | Typography                                     |
+| -------- | ------------------------------------------ | ---------------------------------------------- |
+| Cover    | Wordmark + one-line positioning            | Space Grotesk Bold, Indigo gradient background |
+| Problem  | Named, quantified, no Ariviti branding yet | Plus Jakarta Sans                              |
+| Approach | What Ariviti does, specifically            | Space Grotesk H2 + body                        |
+| Proof    | 1 proof block per slide, never more        | Bold metric, sourced                           |
+| Close    | Single CTA, contact                        | Orange CTA button                              |
 
 **Do:** one idea per slide, always — this is the Design Philosophy "Clarity" law applied directly.
 **Don't:** build a slide with a bullet list longer than 4 items — split it into two slides.

@@ -1,18 +1,3 @@
----
-pid: 26.04.26.22.14
-domain: company
-category:
-  - content
-type:
-created: 2026-04-16 17:29
-modified: 2026-04-16 17:29
-status:
-tags: []
-author:
-linked-projects:
-  - ATMOS
-rule_lead_staleness_audit_status: queued
----
 [[00_ATMOS-INDEX]]
 
 # TABS — The Ariviti Brand System
@@ -44,10 +29,10 @@ TABS (The Ariviti Brand System)
 
 Two areas named in earlier drafts of this architecture are **not yet authored** anywhere in the system:
 
-| Gap | Status | Notes |
-|---|---|---|
-| Contextual rules for internal memos / informal touchpoints | 🔴 Not yet written | `01-strings.md` → Tone by Format covers five external-facing formats only (web hero, LinkedIn, case study, sales email, leadership bio). Internal-facing tone is a real gap, not an oversight to ignore. |
-| Legal & taxonomy spec (rights, licensing, DAM metadata rules) | 🔴 Not yet written | No file in the system currently governs asset licensing or DAM metadata schema. Needed before the `02_PARTICLES` and `03_ATOMS` asset libraries below scale past a handful of files. |
+| Gap                                                           | Status            | Notes                                                                                                                                                                                                    |
+| ------------------------------------------------------------- | ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Contextual rules for internal memos / informal touchpoints    | 🔴 Not yet written | `01-strings.md` → Tone by Format covers five external-facing formats only (web hero, LinkedIn, case study, sales email, leadership bio). Internal-facing tone is a real gap, not an oversight to ignore. |
+| Legal & taxonomy spec (rights, licensing, DAM metadata rules) | 🔴 Not yet written | No file in the system currently governs asset licensing or DAM metadata schema. Needed before the `02_PARTICLES` and `03_ATOMS` asset libraries below scale past a handful of files.                     |
 
 **Note on "design rules":** earlier drafts of this architecture filed color/typography/logo-clearzone rules under Governance. They don't live there — color and typography rules are in `02-particles.md`, logo clearzone and construction rules are in `03-atoms.md`. Governance in this system is strictly non-visual: positioning, voice, methodology, and decision rights.
 

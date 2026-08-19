@@ -9,14 +9,14 @@ If you're building one of these files, read the "Governed By" column first. That
 
 ## Status Manifest
 
-| File | Purpose | Status | Governed By | Owner |
-|---|---|---|---|---|
-| **`ariviti-brand.potx`** | Locked PowerPoint master — theme colors, slide masters, layouts pre-built | 🔴 Not yet built | Particles (Color, Type Scale) + Compounds → Slide Deck Template | Brand owner |
-| **`ariviti-brand.dotx`** | Locked Word master — styles for headings, body, case study/one-pager structure | 🔴 Not yet built | Particles (Typography) + Compounds → Case Study & One-Pager Templates | Brand owner |
-| **`ariviti-tokens.css`** | CSS custom properties for every color and type value | 🟡 Partially specified — property names exist, full file not built | Particles → Color Swatches "File Formats to Maintain"; Particles → Typography | Web/product engineering |
-| **`ariviti-components.jsx`** | React component library implementing the Component Library | 🔴 Not yet built | Strings → Atomic Design Methodology, "Component Library — Minimum Viable Set" | Web/product engineering |
-| **`ariviti-signature.mjml`** | Responsive email-signature markup (replaces raw inline-HTML draft) | 🔴 Not yet built | Compounds → Email Signatures (spec is written; MJML compile step is the gap) | IT / Marketing ops |
-| **`ariviti-tokens.json`** | Design-token export (colors, type scale) for Figma/pipeline consumption | 🔴 Not yet built | Particles doc, in full | Brand owner |
+| File                         | Purpose                                                                        | Status                                                            | Governed By                                                                   | Owner                   |
+| ---------------------------- | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------------------------------------- | ----------------------- |
+| **`ariviti-brand.potx`**     | Locked PowerPoint master — theme colors, slide masters, layouts pre-built      | 🔴 Not yet built                                                   | Particles (Color, Type Scale) + Compounds → Slide Deck Template               | Brand owner             |
+| **`ariviti-brand.dotx`**     | Locked Word master — styles for headings, body, case study/one-pager structure | 🔴 Not yet built                                                   | Particles (Typography) + Compounds → Case Study & One-Pager Templates         | Brand owner             |
+| **`ariviti-tokens.css`**     | CSS custom properties for every color and type value                           | 🟡 Partially specified — property names exist, full file not built | Particles → Color Swatches "File Formats to Maintain"; Particles → Typography | Web/product engineering |
+| **`ariviti-components.jsx`** | React component library implementing the Component Library                     | 🔴 Not yet built                                                   | Strings → Atomic Design Methodology, "Component Library — Minimum Viable Set" | Web/product engineering |
+| **`ariviti-signature.mjml`** | Responsive email-signature markup (replaces raw inline-HTML draft)             | 🔴 Not yet built                                                   | Compounds → Email Signatures (spec is written; MJML compile step is the gap)  | IT / Marketing ops      |
+| **`ariviti-tokens.json`**    | Design-token export (colors, type scale) for Figma/pipeline consumption        | 🔴 Not yet built                                                   | Particles doc, in full                                                        | Brand owner             |
 
 **Legend:** 🟢 Built & in use · 🟡 Partially specified · 🔴 Not yet built
 
