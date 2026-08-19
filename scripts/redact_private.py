@@ -2,7 +2,7 @@
 """
 redact_private.py
 
-Runs at build time, never by hand. Copies every source .md file into the
+Runs at build time, never by hand. It copies every source .md file into the
 mkdocs docs/ folder, stripping anything wrapped in PRIVATE markers along
 the way. If a PRIVATE block is immediately followed by a PUBLIC block,
 the PUBLIC block's content is kept (unwrapped) in its place.
