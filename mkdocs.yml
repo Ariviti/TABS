@@ -1,12 +1,12 @@
 site_name: Ariviti Brand System
 site_description: TABS — The Ariviti Brand System. Logo, color, typography, voice, and templates.
-site_url: https://YOUR-ORG.github.io/tabs/   # update after first deploy
+site_url: https://ariviti.github.io/TABS
 
 theme:
   name: material
-  logo: assets/symbol-white.png
-  favicon: assets/favicon.png
-  font: false   # we load Space Grotesk / Plus Jakarta Sans ourselves — see ariviti-tokens.css
+  logo: 02_ATOM_Logo_Core/PNG/logo_full_dark_3237x1202.png
+  favicon: 02_ATOM_Logo_Core/PNG/logo_symbol_dark_1202x1202.png
+  font: false
   palette:
     scheme: default
     primary: custom
@@ -19,7 +19,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/ariviti-tokens.css
+  - ariviti-tokens.css
 
 markdown_extensions:
   - tables
@@ -31,17 +31,12 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Strings (Rules): 01-strings.md
+  - System Map: 00_ATOMIC_TABS_Intro/00_ATOMIC_TABS_Intro.md
+  - Strings (Rules): 00_STRING_Governance/00_STRING_Governance.md
   - Particles (Values):
-      - Color, Type & Accessibility: 02-particles.md
+      - Color, Type & Accessibility: 02_PARTICLE_Color_Typefaces/02_PARTICLE_Color_Typefaces.md
   - Atoms (Identity):
-      - Logo & Photography: 03-atoms.md
-  - Molecules (Build Manifest): 04-molecules.md
-  - Compounds (Templates & Downloads): 05-compounds.md
+      - Logo & Photography: 02_ATOMS_Logos_Imagery/02_ATOMS_Logos_Imagery.md
+  - Molecules (Build Manifest): 03_MOLECULE_Logos_Templates/03_MOLECULE_Logos_Templates.md
+  - Compounds (Templates & Downloads): 05_COMPOUND_Identity_References/05_COMPOUND_Identity_References.md
   - Downloads: downloads.md
-  - System Map: 00-intro.md
-
-# This file is the ONLY place theme/nav config lives. The .md files themselves
-# are untouched by this config — MkDocs reads them as-is (post-redaction, see
-# scripts/redact_private.py). Never hand-edit anything under the docs/ folder;
-# it is a build output, not a source file, and is gitignored.
