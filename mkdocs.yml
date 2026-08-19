@@ -4,6 +4,8 @@ site_url: https://tabs.ariviti.com
 
 
 markdown_extensions:
+  - attr_list            # Enables inline image sizing and CSS class attributes
+  - md_in_html
   - tables
   - toc:
       permalink: true
@@ -18,7 +20,7 @@ nav:
   - Particles (Colors, Fonts): 00_STRING_Governance/01_PARTICLE_Color_Typefaces.md
   - Atoms (Core Logos & Images): 00_STRING_Governance/02_ATOMS_Logos_Imagery.md
   - Molecules (Other Logos & Templates): 00_STRING_Governance/03_MOLECULE_Logos_Templates.md
-  - Compounds (References): 00_STRING_Governance/05_COMPOUND_Identity_References.md
+  - Compounds (References): 00_STRING_Governance/04_COMPOUND_Identity_References.md
 
 extra:
   cdn_url: "https://cdn.ariviti.com/tabs"
