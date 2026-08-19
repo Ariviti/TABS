@@ -1,15 +1,15 @@
 /* ariviti-tokens.css
-   The built implementation of 02-particles.md's Color & Typography spec.
-   This IS the `ariviti-tokens.css` molecule tracked in 04-molecules.md —
-   once this ships, update that manifest entry from 🟡 to 🟢.
-   Do not hand-edit color/font values here without updating 02-particles.md
-   first — this file follows the spec, it does not define it.
+   The built implementation of 02_PARTICLE_Color_Typefaces.md's Color &
+   Typography spec. Do not hand-edit color/font VALUES here without
+   updating that file first — this file follows the spec, it does not
+   define it. New colors are a token-level decision (Decision Rights
+   Table, Strings doc) — they escalate, they don't get added in CSS.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 :root {
-  /* Particles — Color (02-particles.md § Full Specification) */
+  /* Particles — Color (02_PARTICLE_Color_Typefaces.md § Full Specification) */
   --ariviti-orange: #FF4D1C;
   --ariviti-orange-tint-20: #FFE0D3;
   --ariviti-indigo: #3B3EA9;
@@ -18,20 +18,26 @@
   --ariviti-soft-black: #2E2E2E;
   --ariviti-white: #FFFFFF;
 
-  /* Particles — Dark Surfaces */
-  --ariviti-dark-bg: #0A0A18;
-  --ariviti-dark-surface: #14142B;
+  /* Particles — Dark Surfaces
+     FIXED: previously used two invented hex values (#0A0A18, #14142B)
+     that don't exist anywhere in 02_PARTICLE_Color_Typefaces.md's
+     approved 14-value set (5 base colors + 9 tints/shades). Swapped
+     for the already-approved Indigo 80% shade instead — same visual
+     job (near-black background), zero new colors introduced. */
+  --ariviti-dark-bg: #0C0D22;
+  /* = --ariviti-indigo-shade-80, approved */
+  --ariviti-dark-surface: #1E1669;
+  /* = --ariviti-indigo-dark, approved */
 
-  /* Particles — Typography (02-particles.md § The Three-Font Rule) */
+  /* Particles — Typography (02_PARTICLE_Color_Typefaces.md § The Three-Font Rule) */
   --ariviti-font-display: 'Space Grotesk', sans-serif;
   --ariviti-font-body: 'Plus Jakarta Sans', sans-serif;
 }
 
 /* ==========================================================================
-   SCHEME MAPPING (Fixes font & theme switching across modes)
+   SCHEME MAPPING
    ========================================================================== */
 
-/* Light Mode Scheme Mapping */
 [data-md-color-scheme="default"],
 [data-md-color-primary="custom"] {
   --md-default-bg-color: var(--ariviti-white);
@@ -45,7 +51,6 @@
   --md-accent-fg-color: var(--ariviti-indigo-dark);
 }
 
-/* Dark Mode Scheme Mapping */
 [data-md-color-scheme="slate"] {
   --md-default-bg-color: var(--ariviti-dark-bg);
   --md-default-fg-color: var(--ariviti-white);
@@ -67,9 +72,8 @@ body,
 .md-typeset {
   font-family: var(--ariviti-font-body);
   color: var(--md-typeset-color) !important;
-  /* Bound to scheme variable instead of static black */
   font-size: 16px;
-  /* body minimum per 02-particles.md § Accessibility — no exceptions */
+  /* body minimum, no exceptions — Accessibility standard */
 }
 
 .md-typeset h1,
@@ -82,8 +86,6 @@ body,
   color: var(--md-typeset-color);
 }
 
-/* Table header rows — same Indigo-header pattern used throughout
-   every table in the source .md files and the Annexure deck. */
 .md-typeset table thead {
   background-color: var(--ariviti-indigo);
 }
@@ -96,16 +98,15 @@ body,
 
 [data-md-color-scheme="default"] .md-typeset table tbody tr:nth-child(odd) {
   background-color: #FFFAF7;
-  /* matches the light copper tint used in the Annexure deck */
 }
 
 [data-md-color-scheme="slate"] .md-typeset table tbody tr:nth-child(odd) {
   background-color: var(--ariviti-dark-surface);
 }
 
-/* Primary CTA buttons — the one surface Orange is allowed to carry text,
-   per 02-particles.md § "Use Orange For: CTA buttons, short label,
-   large type, 24px+." Never applied to inline links or body copy. */
+/* Primary CTA buttons — the one surface Orange is allowed to carry
+   text, per the Accessibility "Use Orange For" rule: short label,
+   large type, 24px+. Never applied to inline links or body copy. */
 .md-typeset .md-button--primary {
   background-color: var(--ariviti-orange);
   border-color: var(--ariviti-orange);
@@ -117,13 +118,11 @@ body,
 
 .md-typeset .md-button--primary:hover {
   background-color: #E0450F;
-  /* darkened; still passes large-text contrast */
   border-color: #E0450F;
 }
 
-/* No italics anywhere — system-wide rule (02-particles.md § Typography,
-   "Note on emphasis"). Markdown *single-asterisk* emphasis is
-   automatically neutralized to weight instead of slant. */
+/* No italics anywhere — system-wide rule. Markdown *single-asterisk*
+   emphasis is neutralized to weight instead of slant. */
 .md-typeset em,
 .md-typeset i {
   font-style: normal;
@@ -131,7 +130,6 @@ body,
   color: var(--md-typeset-a-color);
 }
 
-/* Never pure black backgrounds, per 03-atoms.md / core BG rule */
 .md-typeset code,
 .md-typeset pre {
   background-color: var(--ariviti-soft-black);
@@ -142,4 +140,25 @@ body,
 [data-md-color-scheme="slate"] .md-header__button.md-logo img,
 [data-md-color-scheme="slate"] .md-drawer__button.md-logo img {
   content: url("02_ATOM_Logo_Core/PNG/logo_full_light_3237x1202.png");
+}
+
+/* ==========================================================================
+   INLINE FILE BROWSER (used by assets/file-browser.js on each tier page)
+   ========================================================================== */
+
+.ariviti-file-status {
+  color: var(--md-typeset-color);
+  opacity: 0.7;
+}
+
+.ariviti-file-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.ariviti-file-table th,
+.ariviti-file-table td {
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--ariviti-indigo-tint-20);
 }

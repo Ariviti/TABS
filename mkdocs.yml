@@ -50,22 +50,7 @@ theme:
     - content.code.annotate
 
 extra_css:
-  - ariviti-tokens.css
+  - scripts/ariviti-tokens.css
 
-  # Power Features & Layout Enhancements
-  features:
-    # Header & Navigation
-    - navigation.instant        # Turbo-charges page loads (SPA-like navigation)
-    - navigation.tracking       # Updates browser URL as you scroll through headings
-    - navigation.sections       # Groups sub-items cleanly in side drawer
-    - navigation.expand         # Expands navigation tree by default
-    - navigation.top            # "Back to top" smooth-scroll button
-    - navigation.footer         # Next/Previous page links in footer
-
-    # Content & Search
-    - toc.integrate             # Merges Table of Contents into left sidebar for clean reading
-    - search.suggest            # Live search auto-completion
-    - search.highlight          # Highlights matched search terms on the page
-    - search.share              # Allows sharing deep links directly to search results
-    - content.code.copy         # Adds a 1-click copy button to code blocks
-    - content.code.annotate     # Enables inline code comments/annotations
+extra_javascript:
+  - scripts/file-browser.js
