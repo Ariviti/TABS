@@ -2,8 +2,8 @@
 """
 redact_private.py
 
-Runs at build time. Copies source markdown files from subfolders into docs/,
-preserving folder hierarchy and stripping PRIVATE blocks along the way.
+Build step: Process all markdown files, strip PRIVATE blocks,
+and stage everything into docs/ for MkDocs.
 """
 
 import re
@@ -11,17 +11,7 @@ import shutil
 from pathlib import Path
 
 SOURCE_DIR = Path(__file__).resolve().parent.parent          # repo root
-BUILD_DIR = SOURCE_DIR / "docs"                             # mkdocs input folder
-STATIC_DIR = SOURCE_DIR / "docs_static"                     # static files (index.md, downloads.md, css, images)
-
-SOURCE_FILES = [
-    "00_STRING_Governance/00_ATOMIC_TABS_Intro.md",
-    "00_STRING_Governance/00_STRING_Governance.md",
-    "00_STRING_Governance/02_PARTICLE_Color_Typefaces.md",
-    "00_STRING_Governance/02_ATOMS_Logos_Imagery.md",
-    "00_STRING_Governance/03_MOLECULE_Logos_Templates.md",
-    "00_STRING_Governance/05_COMPOUND_Identity_References.md",
-]
+BUILD_DIR = SOURCE_DIR / "docs"                             # staged build folder
 
 PRIVATE_BLOCK = re.compile(
     r"<!--\s*PRIVATE:START.*?-->.*?<!--\s*PRIVATE:END\s*-->"
@@ -38,49 +28,57 @@ def redact(text: str) -> str:
 
 
 def main() -> None:
-    BUILD_DIR.mkdir(exist_ok=True)
-    redacted_count = 0
+    # Reset build folder
+    if BUILD_DIR.exists():
+        shutil.rmtree(BUILD_DIR)
+    BUILD_DIR.mkdir(parents=True, exist_ok=True)
 
-    for rel_path_str in SOURCE_FILES:
-        src_path = SOURCE_DIR / rel_path_str
-        if not src_path.exists():
-            print(f"  ! skipped (not found): {rel_path_str}")
+    redacted_count = 0
+    processed_count = 0
+
+    # 1. Process all .md files in the repo (including root index.md & subfolders)
+    for path in SOURCE_DIR.rglob("*.md"):
+        rel_parts = path.relative_to(SOURCE_DIR).parts
+        # Skip internal build/script/git folders
+        if any(p in {"docs", "site", ".git", ".venv", "scripts"} for p in rel_parts):
             continue
 
-        raw = src_path.read_text(encoding="utf-8")
+        rel_path = path.relative_to(SOURCE_DIR)
+        raw = path.read_text(encoding="utf-8")
         clean = redact(raw)
 
-        # Create destination subfolder inside docs/ if it doesn't exist
-        out_path = BUILD_DIR / rel_path_str
+        out_path = BUILD_DIR / rel_path
         out_path.parent.mkdir(parents=True, exist_ok=True)
 
         if clean != raw:
             redacted_count += 1
-            print(f"  ✓ redacted {raw.count('PRIVATE:START')} block(s) in {rel_path_str}")
+            print(f"  ✓ redacted {raw.count('PRIVATE:START')} block(s) in {rel_path}")
         else:
-            print(f"  · no redaction needed: {rel_path_str}")
+            print(f"  · processed: {rel_path}")
 
         out_path.write_text(clean, encoding="utf-8")
+        processed_count += 1
 
-    # Copy static assets (index.md, downloads.md, stylesheets, images)
-    if STATIC_DIR.exists():
-        for item in STATIC_DIR.rglob("*"):
-            if item.is_file():
-                rel = item.relative_to(STATIC_DIR)
-                dest = BUILD_DIR / rel
-                dest.parent.mkdir(parents=True, exist_ok=True)
-                shutil.copy2(item, dest)
-        print(f"  ✓ copied static assets from {STATIC_DIR.name}/")
+    # 2. Copy CSS tokens file to docs/
+    css_file = SOURCE_DIR / "ariviti-tokens.css"
+    if css_file.exists():
+        shutil.copy2(css_file, BUILD_DIR / "ariviti-tokens.css")
+        print("  ✓ copied ariviti-tokens.css")
 
-    # Sanity check: fail build loudly if a private marker leaked
+    # 3. Copy logo images folder to docs/
+    logo_dir = SOURCE_DIR / "02_ATOM_Logo_Core"
+    if logo_dir.exists():
+        shutil.copytree(logo_dir, BUILD_DIR / "02_ATOM_Logo_Core")
+        print(f"  ✓ copied logo assets from {logo_dir.name}/")
+
+    # Sanity check: prevent secret leaks
     for out_path in BUILD_DIR.rglob("*.md"):
         if "PRIVATE:" in out_path.read_text(encoding="utf-8"):
             raise SystemExit(
-                f"BUILD FAILED: unresolved PRIVATE marker leaked into {out_path.relative_to(BUILD_DIR)}. "
-                f"Check marker syntax — build must not publish unredacted content."
+                f"BUILD FAILED: PRIVATE marker leaked into {out_path.relative_to(BUILD_DIR)}."
             )
 
-    print(f"\nDone. {redacted_count} file(s) had content redacted for the public build.")
+    print(f"\nDone. Processed {processed_count} markdown file(s) ({redacted_count} redacted).")
 
 
 if __name__ == "__main__":
