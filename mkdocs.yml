@@ -36,8 +36,8 @@ theme:
     # Light Mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: custom
-      accent: custom
+      primary: indigo      # Sets Light Mode Header Color
+      accent: indigo
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -45,8 +45,8 @@ theme:
     # Dark Mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: custom
-      accent: custom
+      primary: black       # Sets Dark Mode Header Color
+      accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
