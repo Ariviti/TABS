@@ -2,9 +2,6 @@ site_name: Ariviti Brand System
 site_description: TABS — The Ariviti Brand System. Logo, color, typography, voice, and templates.
 site_url: https://tabs.ariviti.com
 
-extra_css:
-  - ariviti-tokens.css
-
 markdown_extensions:
   - tables
   - toc:
@@ -27,27 +24,32 @@ extra:
 
 theme:
   name: material
-  logo: 02_ATOM_Logo_Core/PNG/logo_full_dark_3237x1202.png
+  logo: 02_ATOM_Logo_Core/PNG/logo_full_light_3237x1202.png  # White/Light logo for dark background
   favicon: 02_ATOM_Logo_Core/PNG/logo_symbol_dark_1202x1202.png
   font: false
 
-  # Light/Dark Toggle (Required for [data-md-color-scheme] CSS selectors)
+  # Single Slate Theme (No dark/light toggle button)
   palette:
-    # Light Mode
-    - scheme: default
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    scheme: slate
+    primary: custom
+    accent: custom
 
-    # Dark Mode
-    - scheme: slate
-      primary: custom
-      accent: custom
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+extra_css:
+  - ariviti-tokens.css
 
   # Power Features & Layout Enhancements
   features:

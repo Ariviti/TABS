@@ -1,15 +1,11 @@
 /* ariviti-tokens.css
-   The built implementation of 02-particles.md's Color & Typography spec.
-   This IS the `ariviti-tokens.css` molecule tracked in 04-molecules.md —
-   once this ships, update that manifest entry from 🟡 to 🟢.
-   Do not hand-edit color/font values here without updating 02-particles.md
-   first — this file follows the spec, it does not define it.
+   Single-theme Replit-inspired neutral dark implementation.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap');
 
 :root {
-  /* Particles — Color (02-particles.md § Full Specification) */
+  /* Particles — Color Tokens */
   --ariviti-orange: #FF4D1C;
   --ariviti-orange-tint-20: #FFE0D3;
   --ariviti-indigo: #3B3EA9;
@@ -18,45 +14,30 @@
   --ariviti-soft-black: #2E2E2E;
   --ariviti-white: #FFFFFF;
 
-  /* Particles — Dark Surfaces */
-  --ariviti-dark-bg: #0A0A18;
-  --ariviti-dark-surface: #14142B;
+  /* Replit/IDE Neutral Gray Palette */
+  --replit-bg: #121316;             /* Canvas background */
+  --replit-surface: #1C1E24;        /* Sidebar / Card surfaces */
+  --replit-surface-hover: #262930;  /* Hover states / zebra rows */
+  --replit-border: #2B2E36;         /* Subtle borders */
+  --replit-text-main: #EDEDED;      /* High contrast body text */
+  --replit-text-muted: #9BA1B0;     /* Muted metadata text */
 
-  /* Particles — Typography (02-particles.md § The Three-Font Rule) */
+  /* Particles — Typography */
   --ariviti-font-display: 'Space Grotesk', sans-serif;
   --ariviti-font-body: 'Plus Jakarta Sans', sans-serif;
-}
 
-/* ==========================================================================
-   SCHEME MAPPING (Fixes font & theme switching across modes)
-   ========================================================================== */
+  /* Material Theme Core Mappings */
+  --md-default-bg-color: var(--replit-bg);
+  --md-default-fg-color: var(--replit-text-main);
+  --md-typeset-color: var(--replit-text-main);
+  --md-typeset-a-color: #6366F1;   /* Soft indigo link accent */
 
-/* Light Mode Scheme Mapping */
-[data-md-color-scheme="default"],
-[data-md-color-primary="custom"] {
-  --md-default-bg-color: var(--ariviti-white);
-  --md-default-fg-color: var(--ariviti-soft-black);
-  --md-typeset-color: var(--ariviti-soft-black);
-  --md-typeset-a-color: var(--ariviti-indigo);
-
-  --md-primary-fg-color: var(--ariviti-indigo);
-  --md-primary-fg-color--light: var(--ariviti-indigo-tint-20);
-  --md-primary-fg-color--dark: var(--ariviti-indigo-dark);
-  --md-accent-fg-color: var(--ariviti-indigo-dark);
-}
-
-/* Dark Mode Scheme Mapping */
-[data-md-color-scheme="slate"] {
-  --md-default-bg-color: var(--ariviti-dark-bg);
-  --md-default-fg-color: var(--ariviti-white);
-  --md-typeset-color: var(--ariviti-white);
-  --md-typeset-a-color: var(--ariviti-orange-tint-20);
-
-  --md-primary-fg-color: var(--ariviti-dark-bg);
-  --md-primary-fg-color--light: var(--ariviti-dark-surface);
-  --md-primary-fg-color--dark: var(--ariviti-indigo-dark);
-  --md-accent-fg-color: var(--ariviti-indigo-dark);
-  --md-sidebar-bg-color: var(--ariviti-dark-bg);
+  /* Header & Navigation Surfaces */
+  --md-primary-fg-color: var(--replit-bg);
+  --md-primary-fg-color--light: var(--replit-surface);
+  --md-primary-fg-color--dark: var(--replit-bg);
+  --md-accent-fg-color: var(--ariviti-orange);
+  --md-sidebar-bg-color: var(--replit-bg);
 }
 
 /* ==========================================================================
@@ -66,10 +47,9 @@
 body,
 .md-typeset {
   font-family: var(--ariviti-font-body);
-  color: var(--md-typeset-color) !important;
-  /* Bound to scheme variable instead of static black */
+  color: var(--replit-text-main) !important;
   font-size: 16px;
-  /* body minimum per 02-particles.md § Accessibility — no exceptions */
+  background-color: var(--replit-bg);
 }
 
 .md-typeset h1,
@@ -79,33 +59,31 @@ body,
   font-family: var(--ariviti-font-display);
   font-weight: 700;
   letter-spacing: -0.01em;
-  color: var(--md-typeset-color);
+  color: var(--replit-text-main);
 }
 
-/* Table header rows — same Indigo-header pattern used throughout
-   every table in the source .md files and the Annexure deck. */
+/* Header border for clean structural separation */
+.md-header {
+  border-bottom: 1px solid var(--replit-border);
+}
+
+/* Table styling in dark neutral */
 .md-typeset table thead {
   background-color: var(--ariviti-indigo);
 }
-
 .md-typeset table thead th {
   color: var(--ariviti-white) !important;
   font-family: var(--ariviti-font-body);
   font-weight: 700;
 }
-
-[data-md-color-scheme="default"] .md-typeset table tbody tr:nth-child(odd) {
-  background-color: #FFFAF7;
-  /* matches the light copper tint used in the Annexure deck */
+.md-typeset table tbody tr:nth-child(odd) {
+  background-color: var(--replit-surface);
+}
+.md-typeset table tbody tr:nth-child(even) {
+  background-color: var(--replit-bg);
 }
 
-[data-md-color-scheme="slate"] .md-typeset table tbody tr:nth-child(odd) {
-  background-color: var(--ariviti-dark-surface);
-}
-
-/* Primary CTA buttons — the one surface Orange is allowed to carry text,
-   per 02-particles.md § "Use Orange For: CTA buttons, short label,
-   large type, 24px+." Never applied to inline links or body copy. */
+/* Primary CTA Buttons */
 .md-typeset .md-button--primary {
   background-color: var(--ariviti-orange);
   border-color: var(--ariviti-orange);
@@ -114,32 +92,23 @@ body,
   font-weight: 700;
   font-size: 1rem;
 }
-
 .md-typeset .md-button--primary:hover {
   background-color: #E0450F;
-  /* darkened; still passes large-text contrast */
   border-color: #E0450F;
 }
 
-/* No italics anywhere — system-wide rule (02-particles.md § Typography,
-   "Note on emphasis"). Markdown *single-asterisk* emphasis is
-   automatically neutralized to weight instead of slant. */
+/* Italics Neutralization Rule */
 .md-typeset em,
 .md-typeset i {
   font-style: normal;
   font-weight: 600;
-  color: var(--md-typeset-a-color);
+  color: var(--ariviti-orange-tint-20);
 }
 
-/* Never pure black backgrounds, per 03-atoms.md / core BG rule */
+/* Code Blocks */
 .md-typeset code,
 .md-typeset pre {
-  background-color: var(--ariviti-soft-black);
-  color: var(--ariviti-white);
-}
-
-/* Dark Mode Logo Switch */
-[data-md-color-scheme="slate"] .md-header__button.md-logo img,
-[data-md-color-scheme="slate"] .md-drawer__button.md-logo img {
-  content: url("02_ATOM_Logo_Core/PNG/logo_full_light_3237x1202.png");
+  background-color: var(--replit-surface);
+  color: var(--replit-text-main);
+  border: 1px solid var(--replit-border);
 }
