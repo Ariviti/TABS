@@ -19,7 +19,7 @@ import re
 import shutil
 from pathlib import Path
 
-SOURCE_DIR = Path(__file__).parent.parent          # repo root
+SOURCE_DIR = Path(__file__).resolve().parent.parent          # repo root
 BUILD_DIR = SOURCE_DIR / "docs"                     # mkdocs input folder (gitignored)
 STATIC_DIR = SOURCE_DIR / "docs_static"             # committed: index.md, css, images — never redacted
 
