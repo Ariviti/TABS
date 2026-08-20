@@ -3,7 +3,10 @@
 export async function onRequest(context) {
     const { request, env } = context;
     const url = new URL(request.url);
-    const prefix = url.searchParams.get("prefix") || "";
+    const rawPrefix = url.searchParams.get("prefix") || "";
+
+    // Ensure prefix ends with a slash if provided (e.g. "04_MOLECULES/")
+    const prefix = rawPrefix ? (rawPrefix.endsWith('/') ? rawPrefix : `${rawPrefix}/`) : '';
 
     // Verify R2 bucket binding exists
     if (!env.BUCKET) {
@@ -16,13 +19,22 @@ export async function onRequest(context) {
     const CDN_DOMAIN = "https://cdn.ariviti.com";
 
     try {
-        // Query R2 bucket for objects matching the prefix
-        const listing = await env.BUCKET.list({ prefix });
+        // Query R2 bucket with delimiter: '/' to isolate immediate subfolders
+        const listing = await env.BUCKET.list({ prefix, delimiter: '/' });
 
+        // Extract immediate subfolder paths returned by R2
+        const folders = (listing.delimitedPrefixes || []).map((p) => {
+            const cleanPath = p.replace(/\/$/, "");
+            return {
+                name: cleanPath.split("/").pop(),
+                prefix: p
+            };
+        });
+
+        // Filter and format immediate files in the target directory
         const files = listing.objects
             .filter((obj) => !obj.key.endsWith("/")) // Exclude folder placeholders
             .map((obj) => {
-                // Calculate human-readable size
                 const bytes = obj.size;
                 let sizeHuman = bytes + " B";
                 if (bytes >= 1024 * 1024) {
@@ -31,7 +43,6 @@ export async function onRequest(context) {
                     sizeHuman = (bytes / 1024).toFixed(1) + " KB";
                 }
 
-                // Extract filename from object key path
                 const name = obj.key.split("/").pop();
 
                 return {
@@ -45,11 +56,11 @@ export async function onRequest(context) {
             });
 
         return new Response(
-            JSON.stringify({ grouped: { files } }),
+            JSON.stringify({ folders, files, grouped: { files } }), // Included 'grouped' for backward compatibility
             {
                 headers: {
                     "Content-Type": "application/json",
-                    "Cache-Control": "public, max-age=60" // Cache response for 1 minute
+                    "Cache-Control": "public, max-age=60"
                 }
             }
         );
