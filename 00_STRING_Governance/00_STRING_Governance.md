@@ -3,7 +3,7 @@
 
 Strings are the governing laws — the rules that don't have a hex code or a font size, but that every particle, atom, molecule, and compound in this system must trace back to. If a component, a sentence, or a decision can't be justified against something in this file, it isn't on-system.
 
-- [Download Brand Guidelines](#brand-guidelines-downloads-anchor)
+- [Download Brand Guidelines](/00_STRING_Governance/README.md)
 
 ---
 
@@ -289,6 +289,3 @@ Every person producing external content — internal or agency — completes a *
 ### Final Principle
 
 **A brand system a two-person team can't operate without constant senior review isn't a system — it's a bottleneck wearing a style guide's clothes.** Every rule in this file is written to be self-enforcing: templates that make compliance the default, a scorecard that makes fragility visible, and a decision-rights table that makes escalation the exception, not the norm.
-
-## Download Brand Guidelines {#brand-guidelines-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/00_STRING_Governance/"></div>

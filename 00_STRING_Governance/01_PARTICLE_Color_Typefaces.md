@@ -1,9 +1,12 @@
 # 01 · Particles
 *Contains: Color Swatches · Typography System · Accessibility Standards*
 
-Particles are the raw, indivisible values — hex codes, type scales, contrast ratios. Every component in the system (see Strings → Atomic Design Methodology) is built by naming a purposeful application of these particles. Get this file wrong and every downstream asset inherits the error.
+- [Download Color Swatches](/01_PARTICLE_Color/README.md
+- 
+- [Download Typefaces](/01_PARTICLE_Typefaces/README.md
 
-- [Download Typefaces](#typeface-downloads-anchor)
+Particles are the raw, indivisible values — hex codes, type scales, contrast ratios. Every component in the system (see Strings → Atomic Design Methodology) is built by naming a purposeful application of these particles. Get this file wrong and every downstream asset inherits the error.
+)
  
 ---
 
@@ -124,10 +127,6 @@ Not addressed in core BG — filling the gap, since metrics are central to Evide
 | Keep body text at 16px minimum on every surface, no exceptions                                                           | Shrink body copy to fit a layout — resize the layout instead                                                        |
 | Use weight and size to create hierarchy                                                                                  | Use color alone to create hierarchy (fails accessibility, see Part 3 below)                                         |
 | Left-align body text                                                                                                     | Justify body text (creates uneven word-spacing "rivers," reads as low-budget)                                       |
-
-
-### Download Typefaces {#typeface-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/01_PARTICLE_Typefaces/"></div>
 
 ---
 

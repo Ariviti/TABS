@@ -1,9 +1,7 @@
 # 04 · Compounds
 *Tracks & specifies: .pptx · .docx · .html templates · Email Signatures*
 
-- [Download Identity Templates](#identity-templates-downloads-anchor)
-
-- [Download Reference Templates](#reference-templates-downloads-anchor)
+- [Download Reference Templates](/04_COMPOUND_References/README.md)
 
 ## What This File Is
 
@@ -182,14 +180,6 @@ For each leader:
 ```
 
 **Why this template exists:** the current About page has no named leadership — this directly undercuts "Human-led" as a brand trait and removes another GEO-citable structure (named-person + credential is exactly what LLMs surface for "who runs Ariviti" style queries).
-
-
-## Download Identity Templates {#identity-templates-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/04_COMPOUND_Identity/"></div>
-
-
-## Download Reference Templates {#reference-templates-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/04_COMPOUND_References/"></div>
 
 ---
 

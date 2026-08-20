@@ -1,19 +1,15 @@
 # 03 · Molecules
 *Tracks: .potx · .dotx · .css · .jsx · .mjml · .json*
 
-- [Download Derived Logos](#derived-logos-downloads-anchor)
+- [Download Derived Logos](/03_MOLECULE_Logo_Derivatives/README.md)
 
-- [Download Core Templates](#core-template-downloads-anchor)
+- [Download Core Templates](/03_MOLECULE_Templates/README.md)
 
 ## What This File Is (and Isn't)
 
 Molecules are not prose — they're working files. This document does not restate brand rules; it tracks **which template/code files exist, which don't, and which upstream document governs each one's build.** When a molecule is built, it must be built strictly from the Strings, Particles, and Atoms documents — never re-derived from memory or vibes.
 
 If you're building one of these files, read the "Governed By" column first. That document is the spec. This manifest just tells you the file is needed and where the spec lives.
-
-
-## Download Derived Logos {#derived-logos-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/03_MOLECULE_Logo_Derivatives/"></div>
 
 ## Status Manifest
 
@@ -27,9 +23,6 @@ If you're building one of these files, read the "Governed By" column first. That
 | **`ariviti-tokens.json`**    | Design-token export (colors, type scale) for Figma/pipeline consumption        | 🔴 Not yet built                                                   | Particles doc, in full                                                        | Brand owner             |
 
 **Legend:** 🟢 Built & in use · 🟡 Partially specified · 🔴 Not yet built
-
-## Download Core Templates {#core-template-downloads-anchor}
-<div class="ariviti-file-list" data-r2-prefix="tabs/03_MOLECULE_Templates/"></div>
 
 ## Build Principles (apply to every molecule above)
 
