@@ -104,6 +104,43 @@ body,
   background-color: var(--ariviti-dark-surface);
 }
 
+/* ==========================================================================
+   INLINE LINK HOVER STATES
+   ========================================================================== */
+
+/* Light Mode Link Hovers */
+[data-md-color-scheme="default"] .md-typeset a {
+  color: var(--ariviti-indigo);
+  text-decoration: underline;
+  text-decoration-color: var(--ariviti-indigo-tint-20);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+[data-md-color-scheme="default"] .md-typeset a:hover,
+[data-md-color-scheme="default"] .md-typeset a:focus {
+  color: var(--ariviti-orange);
+  text-decoration-color: var(--ariviti-orange);
+}
+
+/* Dark Mode (Slate) Link Hovers */
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: var(--ariviti-orange-tint-20);
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 224, 211, 0.3);
+  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover,
+[data-md-color-scheme="slate"] .md-typeset a:focus {
+  color: var(--ariviti-orange);
+  text-decoration-color: var(--ariviti-orange);
+}
+
+/* Exclude primary action buttons from inline link hover styles */
+.md-typeset .md-button {
+  text-decoration: none !important;
+}
+
 /* Primary CTA buttons — the one surface Orange is allowed to carry
    text, per the Accessibility "Use Orange For" rule: short label,
    large type, 24px+. Never applied to inline links or body copy. */
