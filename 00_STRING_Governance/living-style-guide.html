@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ariviti Brand System — Living Style Guide</title>
+<style>
+  :root {
+    --orange: #FF4D1C; --orange-on-light: #C23509; --orange-on-dark: #FF6A3D;
+    --indigo: #3B3EA9; --indigo-dark: #1E1669;
+    --black: #2E2E2E; --white: #FFFFFF;
+    --mist: #F4F4F8; --mist-2: #ECEDF6; --line: #E1E2EC;
+    --gray: #6B6B76; --gray-light: #9A9AA6;
+    --success: #116B3A; --success-bg: #E9F8EF;
+    --warning: #8C6209; --warning-bg: #FBF3E0;
+    --danger: #A81F1F; --danger-bg: #FBEAEA;
+    --font-display: "Space Grotesk", Helvetica, Arial, sans-serif;
+    --font-body: "Plus Jakarta Sans", Helvetica, Arial, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: var(--font-body); color: var(--black); background: var(--white); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 48px 32px 96px 32px; }
+  header.masthead { background: var(--indigo-dark); color: var(--white); padding: 56px 32px; }
+  header.masthead .inner { max-width: 1180px; margin: 0 auto; }
+  header.masthead h1 { font-family: var(--font-display); font-size: 34px; margin: 0 0 8px 0; }
+  header.masthead p { color: #C6C7DE; font-size: 14px; margin: 0; max-width: 640px; line-height: 1.6; }
+  .status-pill { display: inline-block; background: rgba(255,255,255,0.08); border: 1px solid #4A4DBD; border-radius: 999px; padding: 5px 14px; font-size: 11px; font-weight: 700; letter-spacing: 0.5px; margin-top: 18px; }
+
+  section { margin-top: 64px; }
+  section h2 { font-family: var(--font-display); font-size: 24px; margin: 0 0 6px 0; }
+  section .section-note { color: var(--gray); font-size: 13px; margin: 0 0 28px 0; max-width: 720px; line-height: 1.6; }
+
+  .swatch-grid { display: flex; flex-wrap: wrap; gap: 16px; }
+  .swatch { width: 168px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+  .swatch .fill { height: 90px; }
+  .swatch .meta { padding: 10px 12px; }
+  .swatch .name { font-weight: 700; font-size: 12.5px; margin: 0 0 2px 0; }
+  .swatch .hex { font-size: 11px; color: var(--gray); margin: 0; font-family: monospace; }
+  .badge { display: inline-block; font-size: 9px; font-weight: 700; padding: 2px 7px; border-radius: 999px; margin-top: 6px; }
+  .badge.aaa { background: var(--success-bg); color: var(--success); }
+  .badge.aa { background: var(--mist-2); color: var(--indigo); }
+  .badge.exempt { background: var(--mist); color: var(--gray); }
+
+  .type-row { display: flex; align-items: baseline; gap: 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .type-row .label { width: 90px; flex-shrink: 0; font-size: 11px; color: var(--gray); font-family: monospace; }
+  .type-row .sample { font-family: var(--font-display); font-weight: 700; }
+
+  .icon-row { display: flex; flex-wrap: wrap; gap: 28px; }
+  .icon-item { text-align: center; width: 56px; }
+  .icon-item img { width: 26px; height: 26px; }
+  .icon-item span { display: block; font-size: 9px; color: var(--gray); margin-top: 6px; }
+
+  .component-grid { display: flex; gap: 32px; flex-wrap: wrap; align-items: flex-start; }
+  .btn { display: inline-flex; align-items: center; font-family: var(--font-body); font-weight: 700; font-size: 14px; padding: 12px 24px; border-radius: 4px; text-decoration: none; border: 1px solid transparent; }
+  .btn--primary { background: var(--orange-on-light); color: var(--white); }
+  .btn--secondary { background: var(--indigo); color: var(--white); }
+  .btn--ghost { border-color: var(--gray-light); color: var(--black); }
+  .badge-chip { display: inline-flex; font-size: 11px; font-weight: 700; padding: 4px 12px; border-radius: 999px; margin-right: 8px; }
+  .badge-chip.brand { background: #FFF3EE; color: var(--orange-on-light); }
+  .badge-chip.info { background: var(--mist-2); color: var(--indigo); }
+  .badge-chip.success { background: var(--success-bg); color: var(--success); }
+  .alert-sample { display: flex; gap: 10px; padding: 12px 16px; border-radius: 8px; border-left: 3px solid; font-size: 12px; max-width: 360px; }
+  .alert-sample.warn { background: var(--warning-bg); border-color: var(--warning); color: var(--black); }
+
+  .file-table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+  .file-table th { text-align: left; background: var(--mist); padding: 8px 12px; font-size: 10px; letter-spacing: 0.5px; color: var(--gray); text-transform: uppercase; }
+  .file-table td { padding: 8px 12px; border-bottom: 1px solid var(--line); }
+  .tier-tag { font-size: 9px; font-weight: 700; padding: 2px 8px; border-radius: 4px; background: var(--mist-2); color: var(--indigo); }
+  .status-done { color: var(--success); font-weight: 700; }
+  .status-open { color: var(--gray-light); font-weight: 700; }
+</style>
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="inner">
+      <h1><span style="color:#FF4D1C;">a</span>riviti Brand System</h1>
+      <p>Living style guide — every token, component, and template built to date, rendered together on one page so drift between files is visible immediately, not discovered later.</p>
+      <span class="status-pill">v1 &middot; Logo &amp; brand TTFs pending, applied separately</span>
+    </div>
+  </header>
+
+  <div class="wrap">
+
+    <section id="color">
+      <h2>Color</h2>
+      <p class="section-note">WCAG badges reflect the corrected values from the contrast audit, not the raw brand hex — e.g. small orange text uses <code>orange-on-light</code>, not the base brand orange, because the base value fails AA at small sizes.</p>
+      <div class="swatch-grid">
+        <div class="swatch"><div class="fill" style="background:var(--orange)"></div><div class="meta"><p class="name">Orange</p><p class="hex">#FF4D1C</p><span class="badge aa">Large text / non-text only</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--orange-on-light)"></div><div class="meta"><p class="name">Orange (on light)</p><p class="hex">#C23509</p><span class="badge aa">AA 5.52:1</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--indigo)"></div><div class="meta"><p class="name">Indigo</p><p class="hex">#3B3EA9</p><span class="badge aaa">AAA 8.58:1</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--indigo-dark)"></div><div class="meta"><p class="name">Indigo Dark</p><p class="hex">#1E1669</p><span class="badge aaa">AAA on white text</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--black)"></div><div class="meta"><p class="name">Soft Black</p><p class="hex">#2E2E2E</p><span class="badge aaa">AAA 13.58:1</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--mist);border-bottom:1px solid var(--line)"></div><div class="meta"><p class="name">Mist</p><p class="hex">#F4F4F8</p><span class="badge exempt">Surface / non-text</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--gray)"></div><div class="meta"><p class="name">Gray</p><p class="hex">#6B6B76</p><span class="badge aa">AA 5.26:1</span></div></div>
+        <div class="swatch"><div class="fill" style="background:var(--success);"></div><div class="meta"><p class="name">Success (text)</p><p class="hex">#116B3A</p><span class="badge aa">AA 6.00:1 on tint</span></div></div>
+      </div>
+    </section>
+
+    <section id="type">
+      <h2>Typography</h2>
+      <p class="section-note">Space Grotesk (display) / Plus Jakarta Sans (body) — family names wired everywhere; actual font files to be embedded separately, fallback stack renders correctly until then.</p>
+      <div class="type-row"><span class="label">5xl / 64px</span><span class="sample" style="font-size:44px;">Governed AI</span></div>
+      <div class="type-row"><span class="label">4xl / 48px</span><span class="sample" style="font-size:36px;">Governed AI</span></div>
+      <div class="type-row"><span class="label">3xl / 38px</span><span class="sample" style="font-size:30px;">Governed AI</span></div>
+      <div class="type-row"><span class="label">2xl / 30px</span><span class="sample" style="font-size:24px;">Governed AI</span></div>
+      <div class="type-row"><span class="label">xl / 24px</span><span class="sample" style="font-size:20px;">Governed AI</span></div>
+      <div class="type-row"><span class="label">base / 16px</span><span class="sample" style="font-family:var(--font-body);font-weight:400;font-size:16px;">Body copy in Plus Jakarta Sans, regular weight.</span></div>
+      <div class="type-row"><span class="label">sm / 14px</span><span class="sample" style="font-family:var(--font-body);font-weight:400;font-size:14px;color:var(--gray);">Secondary / muted text.</span></div>
+    </section>
+
+    <section id="icons">
+      <h2>Iconography</h2>
+      <p class="section-note">36-icon library, stroke-based, 2px weight. Full set ships separately as <code>Icon_Library.zip</code> — sample below.</p>
+      <div class="icon-row" id="icon-row">
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjYiPjwvY2lyY2xlPjxjaXJjbGUgY3g9IjEyIiBjeT0iMTIiIHI9IjIiPjwvY2lyY2xlPjwvc3ZnPg=="><span>target</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBvbHlsaW5lIHBvaW50cz0iMjMgNiAxMy41IDE1LjUgOC41IDEwLjUgMSAxOCI+PC9wb2x5bGluZT48cG9seWxpbmUgcG9pbnRzPSIxNyA2IDIzIDYgMjMgMTIiPjwvcG9seWxpbmU+PC9zdmc+"><span>trend</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTE3IDIxdi0yYTQgNCAwIDAgMC00LTRINWE0IDQgMCAwIDAtNCA0djIiPjwvcGF0aD48Y2lyY2xlIGN4PSI5IiBjeT0iNyIgcj0iNCI+PC9jaXJjbGU+PHBhdGggZD0iTTIzIDIxdi0yYTQgNCAwIDAgMC0zLTMuODciPjwvcGF0aD48cGF0aCBkPSJNMTYgMy4xM2E0IDQgMCAwIDEgMCA3Ljc1Ij48L3BhdGg+PC9zdmc+"><span>users</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTEyIDIyczgtNCA4LTEwVjVsLTgtMy04IDN2N2MwIDYgOCAxMCA4IDEweiI+PC9wYXRoPjwvc3ZnPg=="><span>shield</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGxpbmUgeDE9IjE4IiB5MT0iMjAiIHgyPSIxOCIgeTI9IjEwIj48L2xpbmU+PGxpbmUgeDE9IjEyIiB5MT0iMjAiIHgyPSIxMiIgeTI9IjQiPjwvbGluZT48bGluZSB4MT0iNiIgeTE9IjIwIiB4Mj0iNiIgeTI9IjE0Ij48L2xpbmU+PC9zdmc+"><span>chart</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iNCIgeT0iNCIgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48cmVjdCB4PSI5IiB5PSI5IiB3aWR0aD0iNiIgaGVpZ2h0PSI2Ij48L3JlY3Q+PGxpbmUgeDE9IjkiIHkxPSIxIiB4Mj0iOSIgeTI9IjQiPjwvbGluZT48bGluZSB4MT0iMTUiIHkxPSIxIiB4Mj0iMTUiIHkyPSI0Ij48L2xpbmU+PGxpbmUgeDE9IjkiIHkxPSIyMCIgeDI9IjkiIHkyPSIyMyI+PC9saW5lPjxsaW5lIHgxPSIxNSIgeTE9IjIwIiB4Mj0iMTUiIHkyPSIyMyI+PC9saW5lPjxsaW5lIHgxPSIyMCIgeTE9IjkiIHgyPSIyMyIgeTI9IjkiPjwvbGluZT48bGluZSB4MT0iMjAiIHkxPSIxNCIgeDI9IjIzIiB5Mj0iMTQiPjwvbGluZT48bGluZSB4MT0iMSIgeTE9IjkiIHgyPSI0IiB5Mj0iOSI+PC9saW5lPjxsaW5lIHgxPSIxIiB5MT0iMTQiIHgyPSI0IiB5Mj0iMTQiPjwvbGluZT48L3N2Zz4="><span>cpu</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSI4IiByPSI3Ij48L2NpcmNsZT48cG9seWxpbmUgcG9pbnRzPSI4LjIxIDEzLjg5IDcgMjMgMTIgMjAgMTcgMjMgMTUuNzkgMTMuODgiPjwvcG9seWxpbmU+PC9zdmc+"><span>award</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMTAiPjwvY2lyY2xlPjxwb2x5Z29uIHBvaW50cz0iMTYuMjQgNy43NiAxNC4xMiAxNC4xMiA3Ljc2IDE2LjI0IDkuODggOS44OCAxNi4yNCA3Ljc2Ij48L3BvbHlnb24+PC9zdmc+"><span>compass</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTQgNGgxNmMxLjEgMCAyIC45IDIgMnYxMmMwIDEuMS0uOSAyLTIgMkg0Yy0xLjEgMC0yLS45LTItMlY2YzAtMS4xLjktMiAyLTJ6Ij48L3BhdGg+PHBvbHlsaW5lIHBvaW50cz0iMjIsNiAxMiwxMyAyLDYiPjwvcG9seWxpbmU+PC9zdmc+"><span>mail</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMyI+PC9jaXJjbGU+PHBhdGggZD0iTTE5LjQgMTVhMS42NSAxLjY1IDAgMCAwIC4zMyAxLjgybC4wNi4wNmEyIDIgMCAwIDEgMCAyLjgzIDIgMiAwIDAgMS0yLjgzIDBsLS4wNi0uMDZhMS42NSAxLjY1IDAgMCAwLTEuODItLjMzIDEuNjUgMS42NSAwIDAgMC0xIDEuNTFWMjFhMiAyIDAgMCAxLTIgMiAyIDIgMCAwIDEtMi0ydi0uMDlBMS42NSAxLjY1IDAgMCAwIDkgMTkuNGExLjY1IDEuNjUgMCAwIDAtMS44Mi4zM2wtLjA2LjA2YTIgMiAwIDAgMS0yLjgzIDAgMiAyIDAgMCAxIDAtMi44M2wuMDYtLjA2YTEuNjUgMS42NSAwIDAgMCAuMzMtMS44MiAxLjY1IDEuNjUgMCAwIDAtMS41MS0xSDNhMiAyIDAgMCAxLTItMiAyIDIgMCAwIDEgMi0yaC4wOUExLjY1IDEuNjUgMCAwIDAgNC42IDlhMS42NSAxLjY1IDAgMCAwLS4zMy0xLjgybC0uMDYtLjA2YTIgMiAwIDAgMSAwLTIuODMgMiAyIDAgMCAxIDIuODMgMGwuMDYuMDZhMS42NSAxLjY1IDAgMCAwIDEuODIuMzNIOWExLjY1IDEuNjUgMCAwIDAgMS0xLjUxVjNhMiAyIDAgMCAxIDItMiAyIDIgMCAwIDEgMiAydi4wOWExLjY1IDEuNjUgMCAwIDAgMSAxLjUxIDEuNjUgMS42NSAwIDAgMCAxLjgyLS4zM2wuMDYtLjA2YTIgMiAwIDAgMSAyLjgzIDAgMiAyIDAgMCAxIDAgMi44M2wtLjA2LjA2YTEuNjUgMS42NSAwIDAgMC0uMzMgMS44MlY5YTEuNjUgMS42NSAwIDAgMCAxLjUxIDFIMjFhMiAyIDAgMCAxIDIgMiAyIDIgMCAwIDEtMiAyaC0uMDlhMS42NSAxLjY1IDAgMCAwLTEuNTEgMXoiPjwvcGF0aD48L3N2Zz4="><span>settings</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iOCI+PC9jaXJjbGU+PGxpbmUgeDE9IjIxIiB5MT0iMjEiIHgyPSIxNi42NSIgeTI9IjE2LjY1Ij48L2xpbmU+PC9zdmc+"><span>search</span></div>
+        <div class="icon-item"><img src="data:image/svg+xml;base64,PHN2ZyBzdHJva2U9ImN1cnJlbnRDb2xvciIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIyIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgY29sb3I9IiMzQjNFQTkiIHN0eWxlPSJjb2xvcjojM0IzRUE5IiBoZWlnaHQ9IjI0IiB3aWR0aD0iMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3QgeD0iMyIgeT0iNCIgd2lkdGg9IjE4IiBoZWlnaHQ9IjE4IiByeD0iMiIgcnk9IjIiPjwvcmVjdD48bGluZSB4MT0iMTYiIHkxPSIyIiB4Mj0iMTYiIHkyPSI2Ij48L2xpbmU+PGxpbmUgeDE9IjgiIHkxPSIyIiB4Mj0iOCIgeTI9IjYiPjwvbGluZT48bGluZSB4MT0iMyIgeTE9IjEwIiB4Mj0iMjEiIHkyPSIxMCI+PC9saW5lPjwvc3ZnPg=="><span>calendar</span></div>
+      </div>
+    </section>
+
+    <section id="components">
+      <h2>Components</h2>
+      <p class="section-note">From the Web Component Library (React + Vue, pixel-identical) — button uses the WCAG-corrected orange, not the raw brand hex.</p>
+      <div class="component-grid">
+        <div>
+          <a class="btn btn--primary" href="#" style="margin-right:10px;">Primary</a>
+          <a class="btn btn--secondary" href="#" style="margin-right:10px;">Secondary</a>
+          <a class="btn btn--ghost" href="#">Ghost</a>
+        </div>
+      </div>
+      <div class="component-grid" style="margin-top:20px;">
+        <div><span class="badge-chip brand">Brand</span><span class="badge-chip info">Info</span><span class="badge-chip success">Success</span></div>
+      </div>
+      <div class="component-grid" style="margin-top:20px;">
+        <div class="alert-sample warn"><strong>!</strong><span>Approval pending — this change needs governance council sign-off.</span></div>
+      </div>
+    </section>
+
+    <section id="manifest">
+      <h2>File Manifest</h2>
+      <p class="section-note">Every deliverable built across this system, by tier. 🟢 shipped and verified · ⚪ deliberately not built (see reasoning in the relevant README) · pending items are the two still open.</p>
+      <table class="file-table">
+        <tr><th>Tier</th><th>File</th><th>Status</th></tr>
+        <tr><td><span class="tier-tag">Particle</span></td><td>Color tokens (.ase ×3, .json, .css, .scss)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Particle</span></td><td>Typography tokens (.json, .css, .scss)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Particle</span></td><td>Icon Library (36 icons, SVG + sprite)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Particle</span></td><td>Logo vector, brand font files</td><td class="status-open">⏳ You're handling separately</td></tr>
+        <tr><td><span class="tier-tag">Atom</span></td><td>Web components (React + Vue, 6 each)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Atom</span></td><td>Chart Style Gallery (native PPTX charts)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Atom</span></td><td>Imagery/photography treatment guide</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Atom</span></td><td>Figma tokens bridge (Tokens Studio JSON)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>PPTX family (6 use-case + 4:3 master)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>DOTX (Corporate Document + Letterhead)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>Email wrapper (.mjml + .html)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>Email signature template</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>Social templates (LinkedIn ×2, OG image)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Molecule</span></td><td>Business card / stationery die-line</td><td class="status-open">⏳ Not built — flag if wanted</td></tr>
+        <tr><td><span class="tier-tag">Organism</span></td><td>3 demo builds (2 emails + landing page)</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Organism</span></td><td>This living style guide</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Governance</span></td><td>WCAG contrast audit + corrected tokens</td><td class="status-done">🟢 Shipped</td></tr>
+        <tr><td><span class="tier-tag">Governance</span></td><td>This manifest</td><td class="status-done">🟢 Shipped</td></tr>
+      </table>
+    </section>
+
+  </div>
+
+</body>
+</html>

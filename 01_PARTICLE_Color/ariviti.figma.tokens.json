@@ -1,0 +1,202 @@
+{
+  "color": {
+    "orange": {
+      "value": "#FF4D1C",
+      "type": "color",
+      "description": "Vibrant Orange \u2014 primary brand"
+    },
+    "orange-on-light": {
+      "value": "#C23509",
+      "type": "color",
+      "description": "WCAG-safe orange for small text on light backgrounds"
+    },
+    "orange-on-dark": {
+      "value": "#FF6A3D",
+      "type": "color",
+      "description": "WCAG-safe orange for text on dark backgrounds"
+    },
+    "indigo": {
+      "value": "#3B3EA9",
+      "type": "color",
+      "description": "Royal Indigo \u2014 primary brand"
+    },
+    "indigo-dark": {
+      "value": "#1E1669",
+      "type": "color",
+      "description": "Indigo Dark \u2014 brand gradient endpoint"
+    },
+    "soft-black": {
+      "value": "#2E2E2E",
+      "type": "color",
+      "description": "Soft Black \u2014 secondary brand"
+    },
+    "white": {
+      "value": "#FFFFFF",
+      "type": "color",
+      "description": "White \u2014 secondary brand"
+    },
+    "mist": {
+      "value": "#F4F4F8",
+      "type": "color"
+    },
+    "mist-2": {
+      "value": "#ECEDF6",
+      "type": "color"
+    },
+    "line": {
+      "value": "#E1E2EC",
+      "type": "color"
+    },
+    "gray": {
+      "value": "#6B6B76",
+      "type": "color"
+    },
+    "gray-light": {
+      "value": "#9A9AA6",
+      "type": "color"
+    },
+    "success": {
+      "value": "#116B3A",
+      "type": "color",
+      "description": "WCAG-corrected \u2014 use on success-bg tint"
+    },
+    "warning": {
+      "value": "#8C6209",
+      "type": "color",
+      "description": "WCAG-corrected \u2014 use on warning-bg tint"
+    },
+    "danger": {
+      "value": "#A81F1F",
+      "type": "color",
+      "description": "WCAG-corrected \u2014 use on danger-bg tint"
+    }
+  },
+  "fontFamilies": {
+    "display": {
+      "value": "Space Grotesk",
+      "type": "fontFamilies"
+    },
+    "body": {
+      "value": "Plus Jakarta Sans",
+      "type": "fontFamilies"
+    }
+  },
+  "fontWeights": {
+    "regular": {
+      "value": 400,
+      "type": "fontWeights"
+    },
+    "medium": {
+      "value": 500,
+      "type": "fontWeights"
+    },
+    "bold": {
+      "value": 700,
+      "type": "fontWeights"
+    }
+  },
+  "fontSize": {
+    "xs": {
+      "value": 12,
+      "type": "fontSizes"
+    },
+    "sm": {
+      "value": 14,
+      "type": "fontSizes"
+    },
+    "base": {
+      "value": 16,
+      "type": "fontSizes"
+    },
+    "lg": {
+      "value": 18,
+      "type": "fontSizes"
+    },
+    "xl": {
+      "value": 24,
+      "type": "fontSizes"
+    },
+    "2xl": {
+      "value": 30,
+      "type": "fontSizes"
+    },
+    "3xl": {
+      "value": 38,
+      "type": "fontSizes"
+    },
+    "4xl": {
+      "value": 48,
+      "type": "fontSizes"
+    },
+    "5xl": {
+      "value": 64,
+      "type": "fontSizes"
+    }
+  },
+  "lineHeights": {
+    "tight": {
+      "value": "120%",
+      "type": "lineHeights"
+    },
+    "normal": {
+      "value": "150%",
+      "type": "lineHeights"
+    },
+    "loose": {
+      "value": "170%",
+      "type": "lineHeights"
+    }
+  },
+  "spacing": {
+    "1": {
+      "value": 4,
+      "type": "spacing"
+    },
+    "2": {
+      "value": 8,
+      "type": "spacing"
+    },
+    "3": {
+      "value": 12,
+      "type": "spacing"
+    },
+    "4": {
+      "value": 16,
+      "type": "spacing"
+    },
+    "5": {
+      "value": 24,
+      "type": "spacing"
+    },
+    "6": {
+      "value": 32,
+      "type": "spacing"
+    },
+    "7": {
+      "value": 48,
+      "type": "spacing"
+    },
+    "8": {
+      "value": 64,
+      "type": "spacing"
+    }
+  },
+  "borderRadius": {
+    "sm": {
+      "value": 4,
+      "type": "borderRadius"
+    },
+    "md": {
+      "value": 8,
+      "type": "borderRadius"
+    },
+    "lg": {
+      "value": 12,
+      "type": "borderRadius"
+    },
+    "full": {
+      "value": 999,
+      "type": "borderRadius"
+    }
+  }
+}

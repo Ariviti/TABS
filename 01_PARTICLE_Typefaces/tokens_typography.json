@@ -1,0 +1,94 @@
+{
+  "meta": {
+    "brand": "Ariviti",
+    "scaleRatio": 1.25,
+    "baseSizePx": 16,
+    "fontFileStatus": "Font family names are wired everywhere; actual .ttf/.otf files to be embedded separately \u2014 see fontStacks[*].note."
+  },
+  "fontStacks": {
+    "display": {
+      "brand": "Space Grotesk",
+      "cdnUrl": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap",
+      "fallback": [
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "usage": "Headlines, titles, numerals/stats, logo wordmark",
+      "note": "Loaded via CDN."
+    },
+    "body": {
+      "brand": "Plus Jakarta Sans",
+      "cdnUrl": "https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap",
+      "fallback": [
+        "Helvetica Neue",
+        "Arial",
+        "sans-serif"
+      ],
+      "usage": "Body copy, UI text, captions",
+      "note": "Loaded via CDN."
+    }
+  },
+  "scale": {
+    "xs": {
+      "px": 12,
+      "rem": 0.75,
+      "usage": "Captions, footnotes, source lines"
+    },
+    "sm": {
+      "px": 14,
+      "rem": 0.875,
+      "usage": "Secondary body, UI labels, badges"
+    },
+    "base": {
+      "px": 16,
+      "rem": 1.0,
+      "usage": "Body copy"
+    },
+    "lg": {
+      "px": 18,
+      "rem": 1.125,
+      "usage": "Lead paragraph, subtitle"
+    },
+    "xl": {
+      "px": 24,
+      "rem": 1.5,
+      "usage": "H4 / card titles"
+    },
+    "2xl": {
+      "px": 30,
+      "rem": 1.875,
+      "usage": "H3"
+    },
+    "3xl": {
+      "px": 38,
+      "rem": 2.375,
+      "usage": "H2"
+    },
+    "4xl": {
+      "px": 48,
+      "rem": 3.0,
+      "usage": "H1 / section titles"
+    },
+    "5xl": {
+      "px": 64,
+      "rem": 4.0,
+      "usage": "Cover / hero display type"
+    }
+  },
+  "weights": {
+    "regular": 400,
+    "medium": 500,
+    "bold": 700
+  },
+  "lineHeights": {
+    "tight": 1.2,
+    "normal": 1.5,
+    "loose": 1.7
+  },
+  "letterSpacing": {
+    "tight": "-0.01em",
+    "normal": "0em",
+    "wide": "0.04em"
+  }
+}

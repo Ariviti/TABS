@@ -1,0 +1,18 @@
+/**
+ * Ariviti Accessible Color Addendum
+ * ---------------------------------------------------------------
+ * Supplementary tokens from the WCAG audit (see WCAG_Contrast_Audit.md).
+ * These do NOT replace the primary brand tokens in colors.css — they
+ * are the correct choice specifically for small text / tinted
+ * backgrounds where the base hue fails AA. Primary brand hex values
+ * are untouched.
+ */
+:root {
+  --ariviti-orange-on-light: #C23509;   /* small orange text on white/mist — was FF4D1C (3.32:1 fail), now 5.52:1 AA */
+  --ariviti-orange-on-dark:  #FF6A3D;   /* orange text on soft-black/dark — was FF4D1C (4.09:1 fail), now 4.77:1 AA */
+  --ariviti-orange-button-bg: #C23509;  /* text-bearing button background — was FF4D1C (3.32:1 fail w/ white text), now 5.52:1 AA */
+
+  --ariviti-success-text: #116B3A;  /* was 1E9E5A on tint (3.14:1 fail), now 6.00:1 AA */
+  --ariviti-warning-text: #8C6209;  /* was B8860B on tint (2.94:1 fail), now 4.91:1 AA */
+  --ariviti-danger-text:  #A81F1F;  /* was D42A2A on tint (4.34:1 fail), now 6.27:1 AA */
+}
