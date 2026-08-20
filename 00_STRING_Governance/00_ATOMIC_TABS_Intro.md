@@ -137,7 +137,9 @@ Two areas named in earlier drafts of this architecture are **not yet authored** 
 
 **TABS** ends at `05_COMPOUNDS`. Everything beyond this point feeds into your dynamic **Content Engine**:
 
-$$\text{TABS (Static System)} \xrightarrow{\quad\text{Handoff Boundary}\quad} \text{Content Engine (Dynamic Production)}$$
+```mermaid
+graph LR
+    A["TABS (Static System)"] -->|"Handoff Boundary"| B["Content Engine (Dynamic Production)"]
 
 * **Organisms:** Custom slide decks, live web pages, active sales documents.
 * **Societies:** Multi-channel campaigns, event rollouts, email sequences.

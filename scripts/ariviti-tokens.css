@@ -105,35 +105,45 @@ body,
 }
 
 /* ==========================================================================
-   INLINE LINK HOVER STATES
+   INLINE & NAVIGATION LINK HOVER STATES (HIGH SPECIFICITY FIX)
    ========================================================================== */
 
-/* Light Mode Link Hovers */
-[data-md-color-scheme="default"] .md-typeset a {
-  color: var(--ariviti-indigo);
+/* 1. Body & Content Links (Light & Dark Mode) */
+.md-typeset a:hover,
+.md-typeset a:focus,
+.md-content a:hover,
+.md-content a:focus {
+  color: var(--ariviti-orange) !important;
+  text-decoration: underline !important;
+  text-decoration-color: var(--ariviti-orange) !important;
+}
+
+/* 2. File Browser Table Links (Dark Indigo Background Support) */
+.ariviti-file-table a {
+  color: var(--ariviti-orange-tint-20) !important;
   text-decoration: underline;
-  text-decoration-color: var(--ariviti-indigo-tint-20);
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+  transition: color 0.15s ease;
 }
 
-[data-md-color-scheme="default"] .md-typeset a:hover,
-[data-md-color-scheme="default"] .md-typeset a:focus {
-  color: var(--ariviti-orange);
-  text-decoration-color: var(--ariviti-orange);
+.ariviti-file-table a:hover,
+.ariviti-file-table a:focus {
+  color: var(--ariviti-orange) !important;
+  text-decoration-color: var(--ariviti-orange) !important;
 }
 
-/* Dark Mode (Slate) Link Hovers */
-[data-md-color-scheme="slate"] .md-typeset a {
-  color: var(--ariviti-orange-tint-20);
-  text-decoration: underline;
-  text-decoration-color: rgba(255, 224, 211, 0.3);
-  transition: color 0.15s ease, text-decoration-color 0.15s ease;
+/* 3. Left Sidebar & Header Navigation Hovers */
+nav.md-nav .md-nav__link:hover,
+nav.md-nav .md-nav__link:focus,
+.md-header a:hover {
+  color: var(--ariviti-orange) !important;
 }
 
-[data-md-color-scheme="slate"] .md-typeset a:hover,
-[data-md-color-scheme="slate"] .md-typeset a:focus {
-  color: var(--ariviti-orange);
-  text-decoration-color: var(--ariviti-orange);
+/* 4. Exclude Primary CTA Buttons from Text Link Overrides */
+.md-typeset .md-button--primary:hover {
+  color: var(--ariviti-white) !important;
+  background-color: #E0450F !important;
+  border-color: #E0450F !important;
+  text-decoration: none !important;
 }
 
 /* Exclude primary action buttons from inline link hover styles */
