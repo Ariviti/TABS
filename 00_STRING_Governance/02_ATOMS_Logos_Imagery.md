@@ -3,11 +3,11 @@
 
 Atoms are the recognizable, named identity assets — the things a person points at and says "that's Ariviti." Built from the Particles (colors, type) in the previous file, governed by the Strings (philosophy, voice) in the first file.
 
-- [Download Primary Logos](/02_ATOM_Logo_Core/README.md)
+- [Download Primary Logos](/02_ATOM_Logo_Core)
 
-- [Download Iconography](/02_ATOM_Icons/README.md)
+- [Download Iconography](/02_ATOM_Icons)
 
-- [Download Imagery](/02_ATOM_Photography/README.md)
+- [Download Imagery](/02_ATOM_Photography)
 
 ---
 

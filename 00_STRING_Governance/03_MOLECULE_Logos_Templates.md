@@ -1,9 +1,9 @@
 # 03 · Molecules
 *Tracks: .potx · .dotx · .css · .jsx · .mjml · .json*
 
-- [Download Derived Logos](/03_MOLECULE_Logo_Derivatives/README.md)
+- [Download Derived Logos](/03_MOLECULE_Logo_Derivatives)
 
-- [Download Core Templates](/03_MOLECULE_Templates/README.md)
+- [Download Core Templates](/03_MOLECULE_Templates)
 
 ## What This File Is (and Isn't)
 

@@ -1,9 +1,9 @@
 # 01 · Particles
 *Contains: Color Swatches · Typography System · Accessibility Standards*
 
-- [Download Color Swatches](/01_PARTICLE_Color/README.md
-- 
-- [Download Typefaces](/01_PARTICLE_Typefaces/README.md
+- [Download Color Swatches](/01_PARTICLE_Color)
+
+- [Download Typefaces](/01_PARTICLE_Typefaces)
 
 Particles are the raw, indivisible values — hex codes, type scales, contrast ratios. Every component in the system (see Strings → Atomic Design Methodology) is built by naming a purposeful application of these particles. Get this file wrong and every downstream asset inherits the error.
 )

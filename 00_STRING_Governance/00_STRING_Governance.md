@@ -3,7 +3,7 @@
 
 Strings are the governing laws — the rules that don't have a hex code or a font size, but that every particle, atom, molecule, and compound in this system must trace back to. If a component, a sentence, or a decision can't be justified against something in this file, it isn't on-system.
 
-- [Download Brand Guidelines](/00_STRING_Governance/README.md)
+- [Download Brand Guidelines](/00_STRING_Governance)
 
 ---
 

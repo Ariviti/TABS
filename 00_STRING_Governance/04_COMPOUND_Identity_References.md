@@ -1,7 +1,7 @@
 # 04 · Compounds
 *Tracks & specifies: .pptx · .docx · .html templates · Email Signatures*
 
-- [Download Reference Templates](/04_COMPOUND_References/README.md)
+- [Download Reference Templates](/04_COMPOUND_References)
 
 ## What This File Is
 
